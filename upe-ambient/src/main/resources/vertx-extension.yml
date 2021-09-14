@@ -1,0 +1,12 @@
+# 数据库
+jooq:
+    provider:
+        driverClassName: "com.mysql.cj.jdbc.Driver"
+        username: root
+        password: "pl,okmijn123"
+        hostname: "ox.engine.cn"
+        instance: DB_EXTENSION
+        jdbcUrl: "jdbc:mysql://ox.engine.cn:3306/DB_EXTENSION?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&useSSL=false"
+# 初始化
+init:
+  - component: io.vertx.tp.ambient.init.AtPin

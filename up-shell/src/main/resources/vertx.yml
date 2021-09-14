@@ -1,0 +1,8 @@
+zero:
+  lime: shell
+  vertx:
+    instance:
+      - name: zero-shell
+        options:
+          # Fix block 2000 limit issue.
+          maxEventLoopExecuteTime: 30000000000

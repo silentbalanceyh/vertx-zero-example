@@ -1,0 +1,31 @@
+shell:
+  config:
+    debug: false
+    welcome:
+      banner: "Ox Engine Shell ( γραμμή εντολών )"
+      version: "1.0"
+      message:
+        environment: "[ {0} ]"
+        wait: "请输入命令，使用 h 可查看帮助文档"
+        quit: "您已经成功推出控制台！Successfully"
+        back: "您已经退出当前子系统：{0}！Successfully"
+        header: "参数选项表："
+        help: "命令表："
+        footer: "版权: 深圳招为科技 Ver.1.0"
+        empty: "[ Error ] 您还没有输入任何命令，请输入合法命令！"
+        invalid: "对不起，该命令无法识别 \"{0}\"，请输入合法命令！"
+        previous: "执行命令：\"{0}\", \"{1}\""
+        usage: "基本语法：<command> [options...]
+                 \t命令名称：{0}, 命令类型：{1}
+                 \t参数格式: [-opt1 value1 -opt2 value2]"
+    commands:
+      default: "runtime/commands.default.json"
+      defined: "runtime/commands.json"
+    validate:
+      input:
+        required: "参数缺失或者长度不匹配（长度只能为1），请输入合法参数！"
+        existing: "请输入合法的参数，参数列表：{0}，当前输入：`{1}`"
+      args:
+        - start
+        - config
+        - dev

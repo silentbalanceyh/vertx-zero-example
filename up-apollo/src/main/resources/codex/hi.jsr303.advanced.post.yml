@@ -1,0 +1,9 @@
+username:
+- type: required
+  message: "Please input your username!"
+- type: length
+  min: 6
+  message: "Your username length must be greater than 6"
+password:
+- type: required
+  message: "Please provide your password"

@@ -1,0 +1,2 @@
+*.eddx filter=lfs diff=lfs merge=lfs -text
+*.mmap filter=lfs diff=lfs merge=lfs -text

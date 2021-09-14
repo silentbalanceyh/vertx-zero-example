@@ -1,0 +1,10 @@
+zero:
+    lime: jooq, cache, excel
+    vertx:
+        instance:
+            -   name: athena-demo
+                options:
+                    # Event loop default executing: 120s
+                    # Worker executing: 1200s -> 20 min
+                    maxEventLoopExecuteTime: 300_000_000_000
+                    maxWorkerExecuteTime: 1200_000_000_000

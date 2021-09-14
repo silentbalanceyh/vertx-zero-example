@@ -1,0 +1,26 @@
+[
+    {
+        "key": "ac140022-45d9-4180-813c-9b572978876f",
+        "name": "锺杰",
+        "code": "NCIJZN",
+        "type": "GREEN",
+        "active": true,
+        "appId": "天官赐福",
+        "sigma": "9df5aa89-f1be-4653-94fe-fda08ada7ae6",
+        "createdBy": "ed6ed84e-a1cc-482a-a1d4-6048fbc4c01e",
+        "createdAt": "2012-08-22 17:35:37",
+        "updatedAt": "2004-03-17 05:21:24"
+    },
+    {
+        "key": "d7e740b0-7c77-4497-b52c-882a7b752964",
+        "name": "钱磊",
+        "code": "KXCLDI",
+        "type": "GREEN",
+        "active": true,
+        "appId": "百无禁忌",
+        "sigma": "9df5aa89-f1be-4653-94fe-fda08ada7ae6",
+        "createdBy": "d5c148fd-a6ce-4fbe-8bd8-7b5d547b2b32",
+        "createdAt": "1973-03-20 07:13:16",
+        "updatedAt": "2006-06-15 19:52:20"
+    }
+]

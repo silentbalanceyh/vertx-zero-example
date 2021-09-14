@@ -1,0 +1,17 @@
+excel:
+    pen: "io.vertx.tp.plugin.excel.tpl.BlueTpl"
+    temp: /tmp/
+    environment:
+        -   name: data.reference.xlsx
+            path: "init/data.reference.xlsx"
+    mapping:
+        # -------------- System 部分 ----------------
+        # Source
+        -   table: X_TABULAR
+            pojo: cn.vertxup.ambient.domain.tables.pojos.XTabular
+            dao: cn.vertxup.ambient.domain.tables.daos.XTabularDao
+            key: key
+            unique:
+                - code
+                - type
+                - appId
