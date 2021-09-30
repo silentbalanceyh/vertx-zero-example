@@ -2,9 +2,10 @@ package cn.vertxup.secure;
 
 import io.vertx.core.Future;
 import io.vertx.core.json.JsonObject;
-import io.vertx.up.secure.Security;
+import io.vertx.up.secure.ZaaS;
 
-public class SecStub implements Security {
+
+public class SecStub implements ZaaS {
 
     @Override
     public Future<Boolean> verify(final JsonObject data) {

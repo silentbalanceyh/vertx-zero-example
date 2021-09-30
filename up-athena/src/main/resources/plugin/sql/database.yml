@@ -1,0 +1,5 @@
+databaseChangeLog:
+  # 系统表
+  - include:
+      file: plugin/sql/demo/X_TABULAR.sql
+      relativeToChangelogFile: false
