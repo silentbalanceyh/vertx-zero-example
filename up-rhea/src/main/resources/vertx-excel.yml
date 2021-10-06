@@ -1,0 +1,5 @@
+excel:
+    pen: "io.vertx.tp.plugin.excel.tpl.BlueTpl"
+    temp: /tmp/
+    mapping:
+        # -------------- System 部分 ----------------

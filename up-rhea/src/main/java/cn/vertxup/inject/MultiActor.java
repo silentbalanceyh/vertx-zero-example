@@ -3,16 +3,16 @@ package cn.vertxup.inject;
 import io.vertx.core.Future;
 import io.vertx.core.json.JsonObject;
 import io.vertx.up.annotations.Address;
-import io.vertx.up.annotations.Qualifier;
 import io.vertx.up.annotations.Queue;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 
 @Queue
 public class MultiActor {
 
     @Inject
-    @Qualifier("ServiceB")
+    @Named("ServiceB")
     private transient MultiStub stub;
 
     @Address("ZERO://INJECT/MULTI")

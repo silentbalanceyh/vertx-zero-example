@@ -1,0 +1,15 @@
+secure:
+  jwt:
+    options:
+      jwtOptions:
+        algorithm: HS256
+      keyStore:
+        type: jceks
+        path: keys/keystore.jceks
+        password: zeroup
+  basic:
+    options:
+      realm: "Test"
+  oauth2:
+    options:
+      clientId: "lang.yu"
