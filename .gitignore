@@ -107,3 +107,6 @@ archive/
 file-uploads
 .auto_links.json
 logs
+.settings
+.classpath
+.project
