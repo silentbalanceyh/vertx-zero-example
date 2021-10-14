@@ -35,12 +35,23 @@ Zero目前的版本中仅支持Maven，最新版为`0.6.2`，一直以`0`前缀�
 
 在您的Maven项目的 `pom.xml` 文件中引入以下配置（推荐使用正式版，0.6.2已发布）：
 
-```xml
+**JDK 8, Vert.x 3.x**
 
+```xml
 <parent>
     <artifactId>vertx-import</artifactId>
     <groupId>cn.vertxup</groupId>
     <version>0.6.2</version>
+</parent>
+```
+
+**JDK 11, Vert.x 4.x**
+
+```xml
+<parent>
+    <artifactId>vertx-import</artifactId>
+    <groupId>cn.vertxup</groupId>
+    <version>0.7.0</version>
 </parent>
 ```
 
