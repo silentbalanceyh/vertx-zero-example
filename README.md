@@ -82,7 +82,7 @@ public class ApolloUp {
          Endpoint: http://198.18.21.28:6083/.
 ```
 
-## 3. 后端教程（Zero）
+## 3. 教程（Zero）
 
 ### 3.1. 零之遥（Απόλλων）
 
