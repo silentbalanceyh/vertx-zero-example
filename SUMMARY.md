@@ -23,7 +23,7 @@
     * [2.1.扬帆：Zero Extension（zero-ke）](/document/zero-extension/001.extension.md)
     * [2.2.漆冰裂：Ambient（zero-ambient）](/document/zero-extensiongi/002.ambient.md)
     * [2.3.木叶鸢：CRUD（zero-crud）](/document/zero-extension/003.crud.md)
-* [3.䆐之疆（Σύνορα της χώρας）](/document/zero/000.index.md)
+* [3.䆐之疆（Σύνορα της χώρας）](/document/zero/000.index-friend.md)
     * [3.1.信封模型：Envelop](/document/zero/000.index/006.async#er-tong-yi-mo-xing)
     * [3.2.任务模型：Mission](/document/zero/000.index/017.job#1-6-mission)
     * [3.3.集成模型：Integration](/document/zero/000.index/018.integration#2-1-integration)
