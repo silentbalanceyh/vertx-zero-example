@@ -1,0 +1,14 @@
+package cn.vertxup.secure;
+
+import io.vertx.core.Future;
+import io.vertx.core.json.JsonObject;
+import io.vertx.up.secure.ZaaS;
+
+
+public class SecStub implements ZaaS {
+
+    @Override
+    public Future<Boolean> verify(final JsonObject data) {
+        return Future.succeededFuture(Boolean.TRUE);
+    }
+}

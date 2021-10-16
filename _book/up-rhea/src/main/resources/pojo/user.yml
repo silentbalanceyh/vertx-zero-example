@@ -1,0 +1,4 @@
+mapping:
+  userName: username
+  pwd: password
+  emailAccount: email

@@ -1,0 +1,2 @@
+# MySQL插件引入
+mysql: io.vertx.up.plugin.jdbc.MySqlInfix

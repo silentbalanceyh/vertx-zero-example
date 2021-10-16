@@ -110,3 +110,4 @@ logs
 .settings
 .classpath
 .project
+node_modules

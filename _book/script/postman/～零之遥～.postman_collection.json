@@ -1,0 +1,2111 @@
+{
+	"info": {
+		"_postman_id": "c1f425c9-1e0e-48c1-87d1-7cb4f302d3bd",
+		"name": "～零之遥～",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. 启航：Zero",
+			"item": [
+				{
+					"name": "/hi/zero-string",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PUB}}/hi/zero-string",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"zero-string"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/zero-json",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PUB}}/hi/zero-json",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"zero-json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/zero-four",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PUB}}/hi/zero-four",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"zero-four"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/zero-four",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{PUB}}/hi/zero-four",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"zero-four"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/zero-four",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{PUB}}/hi/zero-four",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"zero-four"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/zero-four",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{PUB}}/hi/zero-four",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"zero-four"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/zero-oneway",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PUB}}/hi/zero-oneway",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"zero-oneway"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "2. 曲径通幽：@Path",
+			"item": [
+				{
+					"name": "/path/100",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PUB}}/path/100",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"path",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/path/200",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PUB}}/path/200",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"path",
+								"200"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/path/300",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PUB}}/path/300",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"path",
+								"300"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/path/400",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PUB}}/path/400",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"path",
+								"400"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/path/500",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PUB}}/path/500",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"path",
+								"500"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "3. 四叶葎：Http方法",
+			"item": [
+				{
+					"name": "/hi/method/get-first",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PUB}}/hi/method/get-first?name=Lang",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"method",
+								"get-first"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Lang"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/method/get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PUB}}/hi/method/get?name=Lang",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"method",
+								"get"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Lang"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/method/header",
+					"request": {
+						"method": "HEAD",
+						"header": [],
+						"url": {
+							"raw": "{{PUB}}/hi/method/header",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"method",
+								"header"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/method/post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"Lang\",\n\t\"password\": \"111111\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PUB}}/hi/method/post",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"method",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/method/put/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"Lang\",\n\t\"password\": \"111111\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PUB}}/hi/method/put/lang.yu",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"method",
+								"put",
+								"lang.yu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/method/delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"Lang\",\n\t\"password\": \"111111\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PUB}}/hi/method/delete/lang.yu",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"method",
+								"delete",
+								"lang.yu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/body/get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"Lang\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PUB}}/hi/body/get",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"body",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/body/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PUB}}/hi/body/delete",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"body",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/body/get",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PUB}}/hi/body/delete",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"body",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/error/404",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"Lang\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PUB}}/hi/error/404",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"error",
+								"404"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/error/500",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"Lang\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PUB}}/hi/error/500",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"error",
+								"500"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "4. 思无邪：入参",
+			"item": [
+				{
+					"name": "JSR311专用请求",
+					"item": [
+						{
+							"name": "/hi/jsr311/query?name={name}",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PUB}}/hi/jsr311/query?name=Lang",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"jsr311",
+										"query"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Lang"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/jsr311/path/:path",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PUB}}/hi/jsr311/path/lang.yu",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"jsr311",
+										"path",
+										"lang.yu"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/jsr311/header",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/atom+xml",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{PUB}}/hi/jsr311/header",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"jsr311",
+										"header"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/jsr311/form",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "Lang",
+											"type": "text"
+										},
+										{
+											"key": "file",
+											"type": "file",
+											"src": [
+												"/Users/lang/Desktop/历史/test.java",
+												"/Users/lang/Desktop/历史/002-13.png"
+											]
+										},
+										{
+											"key": "file1",
+											"type": "file",
+											"src": [
+												"/Users/lang/Desktop/历史/test.java",
+												"/Users/lang/Desktop/历史/DB_IOP.sql"
+											]
+										}
+									]
+								},
+								"url": {
+									"raw": "{{PUB}}/hi/jsr311/form",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"jsr311",
+										"form"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/jsr311/form-advanced",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/atom+xml"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "Lang Yu",
+											"type": "text"
+										},
+										{
+											"key": "file",
+											"type": "file",
+											"src": [
+												"/Users/lang/Desktop/历史/test.java",
+												"/Users/lang/Desktop/历史/test1.java"
+											]
+										},
+										{
+											"key": "file1",
+											"type": "file",
+											"src": [
+												"/Users/lang/Desktop/历史/002-13.png",
+												"/Users/lang/Desktop/历史/002-7.png"
+											]
+										}
+									]
+								},
+								"url": {
+									"raw": "{{PUB}}/hi/jsr311/form-advanced",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"jsr311",
+										"form-advanced"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/jsr311/form-complex",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/atom+xml"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "Lang Yu",
+											"type": "text"
+										},
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/Users/lang/Desktop/历史/test.java"
+										},
+										{
+											"key": "file1",
+											"type": "file",
+											"src": [
+												"/Users/lang/Desktop/历史/DB_IOP.sql",
+												"/Users/lang/Desktop/历史/Screen Shot 2020-03-28 at 12.42.46 PM.png",
+												"/Users/lang/Desktop/历史/Screen Shot 2020-03-28 at 10.15.36 AM.png"
+											]
+										}
+									]
+								},
+								"url": {
+									"raw": "{{PUB}}/hi/jsr311/form-complex?username=Lang&file",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"jsr311",
+										"form-complex"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "Lang"
+										},
+										{
+											"key": "file",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/jsr311/cookie",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/atom+xml"
+									},
+									{
+										"key": "Set-Cookie",
+										"value": "vertx=X;Domain=localhost",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PUB}}/hi/jsr311/cookie",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"jsr311",
+										"cookie"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/jsr311/pojo",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json",
+										"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman."
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\":\"Lang\",\n\t\"email\":\"lang.yu@hpe.com\",\n\t\"address\":{\n\t\t\"country\":\"中国\",\n\t\t\"state\":\"重庆市\"\n\t}\n}"
+								},
+								"url": {
+									"raw": "{{PUB}}/hi/jsr311/pojo",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"jsr311",
+										"pojo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/jsr311/default",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true,
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json",
+										"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman."
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\":\"Lang\",\n\t\"email\":\"lang.yu@hpe.com\",\n\t\"address\":{\n\t\t\"country\":\"中国\",\n\t\t\"state\":\"重庆市\"\n\t}\n}"
+								},
+								"url": {
+									"raw": "{{PUB}}/hi/jsr311/default?month=5",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"jsr311",
+										"default"
+									],
+									"query": [
+										{
+											"key": "month",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/jsr311/default-date",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true,
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json",
+										"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman."
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\":\"Lang\",\n\t\"email\":\"lang.yu@hpe.com\",\n\t\"address\":{\n\t\t\"country\":\"中国\",\n\t\t\"state\":\"重庆市\"\n\t}\n}"
+								},
+								"url": {
+									"raw": "{{PUB}}/hi/jsr311/default-date?from=2010-08-17",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"jsr311",
+										"default-date"
+									],
+									"query": [
+										{
+											"key": "from",
+											"value": "2010-08-17"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/jsr311/default-pojo",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json",
+										"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman."
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{PUB}}/hi/jsr311/default-pojo",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"jsr311",
+										"default-pojo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/jsr311/resolver",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json",
+										"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman."
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{PUB}}/hi/jsr311/resolver",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"jsr311",
+										"resolver"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/jsr311/resolver-small",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json",
+										"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman."
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{PUB}}/hi/jsr311/resolver-small",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"jsr311",
+										"resolver-small"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/jsr311/stream",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"host": true,
+									"user-agent": true,
+									"accept": true,
+									"accept-encoding": true,
+									"connection": true,
+									"content-length": true
+								}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Length",
+										"type": "text",
+										"value": "112",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "",
+											"type": "file",
+											"src": "/Users/lang/Desktop/历史/test1.java"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{PUB}}/hi/jsr311/stream",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"jsr311",
+										"stream"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/jsr311/file",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/octet-stream"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "",
+											"type": "file",
+											"src": "/Users/lang/Desktop/历史/DB_IOP.sql"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{PUB}}/hi/jsr311/file",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"jsr311",
+										"file"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/jsr311/streams",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"connection": true,
+									"accept-encoding": true,
+									"accept": true,
+									"user-agent": true,
+									"host": true
+								}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/octet-stream",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": [],
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{PUB}}/hi/jsr311/streams",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"jsr311",
+										"streams"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/jsr311/buffer",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true,
+									"accept-encoding": true,
+									"connection": true,
+									"host": true,
+									"user-agent": true,
+									"content-type": true
+								}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/octet-stream"
+									}
+								],
+								"body": {
+									"mode": "file",
+									"file": {
+										"src": "/Users/lang/Desktop/历史/DB_IOP.sql"
+									}
+								},
+								"url": {
+									"raw": "{{PUB}}/hi/jsr311/buffer",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"jsr311",
+										"buffer"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "JSR311 类型请求",
+					"item": [
+						{
+							"name": "/hi/param/typed/x-header",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Sigma",
+										"value": "PZuSgIAE5EDakR6yr",
+										"type": "text"
+									},
+									{
+										"key": "X-App-Id",
+										"value": "aedba77c-e020-4ef3-b50a-442d919cf2b1",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{PUB}}/hi/params/typed/x-header",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"params",
+										"typed",
+										"x-header"
+									],
+									"query": [
+										{
+											"key": "X-Sigma",
+											"value": "PZuSgIAE5EDakR6yr",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/param/typed/session",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Sigma",
+										"type": "text",
+										"value": "PZuSgIAE5EDakR6yr"
+									},
+									{
+										"key": "X-App-Id",
+										"type": "text",
+										"value": "aedba77c-e020-4ef3-b50a-442d919cf2b1"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{PUB}}/hi/params/typed/session",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"params",
+										"typed",
+										"session"
+									],
+									"query": [
+										{
+											"key": "X-Sigma",
+											"value": "PZuSgIAE5EDakR6yr",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/param/typed/request-response",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Sigma",
+										"type": "text",
+										"value": "PZuSgIAE5EDakR6yr"
+									},
+									{
+										"key": "X-App-Id",
+										"type": "text",
+										"value": "aedba77c-e020-4ef3-b50a-442d919cf2b1"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{PUB}}/hi/params/typed/request-response",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"params",
+										"typed",
+										"request-response"
+									],
+									"query": [
+										{
+											"key": "X-Sigma",
+											"value": "PZuSgIAE5EDakR6yr",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/param/typed/vertx",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Sigma",
+										"type": "text",
+										"value": "PZuSgIAE5EDakR6yr"
+									},
+									{
+										"key": "X-App-Id",
+										"type": "text",
+										"value": "aedba77c-e020-4ef3-b50a-442d919cf2b1"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{PUB}}/hi/params/typed/vertx",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"params",
+										"typed",
+										"vertx"
+									],
+									"query": [
+										{
+											"key": "X-Sigma",
+											"value": "PZuSgIAE5EDakR6yr",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/param/typed/event-bus",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Sigma",
+										"type": "text",
+										"value": "PZuSgIAE5EDakR6yr"
+									},
+									{
+										"key": "X-App-Id",
+										"type": "text",
+										"value": "aedba77c-e020-4ef3-b50a-442d919cf2b1"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{PUB}}/hi/params/typed/event-bus",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"params",
+										"typed",
+										"event-bus"
+									],
+									"query": [
+										{
+											"key": "X-Sigma",
+											"value": "PZuSgIAE5EDakR6yr",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/param/typed/user",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Sigma",
+										"type": "text",
+										"value": "PZuSgIAE5EDakR6yr"
+									},
+									{
+										"key": "X-App-Id",
+										"type": "text",
+										"value": "aedba77c-e020-4ef3-b50a-442d919cf2b1"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{PUB}}/hi/params/typed/user",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"params",
+										"typed",
+										"user"
+									],
+									"query": [
+										{
+											"key": "X-Sigma",
+											"value": "PZuSgIAE5EDakR6yr",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/param/typed/json-array",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Sigma",
+										"type": "text",
+										"value": "PZuSgIAE5EDakR6yr"
+									},
+									{
+										"key": "X-App-Id",
+										"type": "text",
+										"value": "aedba77c-e020-4ef3-b50a-442d919cf2b1"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{PUB}}/hi/params/typed/json-array",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"params",
+										"typed",
+										"json-array"
+									],
+									"query": [
+										{
+											"key": "X-Sigma",
+											"value": "PZuSgIAE5EDakR6yr",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/param/typed/json-object",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Sigma",
+										"type": "text",
+										"value": "PZuSgIAE5EDakR6yr"
+									},
+									{
+										"key": "X-App-Id",
+										"type": "text",
+										"value": "aedba77c-e020-4ef3-b50a-442d919cf2b1"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{PUB}}/hi/params/typed/json-object",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"params",
+										"typed",
+										"json-object"
+									],
+									"query": [
+										{
+											"key": "X-Sigma",
+											"value": "PZuSgIAE5EDakR6yr",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/param/typed/buffer",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Sigma",
+										"type": "text",
+										"value": "PZuSgIAE5EDakR6yr"
+									},
+									{
+										"key": "X-App-Id",
+										"type": "text",
+										"value": "aedba77c-e020-4ef3-b50a-442d919cf2b1"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{PUB}}/hi/params/typed/buffer",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"params",
+										"typed",
+										"buffer"
+									],
+									"query": [
+										{
+											"key": "X-Sigma",
+											"value": "PZuSgIAE5EDakR6yr",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/param/typed/set",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Sigma",
+										"type": "text",
+										"value": "PZuSgIAE5EDakR6yr"
+									},
+									{
+										"key": "X-App-Id",
+										"type": "text",
+										"value": "aedba77c-e020-4ef3-b50a-442d919cf2b1"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{PUB}}/hi/params/typed/set",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"params",
+										"typed",
+										"set"
+									],
+									"query": [
+										{
+											"key": "X-Sigma",
+											"value": "PZuSgIAE5EDakR6yr",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/hi/param/typed/upload",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Sigma",
+										"type": "text",
+										"value": "PZuSgIAE5EDakR6yr"
+									},
+									{
+										"key": "X-App-Id",
+										"type": "text",
+										"value": "aedba77c-e020-4ef3-b50a-442d919cf2b1"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{PUB}}/hi/params/typed/upload",
+									"host": [
+										"{{PUB}}"
+									],
+									"path": [
+										"hi",
+										"params",
+										"typed",
+										"upload"
+									],
+									"query": [
+										{
+											"key": "X-Sigma",
+											"value": "PZuSgIAE5EDakR6yr",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "/hi/param/name/:name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PUB}}/hi/param/name/Lang",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"param",
+								"name",
+								"Lang"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/param/email/{email}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PUB}}/hi/param/email/lang.yu@hpe.com",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"param",
+								"email",
+								"lang.yu@hpe.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/param/age/:age",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PUB}}/hi/param/age/Lang",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"param",
+								"age",
+								"Lang"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/param/currency/:currency",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PUB}}/hi/param/currency/14.77",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"param",
+								"currency",
+								"14.77"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/param/query-string",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PUB}}/hi/param/query-string?name=Lang",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"param",
+								"query-string"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Lang"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/param/query-body",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\":\"lang.yu@hpe.com\",\n\t\"age\":12\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PUB}}/hi/param/query-body?name=Lang",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"param",
+								"query-body"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Lang"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/param/body-string",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"lang.yu\",\n\t\"github\":\"http://github.com/silentbalanceyh\",\n\t\"email\":\"lang.yu@hpe.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PUB}}/hi/param/body-string",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"param",
+								"body-string"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/param/body-file",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/lang/Desktop/历史/ci.server-test.xlsx"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PUB}}/hi/param/body-file",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"param",
+								"body-file"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/hi/param/header-value",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept-encoding": true,
+							"accept": true,
+							"user-agent": true,
+							"host": true,
+							"connection": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Sigma",
+								"value": "lang.yu",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic ExtRS",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/lang/Desktop/历史/ci.server-test.xlsx",
+									"disabled": true
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PUB}}/hi/param/header-value",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"param",
+								"header-value"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "5. 孤城暗雪：验证",
+			"item": [
+				{
+					"name": "/hi/jsr303/notnull",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true,
+							"accept-encoding": true,
+							"connection": true,
+							"user-agent": true,
+							"host": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/lang/Desktop/历史/ci.server-test.xlsx"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PUB}}/hi/jsr303/notnull",
+							"host": [
+								"{{PUB}}"
+							],
+							"path": [
+								"hi",
+								"jsr303",
+								"notnull"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "51cd14e5-9c9f-47c4-bbf5-3cc83164ddb2",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "c0005131-a9cd-4b76-ac21-59fcc8388f71",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

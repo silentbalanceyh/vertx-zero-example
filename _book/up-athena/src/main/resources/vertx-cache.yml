@@ -1,0 +1,13 @@
+cache:
+    # L1 Cache between Dao and Database
+    l1:
+        component: "io.vertx.tp.plugin.redis.cache.L1"
+        worker: "io.vertx.tp.plugin.redis.cache.L1Worker"
+        address: "EVENT://L1-CACHE/FOR/DAO"
+        options:
+        # Definition for spec situations
+        matrix:
+        #
+    # L2 Cache between Service and Dao
+
+    # L3 Cache between Api and Service

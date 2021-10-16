@@ -1,0 +1,8 @@
+zero:
+  lime: secure,excel
+  vertx:
+    instance:
+      - name: zero-native
+        options:
+          # Fix block 2000 limit issue.
+          maxEventLoopExecuteTime: 30000000000

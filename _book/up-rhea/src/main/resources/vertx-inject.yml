@@ -1,0 +1,6 @@
+# Database，静态数据库访问专用，访问：DB_ORIGIN_X 元数据库
+# jooq: io.vertx.tp.plugin.jooq.JooqInfix
+# Redis，缓存
+# redis: io.vertx.tp.plugin.redis.RedisInfix
+# Excel
+excel: io.vertx.tp.plugin.excel.ExcelInfix

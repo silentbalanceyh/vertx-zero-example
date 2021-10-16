@@ -1,0 +1,2 @@
+# Job，任务插件
+job: io.vertx.tp.plugin.job.JobInfix

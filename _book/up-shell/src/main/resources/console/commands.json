@@ -1,0 +1,39 @@
+[
+    {
+        "simple": "t",
+        "name": "test",
+        "description": "2.1. 最简单命令！",
+        "plugin": "cn.vertxup.command.SimpleCommand"
+    },
+    {
+        "simple": "s",
+        "name": "sub",
+        "description": "2.2. 子系统进入",
+        "type": "SYSTEM",
+        "commands": [
+        ]
+    },
+    {
+        "simple": "p",
+        "name": "param",
+        "description": "2.3. 参数系统",
+        "plugin": "cn.vertxup.command.ParamCommand",
+        "config": {
+            "test": "测试配置"
+        },
+        "options": [
+            {
+                "simple": "e",
+                "name": "env",
+                "description": "基本环境名称",
+                "defaultValue": "Development"
+            },
+            {
+                "simple": "r",
+                "name": "required",
+                "description": "必须参数",
+                "required": true
+            }
+        ]
+    }
+]

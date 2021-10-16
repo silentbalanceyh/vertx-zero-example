@@ -1,0 +1,22 @@
+{
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/silentbalanceyh/vertx-zero-example"
+        },
+        "fontSettings": {
+            "size": 1
+        }
+    },
+    "pdf": {
+        "fontSize": 12
+    },
+    "plugins": [
+        "chapter-fold",
+        "expandable-chapters-small",
+        "expandable-chapters",
+        "code",
+        "copy-code-button",
+        "github",
+        "splitter"
+    ]
+}

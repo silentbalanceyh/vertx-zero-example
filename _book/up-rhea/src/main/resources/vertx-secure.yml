@@ -1,0 +1,36 @@
+secure:
+  jwt:
+    type: jwt
+    config:
+      jwtOptions:
+        algorithm: HS256
+      keyStore:
+        type: jceks
+        path: keys/keystore.jceks
+        password: zeroup
+
+# Cross Domain
+cors:
+  credentials: true
+  methods:
+    - DELETE
+    - GET
+    - POST
+    - PUT
+    - OPTIONS
+  headers:
+    - Authorization
+    - Accept
+    - Content-Disposition
+    - Content-Encoding
+    - Content-Length
+    - Content-Type
+    - X-App-Id
+    - X-App-Key
+    - X-Sigma
+    - X-Lang
+  origin: "http://ox.server.cn:4000"
+
+# Debugger 模块
+debug:
+  stack.trace: true

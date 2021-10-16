@@ -1,0 +1,1571 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.13.始源之地：Vert.x集成 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="014.configuration.html" />
+    
+    
+    <link rel="prev" href="012.function.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="000.index.html">
+            
+                <a href="000.index.html">
+            
+                    
+                    1.零之遥（Απόλλων）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="001.first.html">
+            
+                <a href="001.first.html">
+            
+                    
+                    1.1.启航：Zero
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="002.uri.html">
+            
+                <a href="002.uri.html">
+            
+                    
+                    1.2.曲径通幽：@Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="003.method.html">
+            
+                <a href="003.method.html">
+            
+                    
+                    1.3.四叶葎：Http方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="004.param.html">
+            
+                <a href="004.param.html">
+            
+                    
+                    1.4.思无邪：入参
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="005.validation.html">
+            
+                <a href="005.validation.html">
+            
+                    
+                    1.5.孤城暗雪：验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="006.async.html">
+            
+                <a href="006.async.html">
+            
+                    
+                    1.6.潘多拉魔盒：异步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="007.error.html">
+            
+                <a href="007.error.html">
+            
+                    
+                    1.7.珠玉在侧：容错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="008.worker.html">
+            
+                <a href="008.worker.html">
+            
+                    
+                    1.8.铁马冰河：细谈Worker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="009.security.html">
+            
+                <a href="009.security.html">
+            
+                    
+                    1.9.虚之墙：安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="010.jooq.html">
+            
+                <a href="010.jooq.html">
+            
+                    
+                    1.10.珷玞：Jooq
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="011.jsr330.html">
+            
+                <a href="011.jsr330.html">
+            
+                    
+                    1.11.笙歌散：JSR330/JSR340
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="012.function.html">
+            
+                <a href="012.function.html">
+            
+                    
+                    1.12.阡陌：Ux编排
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.13" data-path="013.native.html">
+            
+                <a href="013.native.html">
+            
+                    
+                    1.13.始源之地：Vert.x集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="014.configuration.html">
+            
+                <a href="014.configuration.html">
+            
+                    
+                    1.14.俯瞰：配置地图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="015.devops.html">
+            
+                <a href="015.devops.html">
+            
+                    
+                    1.15.鼚乎：Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="016.excel.html">
+            
+                <a href="016.excel.html">
+            
+                    
+                    1.16.二向箔：Excel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="017.job.html">
+            
+                <a href="017.job.html">
+            
+                    
+                    1.17.隐匿者：Job
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="018.integration.html">
+            
+                <a href="018.integration.html">
+            
+                    
+                    1.18.天下：集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../zero-extension/000.index.html">
+            
+                <a href="../zero-extension/000.index.html">
+            
+                    
+                    2.风之殇（Πόλεμος ανέμου）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../zero-extension/001.extension.html">
+            
+                <a href="../zero-extension/001.extension.html">
+            
+                    
+                    2.1.扬帆：Zero Extension（zero-ke）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../zero-extensiongi/002.ambient.md">
+            
+                <span>
+            
+                    
+                    2.2.漆冰裂：Ambient（zero-ambient）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../zero-extension/003.crud.html">
+            
+                <a href="../zero-extension/003.crud.html">
+            
+                    
+                    2.3.木叶鸢：CRUD（zero-crud）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="000.index.html">
+            
+                <a href="000.index.html">
+            
+                    
+                    3.䆐之疆（Σύνορα της χώρας）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/006.async#er-tong-yi-mo-xing">
+            
+                    
+                    3.1.信封模型：Envelop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/017.job#1-6-mission">
+            
+                    
+                    3.2.任务模型：Mission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/018.integration#2-1-integration">
+            
+                    
+                    3.3.集成模型：Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/007.error#er-yi-chang-cha-xun-biao">
+            
+                    
+                    3.4.异常查询表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/006.async#1-2-zero-mo-shi">
+            
+                    
+                    3.5.异步模式：5 Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/004.param#3-4-shang-xia-wen">
+            
+                    
+                    3.6.参数签名：Agent组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/008.worker#3-2-kuo-zhan-can-shu">
+            
+                    
+                    3.7.参数签名：Worker组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/017.job#2-2-on-off">
+            
+                    
+                    3.8.参数签名：Job组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/010.jooq#san-cha-xun-yin-qing">
+            
+                    
+                    3.9.查询引擎语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index-1/001.extension#2-2-tong-dao-ding-yi">
+            
+                    
+                    3.10.Ex: ServiceLoader通道
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../zero-ui/000.index.html">
+            
+                <a href="../zero-ui/000.index.html">
+            
+                    
+                    4.影之月（Σάντοου μήνα）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../zero-ui/001.structure.html">
+            
+                <a href="../zero-ui/001.structure.html">
+            
+                    
+                    4.1.初赦：Zero Ui
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >1.13.始源之地：Vert.x集成</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="13-&#x59CB;&#x6E90;&#x4E4B;&#x5730;&#xFF1A;vertx&#x96C6;&#x6210;">13. &#x59CB;&#x6E90;&#x4E4B;&#x5730;&#xFF1A;Vert.x&#x96C6;&#x6210;</h1>
+<blockquote>
+<p>&#x8003;&#x69C3;&#x5728;&#x6DA7;&#xFF0C;&#x7855;&#x4EBA;&#x4E4B;&#x5BBD;&#x3002;&#x72EC;&#x5BD0;&#x5BE4;&#x8A00;&#xFF0C;&#x6C38;&#x77E2;&#x5F17;&#x8C16;&#x3002;&#x2014;&#x2014;&#x4F5A;&#x540D;&#x300A;&#x56FD;&#x98CE;&#xB7;&#x536B;&#x98CE;&#x300B;</p>
+</blockquote>
+<ul>
+<li>&#x9879;&#x76EE;&#x5730;&#x5740;&#xFF1A;<a href="https://github.com/silentbalanceyh/vertx-zero-example/" target="_blank">https://github.com/silentbalanceyh/vertx-zero-example/</a>&#xFF08;&#x5B50;&#x9879;&#x76EE;&#xFF1A;<strong>up-native</strong>&#xFF09;</li>
+</ul>
+<h2 id="&#x300C;&#x58F9;&#x300D;vertx&#x5B50;&#x9879;&#x76EE;">&#x300C;&#x58F9;&#x300D;Vert.x&#x5B50;&#x9879;&#x76EE;</h2>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;Vert.x&#x4ECE;3.x&#x5F00;&#x59CB;&#xFF0C;&#x5C31;&#x5C06;&#x66FE;&#x7ECF;&#x7684;&#x5DE5;&#x5177;&#x7BB1;&#x91CD;&#x65B0;&#x8FDB;&#x884C;&#x4E86;&#x6A21;&#x5757;&#x5316;&#x8BBE;&#x8BA1;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5728;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x4E2D;&#x770B;&#x5230;&#x5F88;&#x591A;&#x76F8;&#x5173;&#x5B50;&#x9879;&#x76EE;&#xFF08;2.x&#x4E2D;&#x7684;&#x6A21;&#x5757;&#x5316;&#x5B8C;&#x5168;&#x662F;&#x707E;&#x96BE;&#x7EA7;&#x7684;&#xFF09;&#xFF1A;</p>
+<p><img src="_image/2021-08-06/2021-08-08-18-12-22.png" alt=""></p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x53EF;&#x80FD;&#x60A8;&#x4F1A;&#x56F0;&#x60D1;&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528;Zero&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x5C31;&#x7528;&#x4E0D;&#x4E86;&#x8FD9;&#x4E9B;&#x76F8;&#x5173;&#x7684;&#x5B50;&#x9879;&#x76EE;&#x4E86;&#x5462;&#xFF1F;&#x7B54;&#x6848;&#x662F;&#x5426;&#x5B9A;&#x7684;&#xFF0C;&#x5728;Zero&#x4E2D;&#x60A8;&#x53EF;&#x4EE5;&#x5F00;&#x53D1;<strong>&#x8FDE;&#x63A5;&#x70B9;</strong>
+&#x7A0B;&#x5E8F;&#xFF0C;&#x6709;&#x4E86;&#x5B83;&#x60A8;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x548C;Vert.x&#x63D0;&#x4F9B;&#x7684;&#x5B98;&#x65B9;&#x5B50;&#x9879;&#x76EE;&#x96C6;&#x6210;&#xFF08;&#x7C7B;&#x4F3C;<code>MySQL Client</code>
+&#xFF09;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x548C;Zero&#x4E2D;&#x8BBE;&#x8BA1;&#x7684;&#x6807;&#x51C6;&#x63D2;&#x4EF6;&#x96C6;&#x6210;&#x3002;Zero&#x4E2D;&#x7684;&#x6807;&#x51C6;&#x63D2;&#x4EF6;&#x4E3B;&#x8981;&#x6E90;&#x8D77;&#x4E8E;&#x5B9E;&#x6218;&#xFF0C;&#x6709;&#x4E9B;&#x63D2;&#x4EF6;&#x662F;Vert.x&#x7684;&#x5B50;&#x9879;&#x76EE;&#x672A;&#x63D0;&#x4F9B;&#x7684;&#xFF0C;&#x800C;&#x4E24;&#x79CD;&#x63D2;&#x4EF6;&#x7684;&#x5F15;&#x5165;&#x4F7F;&#x7528;&#x7EDF;&#x4E00;&#x7684;&#x6A21;&#x5F0F;&#xFF0C;Zero&#x7684;&#x73A9;&#x6CD5;&#x4E0D;&#x4E00;&#x5B9A;&#x6700;&#x70AB;&#xFF0C;&#x4F46;&#x94C1;&#x5B9A;&#x4F1A;&#x8BA9;&#x60A8;&#x773C;&#x524D;&#x4E00;&#x4EAE;&#xFF01;</p>
+<blockquote>
+<p><code>ifx</code>&#x5168;&#x79F0;&#x4E3A;<code>infix</code>&#xFF0C;&#x7FFB;&#x8BD1;&#x4E3A;&#x201C;&#x4E2D;&#x7F00;&#x3001;&#x63D2;&#x5165;&#x201D;&#x3002;</p>
+</blockquote>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;Zero&#x7684;&#x5B50;&#x9879;&#x76EE;<code>vertx-ifx</code>&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x76EE;&#x524D;&#x652F;&#x6301;&#x7684;&#x6240;&#x6709;&#x63D2;&#x4EF6;&#xFF0C;&#x8FD9;&#x4E9B;&#x63D2;&#x4EF6;&#x7684;&#x5F00;&#x53D1;&#x6D41;&#x7A0B;&#x90FD;&#x9075;&#x5FAA;&#x4E86;&#x672C;&#x7AE0;&#x8282;&#x7684;&#x601D;&#x8DEF;&#xFF0C;&#x5176;&#x4E2D;&#x8FD8;&#x5305;&#x542B;&#x7C7B;&#x4F3C;<strong>Neo4j</strong>&#x3001;<strong>ElasticSearch</strong>&#x3001;<strong>
+Excel</strong>&#x7B49;&#x5B98;&#x65B9;&#x4E0D;&#x652F;&#x6301;&#x7684;&#x96C6;&#x6210;&#xFF0C;&#x4E00;&#x65E6;&#x60A8;&#x5B66;&#x4F1A;&#x4E86;&#x672C;&#x7AE0;&#x5B8C;&#x6574;&#x7684;&#x5F00;&#x53D1;&#x601D;&#x8DEF;&#xFF0C;&#x90A3;&#x4E48;&#x60A8;&#x7684;&#x9879;&#x76EE;&#x81EA;&#x7136;&#x5982;&#x864E;&#x6DFB;&#x7FFC;&#x3002;&#x76EE;&#x524D;&#x7684;&#x63D2;&#x4EF6;&#x5982;&#x4E0B;&#x8868;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x9879;&#x76EE;&#x540D;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">zero-ifx-es</td>
+<td>Zero</td>
+<td style="text-align:left">ElasticSearch&#x529F;&#x80FD;&#x6A21;&#x5757;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">zero-ifx-excel</td>
+<td>Zero</td>
+<td style="text-align:left">Excel&#x5BFC;&#x5165;&#x5BFC;&#x51FA;&#x529F;&#x80FD;&#x6A21;&#x5757;&#xFF08;&#x53EF;&#x76F4;&#x8FDE;Jooq&#x529F;&#x80FD;&#x6A21;&#x5757;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">zero-ifx-feign</td>
+<td>Zero</td>
+<td style="text-align:left">Feign&#x529F;&#x80FD;&#x6A21;&#x5757;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">zero-ifx-history</td>
+<td>Zero</td>
+<td style="text-align:left">&#x7CFB;&#x7EDF;&#x8BFB;&#x5199;&#x65E5;&#x5FD7;&#x5386;&#x53F2;&#x6570;&#x636E;&#x5E93;&#xFF08;&#x7B2C;&#x4E8C;&#x5E93;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">zero-ifx-iqiy</td>
+<td>Zero</td>
+<td style="text-align:left">Qiy&#x7231;&#x5947;&#x827A;&#x89C6;&#x9891;&#x5BA2;&#x6237;&#x7AEF;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">zero-ifx-neo4j</td>
+<td>Zero</td>
+<td style="text-align:left">Neo4j&#x7684;&#x975E;SQL&#x6570;&#x636E;&#x5E93;&#x56FE;&#x5E93;&#x96C6;&#x6210;&#x6A21;&#x5757;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">zero-ifx-shell</td>
+<td>Zero</td>
+<td style="text-align:left">&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#x62BD;&#x8C61;&#x6846;&#x67B6;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">zero-ifx-sms</td>
+<td>Zero</td>
+<td style="text-align:left">&#x963F;&#x91CC;&#x4E91;&#x624B;&#x673A;&#x77ED;&#x4FE1;&#x670D;&#x52A1;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">zero-ifx-native</td>
+<td>Vertx</td>
+<td style="text-align:left">MySQL&#x548C;PgSQL&#x5BA2;&#x6237;&#x7AEF;&#x4E13;&#x7528;&#x96C6;&#x6210;&#xFF08;&#x6807;&#x51C6;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">zero-ifx-mongo</td>
+<td>Vertx</td>
+<td style="text-align:left">Mongo&#x6570;&#x636E;&#x5E93;&#x5BA2;&#x6237;&#x7AEF;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">zero-ifx-redis</td>
+<td>Vertx</td>
+<td style="text-align:left">Redis&#x529F;&#x80FD;&#x6A21;&#x5757;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;<strong>&#x8868;&#x683C;&#x4E2D;&#x7684;&#x7C7B;&#x578B;</strong>&#x6807;&#x8BC6;&#x4E86;&#x8BE5;&#x63D2;&#x4EF6;&#x662F;Vert.x&#x96C6;&#x6210;&#x63D2;&#x4EF6;&#x8FD8;&#x662F;Zero&#x7684;&#x96C6;&#x6210;&#x63D2;&#x4EF6;&#xFF0C;&#x672C;&#x7AE0;&#x4E0D;&#x53BB;&#x5256;&#x6790;&#x90E8;&#x5206;&#x590D;&#x6742;&#x7684;&#x63D2;&#x4EF6;&#x7528;&#x6CD5;&#xFF0C;&#x540E;&#x7EED;&#x4F1A;&#x6709;&#x5355;&#x72EC;&#x7684;&#x7AE0;&#x8282;&#x8BB2;&#x89E3;&#xFF0C;&#x4E3B;&#x8981;&#x544A;&#x8BC9;&#x8BFB;&#x8005;&#xFF1A;</p>
+<ol>
+<li>&#x5982;&#x4F55;&#x5728;Zero&#x4E2D;&#x5F00;&#x53D1;&#x8FD9;&#x79CD;&#x63D2;&#x4EF6;&#x9879;&#x76EE;&#x4EE5;&#x53CA;<strong>&#x8FDE;&#x63A5;&#x70B9;</strong>&#x7A0B;&#x5E8F;&#xFF08;&#x5982;&#x4F55;&#x6269;&#x5C55;&#xFF09;&#x3002;</li>
+<li>&#x5982;&#x4F55;&#x5728;&#x60A8;&#x7684;Agent/Worker&#x7EC4;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x6269;&#x5C55;&#x3002;</li>
+</ol>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x8FD9;&#x4E9B;&#x63D2;&#x4EF6;&#x7684;&#x8BBE;&#x8BA1;&#x4EE5;<strong>&#x5355;&#x4E00;&#x804C;&#x8D23;</strong>&#x4E3A;&#x539F;&#x5219;&#xFF0C;&#x9879;&#x76EE;&#x672C;&#x8EAB;&#x6BD4;&#x8F83;&#x5C0F;&#xFF0C;&#x4EE3;&#x7801;&#x4E0D;&#x591A;&#xFF0C;&#x76EE;&#x7684;&#x4E5F;&#x662F;&#x8BA9;&#x60A8;&#x5728;&#x9009;&#x62E9;&#x65F6;&#x53EF;&#x76F4;&#x63A5;&#x6839;&#x636E;&#x6240;&#x9700;<strong>&#x6309;&#x9700;&#x5F15;&#x5165;</strong>&#x3002;</p>
+<h3 id="11-mysql&#x5B64;&#x5C9B;">1.1. MySQL&#x5B64;&#x5C9B;</h3>
+<h4 id="111-&#x63D2;&#x4EF6;&#x5206;&#x6790;">1.1.1. &#x63D2;&#x4EF6;&#x5206;&#x6790;</h4>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;Zero&#x4E2D;&#x4F7F;&#x7528;&#x4E86;MySQL&#xFF0C;&#x4F46;&#x7531;&#x4E8E;<strong>&#x52A8;&#x6001;&#x5EFA;&#x6A21;</strong>&#x7684;&#x5F71;&#x54CD;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x4F7F;&#x7528;Vert.x&#x4E2D;&#x7684;<code>MySQL Client</code>&#xFF0C;&#x800C;&#x662F;&#x5C06;Jooq&#x6807;&#x51C6;&#x5316;&#x4E86;&#x3002;&#x6709;&#x5173;<code>MySQL Client</code>
+&#x7684;&#x5F15;&#x5165;&#x76EE;&#x524D;&#x5B58;&#x5728;&#x4E8E;<code>zero-ifx-native</code>&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x5B83;&#x53EA;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E2A;&#x4EE3;&#x7801;&#x6587;&#x4EF6;&#xFF08;&#x8BFB;&#x8005;&#x65E0;&#x9700;&#x81EA;&#x5DF1;&#x5F00;&#x53D1;&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> io.vertx.up.plugin.jdbc;
+
+<span class="hljs-keyword">import</span> io.vertx.core.Vertx;
+<span class="hljs-keyword">import</span> io.vertx.ext.asyncsql.MySQLClient;
+<span class="hljs-keyword">import</span> io.vertx.ext.sql.SQLClient;
+<span class="hljs-keyword">import</span> io.vertx.up.annotations.Plugin;
+<span class="hljs-keyword">import</span> io.vertx.up.eon.Plugins;
+<span class="hljs-keyword">import</span> io.vertx.up.fn.Fn;
+<span class="hljs-keyword">import</span> io.vertx.up.plugin.Infix;
+
+<span class="hljs-keyword">import</span> java.util.concurrent.ConcurrentHashMap;
+<span class="hljs-keyword">import</span> java.util.concurrent.ConcurrentMap;
+
+<span class="hljs-meta">@Plugin</span>
+<span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&quot;unchecked&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MySqlInfix</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Infix</span> </span>{
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String NAME = <span class="hljs-string">&quot;ZERO_MYSQL_POOL&quot;</span>;
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> ConcurrentMap&lt;String, SQLClient&gt; CLIENTS
+            = <span class="hljs-keyword">new</span> ConcurrentHashMap&lt;&gt;();
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">initInternal</span><span class="hljs-params">(<span class="hljs-keyword">final</span> Vertx vertx,
+                                     <span class="hljs-keyword">final</span> String name)</span> </span>{
+        Fn.pool(CLIENTS, name, () -&gt; 
+            Infix.init(
+                Plugins.Infix.MYSQL,
+                (config) -&gt; MySQLClient.createShared(vertx, config, name),
+                MySqlInfix.class
+            )
+        );
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">init</span><span class="hljs-params">(<span class="hljs-keyword">final</span> Vertx vertx)</span> </span>{
+        initInternal(vertx, NAME);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> SQLClient <span class="hljs-title">getClient</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> CLIENTS.get(NAME);
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> SQLClient <span class="hljs-title">get</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> getClient();
+    }
+}
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x628A;&#x5B83;&#x79F0;&#x4E3A;<strong>&#x5B64;&#x5C9B;</strong>&#xFF0C;&#x5C31;&#x662F;&#x56E0;&#x4E3A;&#x6574;&#x4E2A;<code>zero-ifx-native</code>&#x9879;&#x76EE;&#x4E2D;&#x53EA;&#x6709;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x5374;&#x5305;&#x542B;&#x4E86;&#x5F88;&#x591A;&#x5DE7;&#x601D;&#xFF0C;&#x4E5F;&#x5305;&#x542B;&#x4E86;Zero&#x63D2;&#x4EF6;&#x7ED3;&#x6784;&#x7684;&#x9AA8;&#x67B6;&#x4EE3;&#x7801;&#x3002;
+&#x2002;&#x2002;&#x2002;&#x2002;&#x63A5;&#x53E3;<code>io.vertx.up.plugin.Infix</code>&#x662F;Zero&#x4E2D;&#x4E3A;&#x7B2C;&#x4E09;&#x65B9;&#x529F;&#x80FD;&#x6A21;&#x5757;&#x8BBE;&#x8BA1;&#x7684;&#x63D2;&#x4EF6;&#x63A5;&#x53E3;&#xFF0C;&#x5B9E;&#x73B0;&#x8BE5;&#x63A5;&#x53E3;&#x7684;&#x7C7B;&#x5FC5;&#x987B;&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x57FA;&#x672C;&#x89C4;&#x8303;&#xFF1A;</p>
+<ol>
+<li>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x63D2;&#x4EF6;&#xFF0C;&#x5FC5;&#x987B;&#x88AB;@Plugin&#xFF08;<code>io.vertx.up.annotations.Plugin</code>&#xFF09;&#x6CE8;&#x89E3;&#x3002;</li>
+<li><p>&#x8FD9;&#x4E2A;&#x63D2;&#x4EF6;&#x5FC5;&#x987B;&#x5305;&#x542B;&#x521D;&#x59CB;&#x5316;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#xFF08;&#x6839;&#x636E;Vertx&#x5B9E;&#x4F8B;&#x521D;&#x59CB;&#x5316;&#x63D2;&#x4EF6;&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-java"> <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">init</span><span class="hljs-params">(<span class="hljs-keyword">final</span> Vertx vertx)</span>
+</span></code></pre>
+</li>
+</ol>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;Zero&#x4E2D;&#x7684;&#x63D2;&#x4EF6;&#x8FDE;&#x63A5;&#x70B9;&#x5B9E;&#x73B0;&#x4E86;<strong>&#x6C60;&#x5316;&#x5BA2;&#x6237;&#x7AEF;</strong>&#xFF0C;&#x5982;<code>MySqlInfix</code>&#x6784;&#x9020;&#x5B8C;&#x6210;&#x540E;&#x7684;&#x5B8C;&#x6574;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="_image/2021-08-06/2021-08-09-09-22-48.jpg" alt=""></p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x60A8;&#x83B7;&#x53D6;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x5F15;&#x7528;&#x76F4;&#x63A5;&#x548C;<code>ZERO_MYSQL_POOL</code>&#x7ED1;&#x5B9A;&#xFF0C;Zero&#x4E2D;&#x548C;Vert.x&#x96C6;&#x6210;&#x7684;&#x6240;&#x6709;<code>Infix</code>&#x76EE;&#x524D;&#x7684;&#x7248;&#x672C;&#x90FD;&#x6CA1;&#x6269;&#x5C55;<strong>&#x7B2C;&#x4E8C;&#x5BA2;&#x6237;&#x7AEF;</strong>
+&#xFF0C;&#x662F;&#x5426;&#x6269;&#x5C55;&#x6700;&#x7EC8;&#x53D6;&#x51B3;&#x4E8E;&#x60A8;&#x7684;&#x5B9E;&#x9645;&#x9879;&#x76EE;&#x9700;&#x6C42;&#xFF0C;&#x4E0A;&#x8FB9;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x63D2;&#x4EF6;&#x60A8;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x3002;</p>
+<h4 id="112-&#x63D2;&#x4EF6;&#x4F7F;&#x7528;">1.1.2. &#x63D2;&#x4EF6;&#x4F7F;&#x7528;</h4>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x672C;&#x7AE0;&#x8BB2;&#x89E3;&#x5982;&#x4F55;&#x5728;Zero&#x4E2D;&#x4F7F;&#x7528;<code>Infix</code>&#x63D2;&#x4EF6;&#x3002;</p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x5148;&#x5728;&#x60A8;&#x7684;&#x9879;&#x76EE;<code>pom.xml</code>&#x6587;&#x4EF6;&#x4E2D;&#x5F15;&#x5165;&#x8BE5;&#x63D2;&#x4EF6;&#x7684;&#x4F9D;&#x8D56;&#xFF0C;&#x7531;&#x4E8E;Zero&#x4E2D;&#x6240;&#x6709;<code>vertx-ifx</code>&#x5B50;&#x9879;&#x76EE;&#x90FD;&#x5DF2;&#x7ECF;&#x5B9A;&#x4E49;&#x8FC7;&#x7248;&#x672C;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x7701;&#x7565;<code>&lt;version&gt;</code>&#x6807;&#x7B7E;&#xFF1A;</p>
+<pre><code class="lang-xml">    <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>cn.vertxup<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>zero-ifx-native<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- &#x7248;&#x672C;&#x90E8;&#x5206;&#x53EF;&#x7701;&#x7565;&#xFF0C;&#x5982;&#x679C;&#x7F16;&#x8BD1;&#x901A;&#x4E0D;&#x8FC7;&#xFF0C;&#x5C31;&#x4F7F;&#x7528;&#x4E0B;&#x8FB9;&#x8FD9;&#x79CD;&#x3002;--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>${zero.version}<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x7B2C;&#x4E8C;&#x6B65;&#xFF1A;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x4E66;&#x5199;&#x4EE5;&#x4E0B;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF08;&#x4EE5;MySQL&#x4E3A;&#x4F8B;&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-shell">src/main/resources/vertx.yml
+src/main/resources/vertx-inject.yml
+src/main/resources/vertx-mysql.yml
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4E0A;&#x8FF0;&#x4E09;&#x4E2A;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><strong>vertx.yml&#x7247;&#x6BB5;</strong></p>
+<pre><code class="lang-yaml"><span class="hljs-attr">zero:</span>
+    <span class="hljs-comment"># lime&#x4E13;&#x7528;&#x6269;&#x5C55;&#xFF0C;&#x9ED8;&#x8BA4;&#x4F1A;&#x8BFB;&#x53D6;vertx-inject.yml&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x9700;&#x914D;&#x7F6E;&#x5B83;&#xFF1B;</span>
+    <span class="hljs-comment"># &#x6B64;&#x5904;&#x7684;mysql&#x8868;&#x793A;Zero&#x4F1A;&#x53BB;&#x8BFB;&#x53D6;vertx-mysql.yml&#x914D;&#x7F6E;&#x6587;&#x4EF6;</span>
+<span class="hljs-attr">    lime:</span> mysql
+<span class="hljs-attr">    vertx:</span>
+<span class="hljs-attr">        instance:</span>
+            <span class="hljs-comment"># &#x672A;&#x663E;&#x793A;&#x5B9E;&#x4F8B;&#x5217;&#x8868;</span>
+</code></pre>
+<p><strong>vertx-mysql.yml</strong>&#x5185;&#x5BB9;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">mysql:</span>
+<span class="hljs-attr">  host:</span> localhost
+<span class="hljs-attr">  port:</span> <span class="hljs-number">3306</span>
+<span class="hljs-attr">  username:</span> root
+<span class="hljs-attr">  password:</span> ????
+<span class="hljs-attr">  database:</span> DB_IOP
+</code></pre>
+<p><strong>vertx-inject.yml</strong>&#x5185;&#x5BB9;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-yaml"><span class="hljs-comment"># MySQL&#x63D2;&#x4EF6;&#x5F15;&#x5165;</span>
+<span class="hljs-attr">mysql:</span> io.vertx.up.plugin.jdbc.MySqlInfix
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x7B2C;&#x4E09;&#x6B65;&#xFF1A;&#x5B8C;&#x6210;&#x4E86;&#x4E0A;&#x8FF0;&#x914D;&#x7F6E;&#x540E;&#xFF0C;&#x60A8;&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x60A8;&#x7684;Agent&#x6216;Worker&#x7EC4;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;<code>SQLClient</code>&#x4E86;&#xFF0C;&#x53C2;&#x8003;&#x4E0B;&#x8FB9;&#x4EE3;&#x7801;&#xFF1A;</p>
+<p><strong>Agent&#x4EE3;&#x7801;</strong></p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> cn.vertxup.mysql;
+
+<span class="hljs-keyword">import</span> io.vertx.core.json.JsonObject;
+<span class="hljs-keyword">import</span> io.vertx.ext.sql.SQLClient;
+<span class="hljs-keyword">import</span> io.vertx.up.annotations.EndPoint;
+<span class="hljs-keyword">import</span> io.vertx.up.annotations.Plugin;
+
+<span class="hljs-keyword">import</span> javax.inject.infix.MySql;
+<span class="hljs-keyword">import</span> javax.ws.rs.GET;
+<span class="hljs-keyword">import</span> javax.ws.rs.Path;
+
+<span class="hljs-meta">@EndPoint</span>
+<span class="hljs-meta">@Path</span>(<span class="hljs-string">&quot;/hi/mysql&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MySqlAgent</span> </span>{
+    <span class="hljs-meta">@Plugin</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">transient</span> SQLClient clientA;
+
+    <span class="hljs-meta">@MySql</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">transient</span> SQLClient clientB;
+
+    <span class="hljs-meta">@GET</span>
+    <span class="hljs-meta">@Path</span>(<span class="hljs-string">&quot;/client&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> JsonObject <span class="hljs-title">hiAgent</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">final</span> JsonObject response = <span class="hljs-keyword">new</span> JsonObject();
+        response.put(<span class="hljs-string">&quot;clientA&quot;</span>, <span class="hljs-keyword">this</span>.clientA.toString());
+        response.put(<span class="hljs-string">&quot;clientB&quot;</span>, <span class="hljs-keyword">this</span>.clientB.toString());
+        <span class="hljs-keyword">return</span> response;
+    }
+}
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x5230;&#x5730;&#x5740;<code>/hi/mysql/client</code>&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x5982;&#x4E0B;&#x54CD;&#x5E94;&#xFF1A;</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;data&quot;</span>: {
+        <span class="hljs-string">&quot;clientA&quot;</span>: <span class="hljs-string">&quot;io.vertx.ext.asyncsql.impl.ClientWrapper@225b8ca6&quot;</span>,
+        <span class="hljs-string">&quot;clientB&quot;</span>: <span class="hljs-string">&quot;io.vertx.ext.asyncsql.impl.ClientWrapper@225b8ca6&quot;</span>
+    }
+}
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4ECE;&#x54CD;&#x5E94;&#x7ED3;&#x679C;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#xFF0C;&#x5B9E;&#x9645;<code>clientA</code>&#x548C;<code>clientB</code>&#x5F15;&#x7528;&#x4E86;&#x540C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5728;&#x6574;&#x4E2A;&#x73AF;&#x5883;&#x4E2D;&#xFF0C;&#x90FD;&#x6307;&#x5411;&#x4E86;<code>ZERO_MYSQL_POOL</code>&#x7ED1;&#x5B9A;&#x7684;<code>SQLClient</code>
+&#x3002;&#x4E0A;&#x8FB9;&#x6CE8;&#x89E3;&#x90E8;&#x5206;&#x7684;&#x4EE3;&#x7801;&#x4F7F;&#x7528;&#x4E86;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#xFF08;Worker&#x548C;Agent&#x7EC4;&#x4EF6;&#x4E2D;&#x4EE3;&#x7801;&#x76F8;&#x540C;&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x4F7F;&#x7528;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#xFF0C;&#x5219;&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x8FB9;&#x4EE3;&#x7801;&#x83B7;&#x53D6;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x8FD9;&#x79CD;&#x4EE3;&#x7801;&#x5728;&#x975E;Agent/Worker&#x73AF;&#x5883;&#x4E2D;&#x5C24;&#x5176;&#x6709;&#x7528;&#xFF0C;&#x6BD4;&#x5982;&#x5DE5;&#x5177;&#x7C7B;&#x4E2D;&#x3002;</span>
+<span class="hljs-keyword">final</span> SQLClient client = MySqlInfix.getClient();
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x503C;&#x7684;&#x6CE8;&#x610F;&#x7684;&#x662F;&#x5728;Vert.x&#x7684;3.9.8&#x4E2D;&#xFF08;&#x4E0D;&#x77E5;&#x54EA;&#x4E2A;&#x7248;&#x672C;&#x5F00;&#x59CB;&#xFF09;&#xFF0C;&#x539F;&#x6765;&#x7684;<code>vertx-mysql-postgresql-client</code>&#x9879;&#x76EE;&#x5DF2;&#x7ECF;&#x88AB;<strong>&#x5E9F;&#x5F03;</strong>
+&#x4E86;&#xFF0C;&#x90A3;&#x662F;&#x4E0D;&#x662F;&#x672C;&#x7AE0;&#x5185;&#x5BB9;&#x65E0;&#x7528;&#x4E86;&#x5462;&#xFF1F;&#x5176;&#x5B9E;&#x4E0D;&#x7136;&#xFF0C;&#x867D;&#x7136;&#x5E9F;&#x5F03;&#x4E86;&#x539F;&#x6765;&#x7684;SQLClient&#xFF0C;&#x4F46;&#x8FD8;&#x5F15;&#x5165;&#x4E86;<code>MySQLClient</code>&#x4EE5;&#x53CA;<code>PgSQLClient</code>&#xFF0C;&#x53EA;&#x662F;&#x5206;&#x5F97;&#x66F4;&#x7EC6;&#x4E86;&#xFF0C;&#x540E;&#x7EED;&#x7248;&#x672C;&#x4E2D;&#x6211;&#x4F1A;&#x66F4;&#x65B0;Zero&#x7684;Vert.x&#x96C6;&#x6210;&#x90E8;&#x5206;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5C06;<code>native</code>
+&#x62C6;&#x6210;&#x4E0D;&#x540C;&#x7684;&#x5B50;&#x9879;&#x76EE;&#x6765;&#x5BF9;&#x5F85;&#xFF0C;&#x4F46;&#x6574;&#x4F53;&#x601D;&#x8DEF;&#x4EE5;&#x53CA;&#x73A9;&#x6CD5;&#x548C;&#x672C;&#x7AE0;&#x8282;&#x7684;&#x5185;&#x5BB9;&#x4FDD;&#x6301;&#x9AD8;&#x5EA6;&#x4E00;&#x81F4;&#xFF0C;&#x8BFB;&#x8005;&#x5C31;&#x4E0D;&#x7528;&#x53BB;&#x56F0;&#x60D1;&#x4E86;&#x3002;</p>
+<blockquote>
+<p><code>javax.inject.infix</code>&#x5305;&#x4E2D;&#x7684;&#x6CE8;&#x89E3;&#x4E3A;&#x4FDD;&#x7559;&#x6CE8;&#x89E3;&#xFF0C;&#x540E;&#x7EED;&#x7248;&#x672C;&#x6269;&#x5C55;&#x65F6;&#x4F1A;&#x6839;&#x636E;&#x4E0D;&#x540C;&#x529F;&#x80FD;&#x6267;&#x884C;&#x62D3;&#x5C55;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x60A8;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;&#x7684;&#x63D2;&#x4EF6;&#xFF0C;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x7684;<code>io.vertx.up.annotations.Plugin</code>&#x5373;&#x53EF;&#x3002;</p>
+</blockquote>
+<h3 id="12-mongo">1.2. Mongo</h3>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x524D;&#x4E00;&#x4E2A;&#x7AE0;&#x8282;&#x8BB2;&#x89E3;&#x4E86;<code>zero-ifx-native</code>&#x9879;&#x76EE;&#x7684;&#x5185;&#x5BB9;&#x3001;&#x7528;&#x6CD5;&#x3001;&#x4EE5;&#x53CA;Zero&#x4E2D;<strong>&#x63D2;&#x4EF6;</strong>&#x7684;&#x5F00;&#x53D1;&#x548C;&#x4F7F;&#x7528;&#x601D;&#x8DEF;&#xFF0C;&#x672C;&#x7AE0;&#x8282;&#x4F7F;&#x7528;&#x540C;&#x6837;&#x7684;&#x601D;&#x8DEF;&#x6765;&#x5206;&#x6790;<code>zero-ifx-mongo</code>
+&#xFF0C;&#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#x662F;&#x4ECE;&#x6700;&#x65E9;&#x7684;&#x624B;&#x673A;&#x5B9E;&#x6218;&#x4E2D;&#x5EF6;&#x751F;&#x51FA;&#x6765;&#x7684;&#x5B50;&#x9879;&#x76EE;&#xFF0C;&#x5F53;&#x521D;&#x4F7F;&#x7528;&#x4E86;<code>MongoDB</code>&#x4F5C;&#x4E3A;&#x6570;&#x636E;&#x5E93;&#x3002;&#x56DE;&#x5230;&#x524D;&#x6587;&#x601D;&#x8DEF;&#x4E2D;&#xFF0C;&#x5148;&#x770B;&#x770B;<code>MongoInfix</code>&#x7684;&#x5199;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> io.vertx.tp.plugin.mongo;
+
+<span class="hljs-keyword">import</span> io.vertx.core.Vertx;
+<span class="hljs-keyword">import</span> io.vertx.ext.mongo.MongoClient;
+<span class="hljs-keyword">import</span> io.vertx.up.annotations.Plugin;
+<span class="hljs-keyword">import</span> io.vertx.up.eon.Plugins;
+<span class="hljs-keyword">import</span> io.vertx.up.fn.Fn;
+<span class="hljs-keyword">import</span> io.vertx.up.plugin.Infix;
+
+<span class="hljs-keyword">import</span> java.util.concurrent.ConcurrentHashMap;
+<span class="hljs-keyword">import</span> java.util.concurrent.ConcurrentMap;
+
+<span class="hljs-meta">@Plugin</span>
+<span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&quot;unchecked&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MongoInfix</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Infix</span> </span>{
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String NAME = <span class="hljs-string">&quot;ZERO_MONGO_POOL&quot;</span>;
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> ConcurrentMap&lt;String, MongoClient&gt; CLIENTS
+            = <span class="hljs-keyword">new</span> ConcurrentHashMap&lt;&gt;();
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">initInternal</span><span class="hljs-params">(<span class="hljs-keyword">final</span> Vertx vertx,
+                                     <span class="hljs-keyword">final</span> String name)</span> </span>{
+        Fn.pool(CLIENTS, name,() -&gt; 
+            Infix.init(
+                Plugins.Infix.MONGO,
+                (config) -&gt; MongoClient.createShared(vertx, config, name),
+                MongoInfix.class
+            )
+        );
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">init</span><span class="hljs-params">(<span class="hljs-keyword">final</span> Vertx vertx)</span> </span>{
+        initInternal(vertx, NAME);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> MongoClient <span class="hljs-title">getClient</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> CLIENTS.get(NAME);
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> MongoClient <span class="hljs-title">get</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> getClient();
+    }
+}
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x719F;&#x6089;&#x7684;&#x5473;&#x9053;&#x3001;&#x719F;&#x6089;&#x7684;&#x914D;&#x65B9;&#xFF0C;&#x6709;&#x4E86;&#x524D;&#x4E00;&#x4E2A;&#x7AE0;&#x8282;&#x7684;&#x57FA;&#x7840;&#xFF0C;&#x7406;&#x89E3;&#x8FD9;&#x90E8;&#x5206;&#x4EE3;&#x7801;&#x8F7B;&#x8F66;&#x719F;&#x8DEF;&#x3002;&#x5B83;&#x7684;&#x57FA;&#x672C;&#x914D;&#x7F6E;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><strong>Maven&#x4E2D;&#x5F15;&#x5165;</strong></p>
+<pre><code class="lang-xml">    <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>cn.vertxup<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>zero-ifx-mongo<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- &#x7248;&#x672C;&#x90E8;&#x5206;&#x53EF;&#x7701;&#x7565;&#xFF0C;&#x5982;&#x679C;&#x7F16;&#x8BD1;&#x901A;&#x4E0D;&#x8FC7;&#xFF0C;&#x5C31;&#x4F7F;&#x7528;&#x4E0B;&#x8FB9;&#x8FD9;&#x79CD;&#x3002;--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>${zero.version}<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<p><strong>vertx-mongo.yml</strong></p>
+<blockquote>
+<p>&#x5177;&#x4F53;&#x914D;&#x7F6E;&#x9879;&#x53EF;&#x53C2;&#x8003;&#x5B98;&#x65B9;&#x7684;MongoOptions&#x3002;</p>
+</blockquote>
+<pre><code class="lang-yaml"><span class="hljs-attr">mongo:</span>
+<span class="hljs-attr">    db_name:</span> xxx
+<span class="hljs-attr">    post:</span> xxx
+<span class="hljs-attr">    host:</span> xxx
+<span class="hljs-attr">    connection_string:</span> xxxx
+<span class="hljs-attr">    username:</span> xxx
+<span class="hljs-attr">    password:</span> xxx
+</code></pre>
+<p><strong>vertx-inject.yml</strong></p>
+<pre><code class="lang-yaml"><span class="hljs-attr">mongo:</span> io.vertx.tp.plugin.mongo.MongoInfix
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x8FD9;&#x90E8;&#x5206;&#x7684;&#x4EE3;&#x7801;&#x5C31;&#x4E0D;&#x8BE6;&#x7EC6;&#x53D9;&#x8FF0;&#x4E86;&#xFF0C;&#x53C2;&#x8003;&#x4E0B;&#x8FB9;&#x4EE3;&#x7801;&#x6BB5;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-comment">// ..... import &#x90E8;&#x5206;</span>
+<span class="hljs-comment">// Mongo&#x5BA2;&#x6237;&#x7AEF;&#x5F15;&#x7528;</span>
+<span class="hljs-keyword">import</span> io.vertx.ext.mongo.MongoClient;
+<span class="hljs-comment">// Mongo&#x4E13;&#x7528;&#x6CE8;&#x89E3;</span>
+<span class="hljs-keyword">import</span> javax.inject.infix.Mongo;
+<span class="hljs-comment">// ..... &#x4E3B;&#x4EE3;&#x7801;&#x90E8;&#x5206;</span>
+<span class="hljs-comment">// &#x63D2;&#x4EF6;&#x5F15;&#x7528;</span>
+    <span class="hljs-meta">@Plugin</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">transient</span> MongoClient clientA;
+
+    <span class="hljs-meta">@Mongo</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">transient</span> MongoClient clientB;
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x5982;&#x6B64;&#xFF0C;&#x60A8;&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;Zero&#x7684;Agent&#x548C;Worker&#x7EC4;&#x4EF6;&#x4E2D;&#x76F4;&#x63A5;&#x4F7F;&#x7528;Mongo&#x5BA2;&#x6237;&#x7AEF;&#x4E86;&#xFF0C;&#x82E5;&#x60F3;&#x8981;&#x76F4;&#x63A5;&#x5728;&#x5DE5;&#x5177;&#x7C7B;&#x4E2D;&#x4F7F;&#x7528;&#xFF0C;&#x5219;&#x53EF;&#x53C2;&#x8003;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x5DE5;&#x5177;&#x7C7B;&#x4E2D;&#x4F7F;&#x7528;</span>
+<span class="hljs-keyword">final</span> MongoClient client = MongoInfix.getClient();
+</code></pre>
+<h3 id="13-redis">1.3. Redis</h3>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;Zero&#x76EE;&#x524D;&#x7248;&#x672C;&#x53EA;&#x652F;&#x6301;&#x4E09;&#x4E2A;&#x548C;Vert.x&#x96C6;&#x6210;&#x9879;&#x76EE;&#x7684;&#x5B50;&#x9879;&#x76EE;&#xFF1A;</p>
+<ul>
+<li><code>zero-ifx-native</code>&#xFF1A;MySQL/PgSQL</li>
+<li><code>zero-ifx-mongo</code>&#xFF1A;MongoDB</li>
+<li><code>zero-ifx-redis</code>&#xFF1A;Redis</li>
+</ul>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x672C;&#x7AE0;&#x6211;&#x4EEC;&#x5206;&#x6790;&#x4E00;&#x4E0B;Redis&#x7684;&#x57FA;&#x7840;&#x7528;&#x6CD5;&#xFF0C;Redis&#x7684;<strong>&#x63D2;&#x4EF6;</strong>&#x5728;Zero&#x4E2D;&#x662F;&#x6700;&#x590D;&#x6742;&#x7684;&#xFF0C;&#x5B83;&#x652F;&#x6301;&#x7684;&#x529F;&#x80FD;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ol>
+<li>&#x63D0;&#x4F9B;&#x4E86;&#x548C;Mongo&#x7C7B;&#x4F3C;&#x7684;<code>RedisInfix</code>&#x5B9E;&#x73B0;Redis&#x7684;&#x5F02;&#x6B65;&#x8BBF;&#x95EE;&#x3002;</li>
+<li>&#x5F15;&#x5165;<code>Jedis</code>&#x5BA2;&#x6237;&#x7AEF;&#x65B0;&#x589E;&#x540C;&#x6B65;&#x8BBF;&#x95EE;&#xFF08;&#x9002;&#x7528;&#x4E8E;&#x65E7;&#x573A;&#x666F;&#xFF09;&#x3002;</li>
+<li>&#x53EF;&#x66FF;&#x6362;Vert.x Web&#x4E2D;&#x7684;Session&#x5B58;&#x50A8;&#x4ECB;&#x8D28;&#xFF0C;&#x5C06;<code>web-session</code>&#x5B58;&#x50A8;&#x5728;Redis&#x4E2D;&#x66FF;&#x6362;&#x539F;&#x751F;&#x5B58;&#x50A8;&#x3002;</li>
+</ol>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x8FD8;&#x662F;&#x56DE;&#x5230;&#x672C;&#x7AE0;&#x91CD;&#x70B9;<code>Infix</code>&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> io.vertx.tp.plugin.redis;
+
+<span class="hljs-keyword">import</span> io.vertx.core.Vertx;
+<span class="hljs-keyword">import</span> io.vertx.core.json.JsonObject;
+<span class="hljs-keyword">import</span> io.vertx.redis.client.Redis;
+<span class="hljs-keyword">import</span> io.vertx.redis.client.RedisOptions;
+<span class="hljs-keyword">import</span> io.vertx.up.annotations.Plugin;
+<span class="hljs-keyword">import</span> io.vertx.up.eon.Plugins;
+<span class="hljs-keyword">import</span> io.vertx.up.log.Annal;
+<span class="hljs-keyword">import</span> io.vertx.up.plugin.Infix;
+<span class="hljs-keyword">import</span> io.vertx.up.util.Ut;
+<span class="hljs-keyword">import</span> redis.clients.jedis.Jedis;
+
+<span class="hljs-keyword">import</span> java.util.Objects;
+<span class="hljs-keyword">import</span> java.util.concurrent.ConcurrentHashMap;
+<span class="hljs-keyword">import</span> java.util.concurrent.ConcurrentMap;
+
+<span class="hljs-meta">@Plugin</span>
+<span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&quot;unchecked&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RedisInfix</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Infix</span> </span>{
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String NAME = <span class="hljs-string">&quot;ZERO_REDIS_POOL&quot;</span>;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> Annal LOGGER = Annal.get(RedisInfix.class);
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> ConcurrentMap&lt;String, Redis&gt; CLIENTS
+            = <span class="hljs-keyword">new</span> ConcurrentHashMap&lt;&gt;();
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> ConcurrentMap&lt;String, Jedis&gt; CLIENTS_SYNC
+            = <span class="hljs-keyword">new</span> ConcurrentHashMap&lt;&gt;();
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">initInternal</span><span class="hljs-params">(<span class="hljs-keyword">final</span> Vertx vertx,
+                                     <span class="hljs-keyword">final</span> String name)</span> </span>{
+        <span class="hljs-keyword">final</span> RedisOptions options = Infix.init(Plugins.Infix.REDIS,
+                <span class="hljs-comment">/*
+                 * Two parts for
+                 * - Redis reference
+                 * - RedisOptions reference ( For Sync usage )
+                 */</span>
+                (config) -&gt; <span class="hljs-keyword">new</span> RedisOptions(initSync(name, config)),
+                RedisInfix.class);
+        <span class="hljs-comment">/*
+         * Redis client processing, ping to check whether it&apos;s Ok
+         */</span>
+        <span class="hljs-keyword">final</span> Redis redis = Redis.createClient(vertx, options);
+        CLIENTS.put(name, redis);
+        redis.connect(handler -&gt; {
+            <span class="hljs-comment">/*
+             * If connected, keep
+             * If not connected, remove
+             * This kind of operation could let your system synced the Redis
+             * instead of Null Pointer in Unit Testing
+             */</span>
+            <span class="hljs-keyword">if</span> (handler.succeeded()) {
+                LOGGER.info(<span class="hljs-string">&quot;[ Redis ] Connected successfully! {0}&quot;</span>, 
+                    options.toJson().encode());
+            } <span class="hljs-keyword">else</span> {
+                <span class="hljs-keyword">final</span> Throwable ex = handler.cause();
+                <span class="hljs-keyword">if</span> (Objects.nonNull(ex)) {
+                    LOGGER.jvm(ex);
+                }
+                CLIENTS.remove(name);
+            }
+        });
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> JsonObject <span class="hljs-title">initSync</span><span class="hljs-params">(
+        <span class="hljs-keyword">final</span> String name, 
+        <span class="hljs-keyword">final</span> JsonObject options)</span> </span>{
+        <span class="hljs-keyword">if</span> (!CLIENTS_SYNC.containsKey(name)) {
+            <span class="hljs-keyword">final</span> String host = options.getString(<span class="hljs-string">&quot;host&quot;</span>);
+            <span class="hljs-keyword">final</span> Integer port = options.getInteger(<span class="hljs-string">&quot;port&quot;</span>);
+            <span class="hljs-keyword">final</span> Jedis client = <span class="hljs-keyword">new</span> Jedis(host, port);
+            <span class="hljs-comment">// Auth</span>
+            <span class="hljs-keyword">final</span> String password = options.getString(<span class="hljs-string">&quot;password&quot;</span>);
+            <span class="hljs-keyword">if</span> (Ut.notNil(password)) {
+                <span class="hljs-keyword">final</span> String username = options.getString(<span class="hljs-string">&quot;username&quot;</span>);
+                <span class="hljs-keyword">if</span> (Ut.isNil(username)) {
+                    client.auth(password);
+                } <span class="hljs-keyword">else</span> {
+                    client.auth(username, password);
+                }
+            }
+            <span class="hljs-keyword">try</span> {
+                client.ping();
+                CLIENTS_SYNC.put(name, client);
+            } <span class="hljs-keyword">catch</span> (<span class="hljs-keyword">final</span> Throwable ex) {
+                LOGGER.jvm(ex);
+            }
+        }
+        <span class="hljs-keyword">return</span> options;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">init</span><span class="hljs-params">(<span class="hljs-keyword">final</span> Vertx vertx)</span> </span>{
+        initInternal(vertx, NAME);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Redis <span class="hljs-title">getClient</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> CLIENTS.get(NAME);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Jedis <span class="hljs-title">getJClient</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> CLIENTS_SYNC.get(NAME);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">disabled</span><span class="hljs-params">()</span> </span>{
+        CLIENTS.clear();
+        CLIENTS_SYNC.clear();
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Redis <span class="hljs-title">get</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> getClient();
+    }
+}
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x5728;Redis&#x90E8;&#x5206;&#xFF0C;&#x9664;&#x4E86;Vert.x&#x5728;&#x96C6;&#x6210;&#x4E2D;&#x5F15;&#x5165;&#x4E86;&#x65B0;&#x7248;&#x7684;Redis&#x5F02;&#x6B65;&#x8BBF;&#x95EE;&#x90E8;&#x5206;&#xFF0C;&#x8FD8;&#x5305;&#x542B;&#x4E86;Jedis&#x7684;&#x540C;&#x6B65;&#x8BBF;&#x95EE;&#x90E8;&#x5206;&#xFF08;&#x540C;&#x6B65;&#x4E0D;&#x652F;&#x6301;JSR330&#xFF09;&#xFF0C;&#x4E8C;&#x8005;&#x7ED3;&#x5408;&#x4F7F;&#x5F97;&#x529F;&#x80FD;&#x66F4;&#x52A0;&#x5B8C;&#x5584;&#xFF0C;&#x57FA;&#x672C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><strong>Maven&#x5F15;&#x5165;</strong></p>
+<pre><code class="lang-xml">    <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>cn.vertxup<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>zero-ifx-redis<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- &#x7248;&#x672C;&#x90E8;&#x5206;&#x53EF;&#x7701;&#x7565;&#xFF0C;&#x5982;&#x679C;&#x7F16;&#x8BD1;&#x901A;&#x4E0D;&#x8FC7;&#xFF0C;&#x5C31;&#x4F7F;&#x7528;&#x4E0B;&#x8FB9;&#x8FD9;&#x79CD;&#x3002;--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>${zero.version}<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<p><strong>vertx-redis.yml</strong></p>
+<pre><code class="lang-yaml"><span class="hljs-attr">redis:</span>
+<span class="hljs-attr">    post:</span> xxx
+<span class="hljs-attr">    host:</span> xxx
+</code></pre>
+<p><strong>vertx-inject.yml</strong></p>
+<pre><code class="lang-yaml"><span class="hljs-attr">redis:</span> io.vertx.tp.plugin.redis.RedisInfix
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4F7F;&#x7528;&#x90E8;&#x5206;&#x53C2;&#x8003;&#x4E0B;&#x8FB9;&#x4EE3;&#x7801;&#x6BB5;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-comment">// ..... import &#x90E8;&#x5206;</span>
+<span class="hljs-comment">// Redis&#x5BA2;&#x6237;&#x7AEF;&#x5F15;&#x7528;</span>
+<span class="hljs-keyword">import</span> io.vertx.redis.client.Redis;
+<span class="hljs-comment">// Jedis&#x5BA2;&#x6237;&#x7AEF;&#x5F15;&#x7528;</span>
+<span class="hljs-keyword">import</span> redis.clients.jedis.Jedis;
+<span class="hljs-comment">// Redis&#x4E13;&#x7528;&#x6CE8;&#x89E3;</span>
+<span class="hljs-keyword">import</span> javax.inject.infix.Redis;
+<span class="hljs-comment">// ..... &#x4E3B;&#x4EE3;&#x7801;&#x90E8;&#x5206;</span>
+<span class="hljs-comment">// &#x63D2;&#x4EF6;&#x5F15;&#x7528;&#xFF08;&#x6CE8;&#x5165;&#x6A21;&#x5F0F;&#x53EA;&#x652F;&#x6301;Redis&#xFF0C;&#x4E0D;&#x652F;&#x6301;Jedis&#xFF09;</span>
+    <span class="hljs-meta">@Plugin</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">transient</span> Redis clientA;
+    <span class="hljs-meta">@Redis</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">transient</span> Redis clientB;
+<span class="hljs-comment">// &#x5DE5;&#x5177;&#x8BFB;&#x53D6;&#xFF08;&#x5F02;&#x6B65;&#xFF09;</span>
+<span class="hljs-keyword">final</span> Redis client = RedisInfix.getClient();
+<span class="hljs-comment">// &#x540C;&#x6B65;&#x552F;&#x4E00;&#x83B7;&#x53D6;&#x5F15;&#x7528;&#x65B9;&#x5F0F;</span>
+<span class="hljs-keyword">final</span> Jedis client = RedisInfix.getJClient();
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x90A3;&#x4E48;&#x5230;&#x8FD9;&#x91CC;&#xFF0C;&#x6574;&#x4E2A;Zero&#x4E2D;&#x76EE;&#x524D;&#x7275;&#x6D89;&#x7684;&#x4E09;&#x4E2A;&#x548C;Vert.x&#x7684;&#x96C6;&#x6210;&#x5C31;&#x544A;&#x4E00;&#x6BB5;&#x843D;&#xFF0C;&#x6839;&#x636E;&#x672C;&#x7AE0;&#x8282;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x8BFB;&#x8005;&#x53EF;&#x4EE5;&#x5F88;&#x5FEB;&#x548C;MySQL&#x3001;Mongo&#x3001;Redis&#x96C6;&#x6210;&#xFF0C;&#x5E76;&#x53BB;&#x8BE6;&#x7EC6;&#x4F53;&#x4F1A;Zero&#x4E2D;<code>Infix</code>
+&#x63D2;&#x4EF6;&#x7684;&#x8BE6;&#x7EC6;&#x5185;&#x5BB9;&#xFF0C;&#x540E;&#x7EED;&#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x6211;&#x4F1A;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x9879;&#x76EE;&#x9700;&#x6C42;&#x5C06;&#x90E8;&#x5206;&#x5BA2;&#x6237;&#x7AEF;&#x5185;&#x5BB9;&#x6807;&#x51C6;&#x5316;&#xFF0C;&#x5F53;&#x524D;&#x7248;&#x672C;&#x5219;&#x63D0;&#x4F9B;&#x7ED9;&#x8BFB;&#x8005;&#x81EA;&#x5DF1;&#x53D1;&#x6325;&#x3002;&#x6700;&#x540E;&#x5F3A;&#x8C03;&#x4E00;&#x70B9;&#xFF0C;&#x672C;&#x7AE0;&#x8282;&#x6240;&#x6709;&#x7684;<code>Infix</code>&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x90FD;&#x662F;Zero&#x5DF2;&#x7ECF;&#x63D0;&#x4F9B;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4F7F;&#x7528;&#x65F6;&#x4E0D;&#x9700;&#x989D;&#x5916;&#x5F00;&#x53D1;&#x3002;</p>
+<blockquote>
+<p>&#x6311;&#x6218;&#xFF1A;&#x6700;&#x540E;&#x7559;&#x4E00;&#x4E2A;&#x6311;&#x6218;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x81EA;&#x5DF1;&#x53BB;&#x5F00;&#x53D1;&#x4E00;&#x4E2A;Infix&#x5F7B;&#x5E95;&#x7406;&#x89E3;Zero&#x4E2D;&#x7684;&#x63D2;&#x4EF6;&#x7ED3;&#x6784;&#x3002;</p>
+</blockquote>
+<h2 id="&#x300C;&#x8D30;&#x300D;&#x5185;&#x7F6E;&#x63D2;&#x4EF6;">&#x300C;&#x8D30;&#x300D;&#x5185;&#x7F6E;&#x63D2;&#x4EF6;</h2>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x9664;&#x4E86;&#x7B2C;&#x4E00;&#x7AE0;&#x8282;&#x8868;&#x683C;&#x4E2D;&#x679A;&#x4E3E;&#x7684;Zero&#x5B50;&#x9879;&#x76EE;&#x4EE5;&#x5916;&#xFF0C;Zero&#x4E2D;&#x8FD8;&#x6709;&#x90E8;&#x5206;&#x5185;&#x7F6E;&#x7684;<code>Infix</code>&#x63D2;&#x4EF6;&#xFF0C;&#x672C;&#x7AE0;&#x4E3B;&#x8981;&#x8BB2;&#x89E3;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x5185;&#x7F6E;&#x63D2;&#x4EF6;<code>MapInfix</code>
+&#xFF1B;&#x548C;Redis&#x9879;&#x76EE;&#x63D2;&#x4EF6;&#x4E00;&#x6837;&#xFF0C;Zero&#x4E3A;&#x4E86;&#x517C;&#x5BB9;&#x90E8;&#x5206;&#x9057;&#x7559;&#x7CFB;&#x7EDF;&#x6216;&#x8001;&#x7CFB;&#x7EDF;&#xFF0C;&#x901A;&#x5E38;&#x90FD;&#x4F1A;&#x5F00;<strong>&#x540C;&#x6B65;</strong>&#x548C;<strong>&#x5F02;&#x6B65;</strong>&#x53CC;&#x901A;&#x9053;&#x6765;&#x505A;&#x65B0;&#x65E7;&#x7684;&#x6865;&#x63A5;&#xFF0C;&#x5982;&#x679C;&#x53EA;&#x652F;&#x6301;&#x5F02;&#x6B65;&#x4E0D;&#x652F;&#x6301;&#x540C;&#x6B65;&#xFF0C;&#x867D;&#x7136;&#x770B;&#x8D77;&#x6765;&#x66F4;&#x52A0;Vert.x&#xFF0C;&#x4F46;&#x5BF9;&#x5F88;&#x591A;&#x9879;&#x76EE;&#x7684;&#x8FC1;&#x79FB;&#x5C06;&#x662F;&#x707E;&#x96BE;&#x3002;</p>
+<h3 id="21-mapinfix">2.1. MapInfix</h3>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;Vert.x&#x4E2D;&#x7684;SharedData&#x6570;&#x636E;&#x7ED3;&#x6784;&#x662F;&#x7C7B;&#x4F3C;Hash&#x8868;&#x7684;&#x4E00;&#x79CD;&#x7ED3;&#x6784;&#xFF0C;&#x5B83;&#x4E0D;&#x4EC5;&#x4EC5;&#x53EF;&#x4EE5;&#x5728;&#x672C;&#x5730;&#x73AF;&#x5883;&#x4F7F;&#x7528;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x96C6;&#x7FA4;&#x73AF;&#x5883;&#x4F7F;&#x7528;&#xFF0C;Zero Extension&#x4E2D;&#x7528;&#x6765;&#x5B58;&#x50A8;<strong>&#x4E34;&#x65F6;&#x6388;&#x6743;&#x7801;</strong>
+&#x5C31;&#x4F7F;&#x7528;&#x4E86;&#x8BE5;&#x7ED3;&#x6784;&#xFF0C;&#x4E3A;&#x4E86;&#x540C;&#x65F6;&#x652F;&#x6301;<strong>&#x540C;&#x6B65;</strong>&#x548C;<strong>&#x5F02;&#x6B65;</strong>&#xFF0C;Zero&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;<code>SharedClient</code>&#xFF0C;&#x8BE5;&#x5BA2;&#x6237;&#x7AEF;&#x67B6;&#x6784;&#x548C;<code>MySQLClient</code>&#x4EE5;&#x53CA;<code>MongoClient</code>&#x7C7B;&#x4F3C;&#xFF08;Vert.x&#x6CA1;&#x6709;&#xFF09;&#xFF0C;&#x800C;&#x672C;&#x7AE0;&#x7684;<code>MapInfix</code>
+&#x5C31;&#x662F;&#x7528;&#x6765;&#x8BBF;&#x95EE;&#x8BE5;Client&#x7684;<strong>&#x63D2;&#x4EF6;</strong>&#x3002;</p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;<code>MapInfix</code>&#x7684;&#x5B8C;&#x6574;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> io.vertx.tp.plugin.shared;
+
+<span class="hljs-keyword">import</span> io.vertx.core.Vertx;
+<span class="hljs-keyword">import</span> io.vertx.up.annotations.Plugin;
+<span class="hljs-keyword">import</span> io.vertx.up.eon.Plugins;
+<span class="hljs-keyword">import</span> io.vertx.up.fn.Fn;
+<span class="hljs-keyword">import</span> io.vertx.up.plugin.Infix;
+
+<span class="hljs-keyword">import</span> java.util.concurrent.ConcurrentHashMap;
+<span class="hljs-keyword">import</span> java.util.concurrent.ConcurrentMap;
+
+<span class="hljs-meta">@Plugin</span>
+<span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&quot;all&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MapInfix</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Infix</span> </span>{
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String NAME = <span class="hljs-string">&quot;ZERO_MAP_POOL&quot;</span>;
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> ConcurrentMap&lt;String, SharedClient&lt;String, Object&gt;&gt; 
+        CLIENTS = <span class="hljs-keyword">new</span> ConcurrentHashMap&lt;&gt;();
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">initInternal</span><span class="hljs-params">(<span class="hljs-keyword">final</span> Vertx vertx,
+                                     <span class="hljs-keyword">final</span> String name)</span> </span>{
+        Fn.pool(CLIENTS, name,() -&gt; 
+            Infix.init(
+                Plugins.Infix.SHARED,
+                (config) -&gt; SharedClient.createShared(vertx, config, name),
+                MapInfix.class
+            )
+        );
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">init</span><span class="hljs-params">(<span class="hljs-keyword">final</span> Vertx vertx)</span> </span>{
+        initInternal(vertx, NAME);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> SharedClient&lt;String, Object&gt; <span class="hljs-title">getClient</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> CLIENTS.get(NAME);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">getDefaultName</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> NAME;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> SharedClient&lt;String, Object&gt; <span class="hljs-title">get</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> getClient();
+    }
+}
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x7531;&#x4E8E;&#x8BE5;&#x63D2;&#x4EF6;&#x662F;&#x5185;&#x7F6E;&#xFF0C;&#x6240;&#x4EE5;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#x4EE3;&#x7801;&#x4E2D;&#x4E0D;&#x9700;Maven&#x7684;&#x989D;&#x5916;&#x5F15;&#x5165;&#xFF0C;&#x76F4;&#x63A5;&#x53EF;&#x7528;&#x3002;</p>
+<p><strong>vertx-shared.yml</strong></p>
+<pre><code class="lang-yaml"><span class="hljs-attr">shared:</span>
+  <span class="hljs-comment"># &#x9ED8;&#x8BA4;&#x6A21;&#x5F0F;&#x662F;&#x540C;&#x6B65;&#x6A21;&#x5F0F;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x4F7F;&#x7528;&#x5F02;&#x6B65;&#x6A21;&#x5F0F;&#xFF0C;&#x5219;&#x9700;&#x6253;&#x5F00;&#x8BE5;&#x5F00;&#x5173;</span>
+<span class="hljs-attr">  async:</span> <span class="hljs-literal">true</span>
+</code></pre>
+<p><strong>vertx-inject.yml</strong></p>
+<pre><code class="lang-yaml"><span class="hljs-attr">shared:</span> io.vertx.tp.plugin.shared.MapInfix
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4F7F;&#x7528;&#x4EE3;&#x7801;&#x6BB5;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-comment">// ...import &#x5BFC;&#x5165;&#x90E8;&#x5206;</span>
+<span class="hljs-keyword">import</span> io.vertx.tp.plugin.shared.SharedClient;
+<span class="hljs-keyword">import</span> io.vertx.up.annotations.Plugin;
+<span class="hljs-comment">// JSR330&#x6CE8;&#x5165;</span>
+    <span class="hljs-meta">@Plugin</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">transient</span> SharedClient client;
+<span class="hljs-comment">// &#x5DE5;&#x5177;&#x7C7B;&#x4E2D;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;</span>
+<span class="hljs-keyword">final</span> SharedClient client = SharedInfix.getClient();
+</code></pre>
+<h3 id="22-sharedclient">2.2. SharedClient</h3>
+<h4 id="221-&#x7ED3;&#x6784;&#x7EFC;&#x8FF0;">2.2.1. &#x7ED3;&#x6784;&#x7EFC;&#x8FF0;</h4>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x7531;&#x4E8E;&#x5F53;&#x524D;&#x63D2;&#x4EF6;&#x7684;&#x7279;&#x6B8A;&#x6027;&#xFF0C;<code>SharedClient</code>&#x662F;Zero&#x63D0;&#x4F9B;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x672C;&#x5C0F;&#x8282;&#x7B80;&#x5355;&#x8BB2;&#x89E3;&#x8BE5;&#x63A5;&#x53E3;&#x4E2D;&#x5E38;&#x7528;&#x7684;API&#x51FD;&#x6570;&#xFF0C;&#x8BE5;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x5B8C;&#x6574;&#x56FE;&#x793A;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="_image/2021-08-06/2021-08-09-13-20-58.jpg" alt=""></p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x6BCF;&#x4E2A;SharedClient&#x5185;&#x90E8;&#x90FD;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E2A;&#x5BF9;&#x5E94;&#x7684;<strong>&#x540C;&#x6B65;&#x5F15;&#x7528;</strong>&#xFF08;LocalMap&#xFF09;&#x548C;<strong>&#x5F02;&#x6B65;&#x5F15;&#x7528;</strong>
+&#xFF08;AsyncMap&#xFF09;&#x3002;&#x7531;&#x4E8E;Vert.x&#x4E2D;&#x7684;LocalMap&#x4E0D;&#x80FD;&#x5728;&#x96C6;&#x7FA4;&#x73AF;&#x5883;&#x4E2D;&#x8DE8;&#x73AF;&#x5883;&#x4F7F;&#x7528;&#xFF0C;<code>vertx-shared.yml</code>
+&#x4E2D;&#x7684;&#x914D;&#x7F6E;&#x4F1A;&#x8BA9;SharedClient&#x9009;&#x62E9;&#x5185;&#x90E8;&#x5B9E;&#x73B0;&#x6A21;&#x5F0F;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x5F02;&#x6B65;&#x5219;&#x4F7F;&#x7528;AsyncMap&#xFF0C;&#x5982;&#x679C;&#x662F;&#x540C;&#x6B65;&#x5219;&#x4F7F;&#x7528;LocalMap&#xFF0C;&#x4E14;&#x53EA;&#x80FD;&#x4E8C;&#x9009;&#x4E00;&#x3002;</p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x5982;&#x679C;&#x60A8;&#x8981;&#x4F7F;&#x7528;&#x591A;&#x4E2A;Map&#x5982;&#x4F55;&#x64CD;&#x4F5C;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x8FB9;&#x7684;API&#x51FD;&#x6570;&#xFF08;&#x56FE;&#x4E2D;&#x7684;&#x5207;&#x6362;&#xFF09;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-function">SharedClient&lt;K, V&gt; <span class="hljs-title">switchClient</span><span class="hljs-params">(<span class="hljs-keyword">final</span> String name)</span>
+</span></code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4E0A;&#x8FF0;API&#x53EF;&#x4EE5;&#x8BA9;&#x60A8;&#x76F4;&#x63A5;&#x5207;&#x6362;&#x5BA2;&#x6237;&#x7AEF;&#x5F15;&#x7528;&#xFF0C;&#x4E00;&#x65E6;&#x5207;&#x6362;&#x540E;&#x60A8;&#x5C31;&#x53EF;&#x4EE5;&#x64CD;&#x4F5C;&#x7B2C;&#x4E8C;&#x4E2A;SharedClient&#xFF0C;Zero&#x4E2D;&#x4FDD;&#x8BC1;&#x6BCF;&#x4E2A;&#x540D;&#x5B57;&#x4E0B;&#x53EA;&#x6709;&#x4E00;&#x4E2A;SharedClient&#x5B9E;&#x4F8B;&#xFF0C;&#x5B9E;&#x73B0;&#x6C60;&#x5316;&#x5355;&#x4EF6;&#x7ED3;&#x6784;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-comment">// name = ZERO_MAP_POOL</span>
+SharedClient client1 = MapInfix.getClient(); 
+<span class="hljs-comment">// name = test</span>
+SharedClient client2 = client1.switchClient(<span class="hljs-string">&quot;test&quot;</span>);
+</code></pre>
+<h4 id="222-&#x6700;&#x5C0F;&#x5355;&#x5143;">2.2.2. &#x6700;&#x5C0F;&#x5355;&#x5143;</h4>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;SharedClient&#x6700;&#x5C0F;&#x64CD;&#x4F5C;&#x5355;&#x5143;&#x4E3A;<code>io.vertx.up.atom.Kv</code>&#x2014;&#x2014;&#x8BE5;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x5B58;&#x50A8;&#x4E86;&#x4E00;&#x4E2A;<code>key = value</code>&#x7684;&#x5B8C;&#x6574;&#x4FE1;&#x606F;&#xFF0C;&#x5305;&#x62EC;&#x952E;&#x540D;&#x3001;&#x952E;&#x503C;&#x7B49;&#xFF0C;&#x8BE5;&#x7C7B;&#x7684;&#x5B8C;&#x6574;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x5982;&#x4E0B;:</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> io.vertx.up.atom;
+
+<span class="hljs-keyword">import</span> java.util.Map;
+<span class="hljs-keyword">import</span> java.util.Objects;
+
+<span class="hljs-comment">/*
+ * [Data Structure]
+ * Definition for `key = value` pair here
+ * It stored `key = value` and act as Pair here for some spec usage
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">final</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Kv</span>&lt;<span class="hljs-title">K</span>, <span class="hljs-title">V</span>&gt; </span>{
+    <span class="hljs-keyword">private</span> K key;
+    <span class="hljs-keyword">private</span> V value;
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">Kv</span><span class="hljs-params">(<span class="hljs-keyword">final</span> K key, <span class="hljs-keyword">final</span> V value)</span> </span>{
+        <span class="hljs-keyword">this</span>.key = key;
+        <span class="hljs-keyword">this</span>.value = value;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> &lt;K, V&gt; <span class="hljs-function">Kv&lt;K, V&gt; <span class="hljs-title">create</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Kv&lt;&gt;(<span class="hljs-keyword">null</span>, <span class="hljs-keyword">null</span>);
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> &lt;K, V&gt; <span class="hljs-function">Kv&lt;K, V&gt; <span class="hljs-title">create</span><span class="hljs-params">(<span class="hljs-keyword">final</span> K key,
+                                         <span class="hljs-keyword">final</span> V value)</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Kv&lt;&gt;(key, value);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">final</span> K <span class="hljs-title">getKey</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.key;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">final</span> V <span class="hljs-title">getValue</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.value;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">set</span><span class="hljs-params">(<span class="hljs-keyword">final</span> K key, <span class="hljs-keyword">final</span> V value)</span> </span>{
+        <span class="hljs-keyword">this</span>.key = key;
+        <span class="hljs-keyword">this</span>.value = value;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> <span class="hljs-title">hashCode</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> Objects.hashCode(<span class="hljs-keyword">this</span>.key) ^ Objects.hashCode(<span class="hljs-keyword">this</span>.value);
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">equals</span><span class="hljs-params">(<span class="hljs-keyword">final</span> Object o)</span> </span>{
+        <span class="hljs-keyword">if</span> (o == <span class="hljs-keyword">this</span>) {
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+        }
+        <span class="hljs-keyword">if</span> (o <span class="hljs-keyword">instanceof</span> Map.Entry) {
+            <span class="hljs-keyword">final</span> Map.Entry&lt;?, ?&gt; e = (Map.Entry&lt;?, ?&gt;) o;
+            <span class="hljs-keyword">return</span> Objects.equals(<span class="hljs-keyword">this</span>.key, e.getKey()) &amp;&amp;
+                    Objects.equals(<span class="hljs-keyword">this</span>.value, e.getValue());
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Kv{&quot;</span> +
+                <span class="hljs-string">&quot;key=&quot;</span> + <span class="hljs-keyword">this</span>.key +
+                <span class="hljs-string">&quot;, value=&quot;</span> + <span class="hljs-keyword">this</span>.value +
+                <span class="hljs-string">&apos;}&apos;</span>;
+    }
+}
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x8BE5;&#x7ED3;&#x6784;&#x548C;<code>Map.Entry</code>&#x7C7B;&#x4F3C;&#xFF0C;&#x4F46;&#x6BD4;<code>Map.Entry</code>&#x66F4;&#x7B80;&#x5316;&#xFF0C;Zero&#x5185;&#x90E8;&#x5F88;&#x591A;&#x5730;&#x65B9;&#x90FD;&#x4F7F;&#x7528;&#x4E86;&#x8BE5;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x3002;</p>
+<h4 id="223-&#x64CD;&#x4F5C;&#x7C7B;api">2.2.3. &#x64CD;&#x4F5C;&#x7C7B;API</h4>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x540C;&#x6B65;&#x6240;&#x6709;API&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-java">    <span class="hljs-comment">// &#x5C06; key = value &#x5B58;&#x50A8;&#x5230;SharedData&#x4E2D;</span>
+    <span class="hljs-function">Kv&lt;K, V&gt; <span class="hljs-title">put</span><span class="hljs-params">(K key, V value)</span></span>;
+    <span class="hljs-comment">// &#x5C06; key = value &#x5B58;&#x50A8;&#x5230;SharedData&#x4E2D;&#xFF0C;expiredSecs&#x79D2;&#x540E;&#x81EA;&#x52A8;&#x79FB;&#x9664;</span>
+    <span class="hljs-function">Kv&lt;K, V&gt; <span class="hljs-title">put</span><span class="hljs-params">(K key, V value, <span class="hljs-keyword">int</span> expiredSecs)</span></span>;
+    <span class="hljs-comment">// &#x79FB;&#x9664; key &#x5BF9;&#x5E94;&#x7684; key = value &#x952E;&#x503C;&#x5BF9;&#xFF0C;&#x8FD4;&#x56DE;&#x521A;&#x79FB;&#x9664;&#x7684;&#x9879;</span>
+    <span class="hljs-function">Kv&lt;K, V&gt; <span class="hljs-title">remove</span><span class="hljs-params">(K key)</span></span>;
+    <span class="hljs-comment">// &#x8BFB;&#x53D6; key &#x5BF9;&#x5E94;&#x7684; value &#x503C;</span>
+    <span class="hljs-function">V <span class="hljs-title">get</span><span class="hljs-params">(K key)</span></span>;
+    <span class="hljs-comment">// &#x8BFB;&#x53D6; key &#x5BF9;&#x5E94;&#x7684; value&#xFF0C;&#x5982;&#x679C; once = true&#xFF0C;&#x5219;&#x8BFB;&#x53D6;&#x540E;&#x79FB;&#x9664;</span>
+    <span class="hljs-function">V <span class="hljs-title">get</span><span class="hljs-params">(K key, <span class="hljs-keyword">boolean</span> once)</span></span>;
+    <span class="hljs-comment">// &#x6E05;&#x9664;&#x6240;&#x6709;</span>
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">clear</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-comment">// &#x8FD4;&#x56DE;&#x5F53;&#x524D;Map&#x5C3A;&#x5BF8;</span>
+    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">size</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-comment">// &#x8FD4;&#x56DE;&#x5F53;&#x524D;Map&#x6240;&#x6709; key &#x540D;&#x96C6;&#x5408;</span>
+    <span class="hljs-function">Set&lt;K&gt; <span class="hljs-title">keys</span><span class="hljs-params">()</span></span>;
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x5F02;&#x6B65;&#x6240;&#x6709;API&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-java">
+    <span class="hljs-meta">@Fluent</span>
+    <span class="hljs-function">SharedClient&lt;K, V&gt; <span class="hljs-title">put</span><span class="hljs-params">(K key, V value, 
+        Handler&lt;AsyncResult&lt;Kv&lt;K, V&gt;&gt;&gt; handler)</span></span>;
+
+    <span class="hljs-meta">@Fluent</span>
+    <span class="hljs-function">SharedClient&lt;K, V&gt; <span class="hljs-title">put</span><span class="hljs-params">(K key, V value, <span class="hljs-keyword">int</span> expiredSecs, 
+        Handler&lt;AsyncResult&lt;Kv&lt;K, V&gt;&gt;&gt; handler)</span></span>;
+
+    <span class="hljs-meta">@Fluent</span>
+    <span class="hljs-function">SharedClient&lt;K, V&gt; <span class="hljs-title">remove</span><span class="hljs-params">(K key, 
+        Handler&lt;AsyncResult&lt;Kv&lt;K, V&gt;&gt;&gt; handler)</span></span>;
+
+    <span class="hljs-meta">@Fluent</span>
+    <span class="hljs-function">SharedClient&lt;K, V&gt; <span class="hljs-title">get</span><span class="hljs-params">(K key, 
+        Handler&lt;AsyncResult&lt;V&gt;&gt; handler)</span></span>;
+
+    <span class="hljs-meta">@Fluent</span>
+    <span class="hljs-function">SharedClient&lt;K, V&gt; <span class="hljs-title">get</span><span class="hljs-params">(K key, <span class="hljs-keyword">boolean</span> once, 
+        Handler&lt;AsyncResult&lt;V&gt;&gt; handler)</span></span>;
+
+    <span class="hljs-meta">@Fluent</span>
+    <span class="hljs-function">SharedClient&lt;K, V&gt; <span class="hljs-title">clear</span><span class="hljs-params">(
+        Handler&lt;AsyncResult&lt;Boolean&gt;&gt; handler)</span></span>;
+
+    <span class="hljs-meta">@Fluent</span>
+    <span class="hljs-function">SharedClient&lt;K, V&gt; <span class="hljs-title">size</span><span class="hljs-params">(
+        Handler&lt;AsyncResult&lt;Integer&gt;&gt; handler)</span></span>;
+
+    <span class="hljs-meta">@Fluent</span>
+    <span class="hljs-function">SharedClient&lt;K, V&gt; <span class="hljs-title">keys</span><span class="hljs-params">(
+        Handler&lt;AsyncResult&lt;Set&lt;K&gt;&gt;&gt; handler)</span></span>;
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x7B80;&#x5355;&#x6C47;&#x603B;&#xFF1A;</p>
+<ol>
+<li>&#x5F02;&#x6B65;&#x7C7B;&#x578B;&#x7684;API&#x5168;&#x90E8;&#x53C2;&#x8003;Vert.x&#x5B50;&#x9879;&#x76EE;&#x4E2D;&#x7684;Client&#x67B6;&#x6784;&#x91CF;&#x8EAB;&#x6253;&#x9020;&#xFF0C;&#x4E14;&#x6BCF;&#x4E2A;API&#x90FD;&#x662F;<code>@Fluent</code>&#x7684;&#xFF0C;&#x7531;&#x4E8E;&#x53C2;&#x8003;&#x4E86;Vert.x&#x5B50;&#x9879;&#x76EE;&#xFF0C;&#x6240;&#x4EE5;&#x5E76;&#x4E0D;&#x5305;&#x542B;Future&#x6A21;&#x5F0F;&#x3002;</li>
+<li>&#x8FD9;&#x4E9B;API&#x6BD4;Map&#x5E38;&#x89C4;API&#x552F;&#x4E00;&#x591A;&#x51FA;&#x6765;&#x7684;&#x4E24;&#x4E2A;&#x529F;&#x80FD;&#x662F;&#xFF1A;<ol>
+<li>&#x5B58;&#x50A8;&#x5230;Map&#x4E2D;&#x7684;<strong>&#x9879;&#xFF08;key = value&#xFF09;</strong>&#x53EF;&#x6309;&#x79D2;&#x8BA1;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x8D85;&#x65F6;&#x5219;Zero&#x4F1A;&#x81EA;&#x52A8;&#x79FB;&#x9664;&#x8BE5;&#x9879;&#x3002;</li>
+<li>&#x53EF;&#x4F7F;&#x7528;<strong>&#x4E00;&#x6B21;&#x8BFB;&#x53D6;</strong>&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x8BE5;&#x9879;&#x88AB;&#x6D88;&#x8D39;&#x540E;&#x5C31;&#x76F4;&#x63A5;&#x4ECE;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E2D;&#x79FB;&#x9664;&#x3002;</li>
+</ol>
+</li>
+</ol>
+<h3 id="23-uxpool">2.3. Ux.Pool</h3>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;<code>Ux.Pool</code>&#x662F;Zero&#x63D0;&#x4F9B;&#x7684;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x5DE5;&#x5177;&#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x8FD1;&#x4F3C;&#x4E8E;<code>Ux.Jwt</code>&#x548C;<code>Ux.Jooq</code>
+&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;Zero&#x4E2D;&#x5E38;&#x7528;&#x7684;&#x51FD;&#x6570;&#xFF08;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x6210;SharedClient&#x7684;Future&#x6A21;&#x5F0F;&#x7684;&#x5C01;&#x88C5;&#xFF09;&#x3002;&#x4F7F;&#x7528;&#x5B83;&#x7684;&#x521D;&#x59CB;&#x5316;&#x4EE3;&#x7801;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x7684;SharedData&#xFF0C;name = ZERO_MAP_POOL</span>
+Ux.Pool.on();         <span class="hljs-comment">// UxPool &#x7C7B;&#x578B;</span>
+<span class="hljs-comment">// &#x4F7F;&#x7528;&#x5E26;&#x540D;&#x79F0;&#x7684;SharedData&#xFF0C;name = test</span>
+Ux.Pool.on(<span class="hljs-string">&quot;test&quot;</span>);    <span class="hljs-comment">// UxPool&#x7C7B;&#x578B;</span>
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x5B9E;&#x9645;&#x4E0A;&#x8FB9;&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#x6700;&#x7EC8;&#x8FD4;&#x56DE;&#x4E86;<code>UxPool</code>&#x7C7B;&#x578B;&#xFF0C;&#x770B;&#x770B;&#x5B83;&#x5F00;&#x653E;&#x7684;&#x6240;&#x6709;API&#x5B9A;&#x4E49;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> &lt;K, V&gt; Future&lt;Kv&lt;K, V&gt;&gt; put(<span class="hljs-keyword">final</span> K key, <span class="hljs-keyword">final</span> V value)
+<span class="hljs-keyword">public</span> &lt;K, V&gt; Future&lt;Kv&lt;K, V&gt;&gt; put(<span class="hljs-keyword">final</span> K key, <span class="hljs-keyword">final</span> V value, <span class="hljs-keyword">int</span> expiredSecs)
+<span class="hljs-keyword">public</span> &lt;K, V&gt; Future&lt;Kv&lt;K, V&gt;&gt; remove(<span class="hljs-keyword">final</span> K key)
+<span class="hljs-keyword">public</span> &lt;K, V&gt; <span class="hljs-function">Future&lt;V&gt; <span class="hljs-title">get</span><span class="hljs-params">(<span class="hljs-keyword">final</span> K key)</span>
+<span class="hljs-keyword">public</span> &lt;K, V&gt; Future&lt;V&gt; <span class="hljs-title">get</span><span class="hljs-params">(<span class="hljs-keyword">final</span> K key, <span class="hljs-keyword">final</span> <span class="hljs-keyword">boolean</span> once)</span>
+<span class="hljs-keyword">public</span> Future&lt;Boolean&gt; <span class="hljs-title">clear</span><span class="hljs-params">()</span>
+<span class="hljs-keyword">public</span> Future&lt;Integer&gt; <span class="hljs-title">size</span><span class="hljs-params">()</span>
+<span class="hljs-keyword">public</span> Future&lt;Set&lt;String&gt;&gt; <span class="hljs-title">keys</span><span class="hljs-params">()</span>
+</span></code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x8BE5;&#x5DE5;&#x5177;&#x548C;SharedClient&#x4E2D;&#x7684;API&#x7EF4;&#x6301;&#x4E86;&#x9AD8;&#x5EA6;&#x7EDF;&#x4E00;&#xFF0C;&#x6240;&#x4EE5;&#x53EA;&#x662F;&#x8F6C;&#x6362;&#x4E86;&#x5F02;&#x6B65;&#x51FD;&#x6570;&#xFF0C;&#x8F6C;&#x6362;&#x6210;&#x4E86;<code>Future</code>
+&#x7684;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4EE5;&#x65B9;&#x4FBF;&#x4F7F;&#x7528;Zero&#x7684;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#xFF0C;&#x6700;&#x540E;&#x63D0;&#x4F9B;&#x4E00;&#x4EFD;&#x5185;&#x90E8;&#x4F7F;&#x7528;&#x4E34;&#x65F6;&#x6388;&#x6743;&#x7801;&#x90E8;&#x5206;&#x7684;&#x8C03;&#x7528;&#x4EE3;&#x7801;&#x7ED9;&#x60A8;&#x53C2;&#x8003;&#xFF1A;</p>
+<pre><code class="lang-java">    <span class="hljs-comment">// &#x8BFB;&#x53D6;&#x6388;&#x6743;&#x7801;</span>
+    <span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&quot;all&quot;</span>)
+    <span class="hljs-keyword">static</span> &lt;V&gt; <span class="hljs-function">Future&lt;V&gt; <span class="hljs-title">code</span><span class="hljs-params">(<span class="hljs-keyword">final</span> String key)</span> </span>{
+        <span class="hljs-keyword">final</span> String codePool = CONFIG.getCodePool();
+        <span class="hljs-keyword">return</span> Ux.Pool.on(codePool).remove(key)
+                .compose(value -&gt; Ux.future((V) value.getValue()));
+    }
+    <span class="hljs-comment">// &#x5199;&#x5165;&#x6388;&#x6743;&#x7801;&#xFF0C;&#x52A0;&#x5165;30&#x79D2;&#x7684;&#x8FC7;&#x671F;&#x65F6;&#x95F4;</span>
+    <span class="hljs-keyword">static</span> &lt;V&gt; <span class="hljs-function">Future&lt;V&gt; <span class="hljs-title">code</span><span class="hljs-params">(<span class="hljs-keyword">final</span> String key, <span class="hljs-keyword">final</span> V value)</span> </span>{
+        <span class="hljs-keyword">final</span> String codePool = CONFIG.getCodePool();
+        <span class="hljs-keyword">final</span> Integer codeExpired = CONFIG.getCodeExpired();
+        <span class="hljs-keyword">return</span> Ux.Pool.on(codePool).put(key, value, codeExpired)
+                .compose(item -&gt; Ux.future(item.getValue()));
+    }
+</code></pre>
+<h2 id="&#x300C;&#x53C1;&#x300D;&#x5C0F;&#x7ED3;">&#x300C;&#x53C1;&#x300D;&#x5C0F;&#x7ED3;</h2>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x672C;&#x6587;&#x4E3B;&#x8981;&#x7ED9;&#x60A8;&#x8BB2;&#x89E3;&#x4E86;Zero&#x5982;&#x4F55;&#x548C;Vert.x&#x4E2D;&#x7684;&#x5B50;&#x9879;&#x76EE;&#x505A;&#x96C6;&#x6210;&#xFF0C;&#x5E76;&#x4E14;&#x901A;&#x8FC7;&#x96C6;&#x6210;&#x90E8;&#x5206;&#x7ED9;&#x60A8;&#x8BB2;&#x89E3;&#x4E86;Zero&#x4E2D;&#x7684;<strong>&#x63D2;&#x4EF6;</strong>Infix&#x67B6;&#x6784;&#xFF0C;&#x53EF;&#x80FD;&#x6709;&#x90E8;&#x5206;&#x8BFB;&#x8005;&#x4F1A;&#x56F0;&#x60D1;&#xFF0C;&#x4E3A;&#x4EC0;&#x4E48;&#x4E0D;&#x76F4;&#x63A5;&#x5728;<code>SharedClient</code>
+&#x4E2D;&#x63D0;&#x4F9B;Future&#x6A21;&#x5F0F;&#xFF1F;&#x8FD9;&#x548C;Vert.x&#x4E2D;&#x7684;&#x5B50;&#x9879;&#x76EE;&#x6709;&#x5173;&#xFF0C;&#x4E3A;&#x4E86;&#x548C;Vert.x&#x4E2D;&#x7684;&#x5927;&#x90E8;&#x5206;&#x5B50;&#x9879;&#x76EE;&#x9AD8;&#x5EA6;&#x7EDF;&#x4E00;&#xFF0C;&#x6240;&#x4EE5;&#x624D;&#x63D0;&#x4F9B;&#x4E86;&#x539F;&#x751F;&#x98CE;&#x683C;&#x7C7B;&#x4F3C;&#x7684;&#x5F02;&#x6B65;API&#xFF08;&#x5168;@Fluent&#x6A21;&#x5F0F;&#x7ED3;&#x6784;&#xFF09;&#xFF0C;&#x800C;&#x6269;&#x5C55;&#x90E8;&#x5206;&#x7684;API&#x624D;&#x4F1A;&#x63D0;&#x4F9B;Future&#x6A21;&#x5F0F;&#xFF0C;&#x7B80;&#x5355;&#x8BF4;SharedClient&#x51E0;&#x4E4E;&#x662F;&#x53C2;&#x8003;Vert.x&#x4E2D;&#x5B50;&#x9879;&#x76EE;&#x7684;&#x5404;&#x79CD;Client&#x4EFF;&#x9020;&#x7684;&#x3002;</p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x76EE;&#x524D;Zero&#x63D0;&#x4F9B;&#x7684;&#x5DE5;&#x5177;&#x7C7B;&#x4E2D;&#xFF0C;&#x4E3B;&#x8981;&#x5305;&#x542B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5DE5;&#x5177;&#x7C7B;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Ux.Jooq.on(daoClass)</td>
+<td>UxJooq</td>
+<td style="text-align:left">&#x548C;Jooq&#x751F;&#x6210;&#x7684;VertxDAO&#x7ED1;&#x5B9A;&#x7B80;&#x5316;&#x6570;&#x636E;&#x5E93;&#x8BBF;&#x95EE;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">Ux.Join.on()</td>
+<td>UxJoin</td>
+<td style="text-align:left">&#x5B9E;&#x73B0;&#x8DE8;&#x8868;&#x8BBF;&#x95EE;&#xFF0C;JOIN&#x7C7B;&#x578B;&#x7684;&#x8BFB;&#x53D6;&#x3001;&#x641C;&#x7D22;&#x3001;&#x7EDF;&#x4E00;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">Ux.Pool.on()</td>
+<td>UxPool</td>
+<td style="text-align:left">&#x548C;SharedData&#x7ED1;&#x5B9A;&#x53EF;&#x8C03;Future&#x6A21;&#x5F0F;&#x7684;&#x5F02;&#x6B65;API&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">Ux.Jwt</td>
+<td>UxJwt</td>
+<td style="text-align:left">&#x548C;&#x5B89;&#x5168;&#x4E2D;Jwt&#x76F8;&#x5173;&#x7684;&#x6838;&#x5FC3;&#x5DE5;&#x5177;&#x7C7B;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">Ux.Job.on()</td>
+<td>UxJob</td>
+<td style="text-align:left">&#x83B7;&#x53D6;&#x4EFB;&#x52A1;&#x7BA1;&#x7406;&#x5668;&#xFF0C;&#x542F;&#x52A8;&#x3001;&#x505C;&#x6B62;&#x3001;&#x6062;&#x590D;&#x540E;&#x53F0;&#x4EFB;&#x52A1;&#x4E13;&#x7528;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="012.function.html" class="navigation navigation-prev " aria-label="Previous page: 1.12.阡陌：Ux编排">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="014.configuration.html" class="navigation navigation-next " aria-label="Next page: 1.14.俯瞰：配置地图">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.13.始源之地：Vert.x集成","level":"1.2.13","depth":2,"next":{"title":"1.14.俯瞰：配置地图","level":"1.2.14","depth":2,"path":"document/zero/014.configuration.md","ref":"document/zero/014.configuration.md","articles":[]},"previous":{"title":"1.12.阡陌：Ux编排","level":"1.2.12","depth":2,"path":"document/zero/012.function.md","ref":"document/zero/012.function.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chapter-fold","expandable-chapters-small","expandable-chapters","code","copy-code-button","github","splitter"],"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/silentbalanceyh/vertx-zero-example"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"size":1},"highlight":{},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"document/zero/013.native.md","mtime":"2021-09-18T07:20:01.562Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-10-16T02:52:57.212Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

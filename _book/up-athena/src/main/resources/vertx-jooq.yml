@@ -1,0 +1,13 @@
+# ------------------- 数据库存储 ----------------------
+jooq:
+    provider:
+        driverClassName: "com.mysql.cj.jdbc.Driver"
+        username: cmdb
+        password: "cmdb123"
+        hostname: "ox.engine.cn"
+        instance: DB_ETERNAL
+        jdbcUrl: "jdbc:mysql://ox.engine.cn:3306/DB_ETERNAL?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&useSSL=false"
+# ------------------- 缓存
+redis:
+    host: ox.integration.cn
+    port: 6379

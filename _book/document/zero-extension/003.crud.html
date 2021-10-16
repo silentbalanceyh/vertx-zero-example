@@ -1,0 +1,1622 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.3.木叶鸢：CRUD（zero-crud） · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../zero/000.index.html" />
+    
+    
+    <link rel="prev" href="../zero-extensiongi/002.ambient.md" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../zero/000.index.html">
+            
+                <a href="../zero/000.index.html">
+            
+                    
+                    1.零之遥（Απόλλων）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../zero/001.first.html">
+            
+                <a href="../zero/001.first.html">
+            
+                    
+                    1.1.启航：Zero
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../zero/002.uri.html">
+            
+                <a href="../zero/002.uri.html">
+            
+                    
+                    1.2.曲径通幽：@Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../zero/003.method.html">
+            
+                <a href="../zero/003.method.html">
+            
+                    
+                    1.3.四叶葎：Http方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../zero/004.param.html">
+            
+                <a href="../zero/004.param.html">
+            
+                    
+                    1.4.思无邪：入参
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../zero/005.validation.html">
+            
+                <a href="../zero/005.validation.html">
+            
+                    
+                    1.5.孤城暗雪：验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../zero/006.async.html">
+            
+                <a href="../zero/006.async.html">
+            
+                    
+                    1.6.潘多拉魔盒：异步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../zero/007.error.html">
+            
+                <a href="../zero/007.error.html">
+            
+                    
+                    1.7.珠玉在侧：容错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../zero/008.worker.html">
+            
+                <a href="../zero/008.worker.html">
+            
+                    
+                    1.8.铁马冰河：细谈Worker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../zero/009.security.html">
+            
+                <a href="../zero/009.security.html">
+            
+                    
+                    1.9.虚之墙：安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../zero/010.jooq.html">
+            
+                <a href="../zero/010.jooq.html">
+            
+                    
+                    1.10.珷玞：Jooq
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../zero/011.jsr330.html">
+            
+                <a href="../zero/011.jsr330.html">
+            
+                    
+                    1.11.笙歌散：JSR330/JSR340
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../zero/012.function.html">
+            
+                <a href="../zero/012.function.html">
+            
+                    
+                    1.12.阡陌：Ux编排
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../zero/013.native.html">
+            
+                <a href="../zero/013.native.html">
+            
+                    
+                    1.13.始源之地：Vert.x集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../zero/014.configuration.html">
+            
+                <a href="../zero/014.configuration.html">
+            
+                    
+                    1.14.俯瞰：配置地图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../zero/015.devops.html">
+            
+                <a href="../zero/015.devops.html">
+            
+                    
+                    1.15.鼚乎：Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../zero/016.excel.html">
+            
+                <a href="../zero/016.excel.html">
+            
+                    
+                    1.16.二向箔：Excel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../zero/017.job.html">
+            
+                <a href="../zero/017.job.html">
+            
+                    
+                    1.17.隐匿者：Job
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="../zero/018.integration.html">
+            
+                <a href="../zero/018.integration.html">
+            
+                    
+                    1.18.天下：集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="000.index.html">
+            
+                <a href="000.index.html">
+            
+                    
+                    2.风之殇（Πόλεμος ανέμου）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="001.extension.html">
+            
+                <a href="001.extension.html">
+            
+                    
+                    2.1.扬帆：Zero Extension（zero-ke）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../zero-extensiongi/002.ambient.md">
+            
+                <span>
+            
+                    
+                    2.2.漆冰裂：Ambient（zero-ambient）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="003.crud.html">
+            
+                <a href="003.crud.html">
+            
+                    
+                    2.3.木叶鸢：CRUD（zero-crud）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../zero/000.index.html">
+            
+                <a href="../zero/000.index.html">
+            
+                    
+                    3.䆐之疆（Σύνορα της χώρας）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/006.async#er-tong-yi-mo-xing">
+            
+                    
+                    3.1.信封模型：Envelop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/017.job#1-6-mission">
+            
+                    
+                    3.2.任务模型：Mission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/018.integration#2-1-integration">
+            
+                    
+                    3.3.集成模型：Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/007.error#er-yi-chang-cha-xun-biao">
+            
+                    
+                    3.4.异常查询表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/006.async#1-2-zero-mo-shi">
+            
+                    
+                    3.5.异步模式：5 Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/004.param#3-4-shang-xia-wen">
+            
+                    
+                    3.6.参数签名：Agent组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/008.worker#3-2-kuo-zhan-can-shu">
+            
+                    
+                    3.7.参数签名：Worker组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/017.job#2-2-on-off">
+            
+                    
+                    3.8.参数签名：Job组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/010.jooq#san-cha-xun-yin-qing">
+            
+                    
+                    3.9.查询引擎语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index-1/001.extension#2-2-tong-dao-ding-yi">
+            
+                    
+                    3.10.Ex: ServiceLoader通道
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../zero-ui/000.index.html">
+            
+                <a href="../zero-ui/000.index.html">
+            
+                    
+                    4.影之月（Σάντοου μήνα）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../zero-ui/001.structure.html">
+            
+                <a href="../zero-ui/001.structure.html">
+            
+                    
+                    4.1.初赦：Zero Ui
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >2.3.木叶鸢：CRUD（zero-crud）</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6728;&#x53F6;&#x9E22;&#xFF1A;crud">&#x6728;&#x53F6;&#x9E22;&#xFF1A;CRUD</h1>
+<blockquote>
+<p>&#x8C01;&#x4F5C;&#x8F7B;&#x9E22;&#x58EE;&#x8FDC;&#x89C2;&#xFF0C;&#x4F3C;&#x5ACC;&#x98DE;&#x9E1F;&#x672A;&#x591A;&#x7AEF;&#x3002;&#x624D;&#x4E58;&#x4E00;&#x7EBF;&#x51ED;&#x98CE;&#x53BB;&#xFF0C;&#x4FBF;&#x6709;&#x611A;&#x513F;&#x4EF0;&#x9762;&#x770B;&#x3002;&#x2014;&#x2014;&#x738B;&#x4EE4;&#x300A;&#x7EB8;&#x9E22;&#x300B;</p>
+</blockquote>
+<ul>
+<li>&#x9879;&#x76EE;&#x5730;&#x5740;&#xFF1A;<a href="https://github.com/silentbalanceyh/vertx-zero-example/" target="_blank">https://github.com/silentbalanceyh/vertx-zero-example/</a>&#xFF08;&#x5B50;&#x9879;&#x76EE;&#xFF1A;<strong>upe-ambient</strong>&#xFF09;</li>
+</ul>
+<p>&#x9879;&#x76EE;&#x540D;&#xFF1A;<strong>zero-crud</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x8868;&#x524D;&#x7F00;</th>
+<th>&#x4E1A;&#x52A1;&#x540D;</th>
+<th>&#x7F29;&#x7565;&#x540D;</th>
+<th>&#x4E3B;&#x914D;&#x7F6E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x65E0;</td>
+<td>crud</td>
+<td>Ix</td>
+<td>plugin/crud/configuration.json</td>
+</tr>
+</tbody>
+</table>
+<p>&#x65E5;&#x5FD7;&#x6587;&#x4EF6;logback.xml&#xFF1A;</p>
+<pre><code class="lang-xml">    <span class="hljs-tag">&lt;<span class="hljs-name">include</span> <span class="hljs-attr">resource</span>=<span class="hljs-string">&quot;plugin/annal/zero-module-crud.xml&quot;</span>/&gt;</span>
+</code></pre>
+<blockquote>
+<p>&#x524D;&#x6587;&#x6709;&#x4E24;&#x4E2A;&#x7AE0;&#x8282;&#x8BB2;&#x89E3;&#x5982;&#x4F55;&#x914D;&#x7F6E;Jooq&#x548C;&#x81EA;&#x52A8;&#x751F;&#x6210;Zero&#x4E2D;&#x9700;&#x8981;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x672C;&#x7BC7;&#x5F00;&#x59CB;&#x4E0D;&#x518D;&#x8BF4;&#x660E;&#xFF0C;&#x4E3B;&#x8981;&#x53C2;&#x8003;&#x300A;<a href="../zero/010.jooq.html">1.10.&#x73F7;&#x739E;&#xFF1A;Jooq</a>&#x300B;&#x3002;</p>
+</blockquote>
+<h2 id="&#x300C;&#x58F9;&#x300D;crud">&#x300C;&#x58F9;&#x300D;CRUD</h2>
+<h3 id="11-&#x529F;&#x80FD;&#x8868;">1.1. &#x529F;&#x80FD;&#x8868;</h3>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x6211;&#x4EEC;&#x5927;&#x591A;&#x6570;&#x65F6;&#x95F4;&#x5F00;&#x53D1;&#x7684;&#x57FA;&#x4E8E;RESTful&#x7684;&#x4F01;&#x4E1A;&#x7CFB;&#x7EDF;&#x90FD;&#x662F;&#x6807;&#x51C6;&#x7684;CRUD&#x7CFB;&#x7EDF;&#xFF0C;&#x8BE5;&#x7CFB;&#x7EDF;&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x666E;&#x901A;&#x7684;&#x589E;&#x5220;&#x67E5;&#x6539;&#x76F8;&#x5173;&#x64CD;&#x4F5C;&#xFF0C;&#x800C;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x4E8E;&#x5F88;&#x591A;&#x7CFB;&#x7EDF;&#x800C;&#x8A00;&#x90FD;&#x662F;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x6280;&#x672F;&#x542B;&#x91CF;&#x7684;&#xFF0C;&#x4F46;&#x5176;&#x4E1A;&#x52A1;&#x542B;&#x91CF;&#x548C;&#x590D;&#x6742;&#x5EA6;&#x5374;&#x6839;&#x636E;&#x9700;&#x6C42;&#x800C;&#x6709;&#x6240;&#x4E0D;&#x540C;&#x3002;Zero
+Framework&#x4E2D;&#x6807;&#x51C6;&#x5316;&#x7684;CRUD&#x7684;&#x57FA;&#x7840;&#x5C42;&#xFF08;&#x9886;&#x57DF;&#x5C42;&#x548C;&#x6570;&#x636E;&#x8BBF;&#x95EE;&#x5C42;&#xFF09;&#x662F;&#x4F9D;&#x8D56;Jooq&#x5DE5;&#x5177;&#x751F;&#x6210;&#xFF0C;&#x800C;&#x6269;&#x5C55;&#x6A21;&#x5757;<code>zero-crud</code>&#x5728;&#x63D0;&#x4F9B;&#x4E86;&#x5FEB;&#x901F;&#x5F00;&#x53D1;&#x57FA;&#x7840;CRUD&#x7684;<strong>&#x529F;&#x80FD;</strong>&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x529F;&#x80FD;&#x540D;&#x79F0;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x6A21;&#x677F;&#x5316;</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x751F;&#x6210;&#x7684;Dao&#x548C;Entity&#x4E24;&#x79CD;class&#x6267;&#x884C;&#x53CD;&#x5C04;&#x8C03;&#x7528;&#xFF0C;&#x4FBF;&#x9762;&#x91CD;&#x590D;&#x7684;CRUD&#x63A5;&#x53E3;&#x5F00;&#x53D1;&#x3002;</td>
+</tr>
+<tr>
+<td>&#x6807;&#x51C6;&#x5316;</td>
+<td style="text-align:left">&#x63D0;&#x4F9B;CRUD&#x63A5;&#x53E3;&#x7684;&#x5341;&#x4E94;&#x4E2A;&#x6807;&#x51C6;&#x5316;&#x63A5;&#x53E3;&#xFF0C;&#x5305;&#x62EC;&#x589E;&#x5F3A;&#x7684;CRUD&#x63A5;&#x53E3;&#x3002;</td>
+</tr>
+<tr>
+<td>&#x67E5;&#x8BE2;&#x5F15;&#x64CE;</td>
+<td style="text-align:left">Zero&#x81EA;&#x52A8;&#x63D0;&#x4F9B;&#x8BED;&#x6CD5;&#x5206;&#x6790;&#x3001;&#x8BED;&#x53E5;&#x5206;&#x6790;&#x548C;&#x6027;&#x80FD;&#x4F18;&#x5316;&#x5DE5;&#x4F5C;&#xFF0C;&#x63D0;&#x4F9B;&#x590D;&#x6742;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;&#x3002;</td>
+</tr>
+<tr>
+<td>&#x6620;&#x5C04;&#x5C42;</td>
+<td style="text-align:left">&#x8FDE;&#x63A5;Zero&#x4E2D;&#x7684;Pojo&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x8BA9;&#x9057;&#x7559;&#x7CFB;&#x7EDF;&#x5F88;&#x5BB9;&#x6613;&#x5BF9;&#x63A5;&#x5230;Zero&#x6846;&#x67B6;&#x4E2D;&#x3002;</td>
+</tr>
+<tr>
+<td>&#x5C5E;&#x6027; - &#x4E3B;&#x952E;</td>
+<td style="text-align:left">&#x4E3B;&#x952E;&#x5C5E;&#x6027;&#x81EA;&#x52A8;&#x8BC6;&#x522B;&#x548C;&#x8FD0;&#x7B97;&#xFF0C;UUID&#x683C;&#x5F0F;&#x3002;</td>
+</tr>
+<tr>
+<td>&#x5C5E;&#x6027; - &#x5E8F;&#x53F7;</td>
+<td style="text-align:left">&#x300C;&#x4F9D;&#x8D56;<code>zero-ambient</code>&#x300D;&#x5E8F;&#x53F7;&#x5C5E;&#x6027;&#x81EA;&#x52A8;&#x8FD0;&#x7B97;&#xFF0C;&#x5BF9;&#x63A5;<code>X_NUMBER</code>&#x4E2D;&#x7684;&#x5E8F;&#x53F7;&#x5B9A;&#x4E49;&#x751F;&#x6210;&#x3002;</td>
+</tr>
+<tr>
+<td>&#x5C5E;&#x6027; - &#x552F;&#x4E00;</td>
+<td style="text-align:left">&#x63D0;&#x4F9B;&#x591A;&#x7EF4;&#x5EA6;&#x552F;&#x4E00;&#x5C5E;&#x6027;&#x81EA;&#x52A8;&#x8BA1;&#x7B97;&#xFF0C;&#x6BCF;&#x4E2A;&#x5B9E;&#x4F53;&#x652F;&#x6301;&#x591A;&#x7EC4;&#x552F;&#x4E00;&#x952E;&#x3001;&#x6BCF;&#x7EC4;&#x8DE8;&#x8D8A;&#x591A;&#x5B57;&#x6BB5;&#x3002;</td>
+</tr>
+<tr>
+<td>&#x5C5E;&#x6027; - &#x8D23;&#x4EFB;</td>
+<td style="text-align:left">&#x8D23;&#x4EFB;&#x5C5E;&#x6027;&#x81EA;&#x52A8;&#x8F85;&#x52A9;&#xFF0C;&#x521B;&#x5EFA;/&#x66F4;&#x65B0;&#xFF08;<code>createdAt, createdBy, updatedAt, updatedBy</code>&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td>&#x5C5E;&#x6027; - &#x590D;&#x6742;</td>
+<td style="text-align:left">&#x590D;&#x6742;&#x5C5E;&#x6027;&#x81EA;&#x52A8;&#x8BA1;&#x7B97;&#xFF0C;<code>JsonObject</code>&#x548C;<code>JsonArray</code>&#x683C;&#x5F0F;&#x3002;</td>
+</tr>
+<tr>
+<td><code>X-</code>&#x8BF7;&#x6C42;&#x5934;</td>
+<td style="text-align:left">&#x652F;&#x6301;<code>X-</code>&#x7CFB;&#x5217;&#x81EA;&#x5B9A;&#x4E49;&#x5934;&#x8FD0;&#x7B97;&#xFF0C;&#x652F;&#x6301;&#x591A;&#x79DF;&#x6237;&#x3001;&#x591A;&#x8BED;&#x8A00;&#x3001;&#x591A;&#x5E94;&#x7528;&#x529F;&#x80FD;&#x3002;</td>
+</tr>
+<tr>
+<td>&#x5217; - &#x9759;&#x6001;</td>
+<td style="text-align:left">&#x300C;&#x4F9D;&#x8D56;<code>zero-ui</code>&#x300D;&#x9759;&#x6001;&#x8BA1;&#x7B97;&#x6570;&#x636E;&#x5217;&#xFF0C;&#x5173;&#x8054;&#x914D;&#x7F6E;<code>plugin/ui/column/configuration.json</code>&#x3002;</td>
+</tr>
+<tr>
+<td>&#x5217; - &#x52A8;&#x6001;</td>
+<td style="text-align:left">&#x300C;&#x4F9D;&#x8D56;<code>zero-ui</code>&#x300D;&#x52A8;&#x6001;&#x8BA1;&#x7B97;&#x6570;&#x636E;&#x5217;&#xFF0C;&#x6700;&#x7EC8;&#x8BBF;&#x95EE;<code>UI_COLUMN</code>&#x8868;&#x3002;</td>
+</tr>
+<tr>
+<td>&#x8FDE;&#x63A5;&#x6A21;&#x5F0F;</td>
+<td style="text-align:left">&#x81EA;&#x52A8;&#x8BA1;&#x7B97;&#x7B80;&#x5355;&#x5E38;&#x7528;&#x7684;<code>JOIN</code>&#x8FDE;&#x63A5;&#xFF0C;&#x652F;&#x6301;&#x8DE8;&#x8868;&#x6A21;&#x578B;&#xFF0C;&#x63D0;&#x4F9B;&#x7B80;&#x5355;CRUD&#x64CD;&#x4F5C;&#x3002;</td>
+</tr>
+<tr>
+<td>&#x8F6C;&#x6362;</td>
+<td style="text-align:left">&#x652F;&#x6301;&#x6570;&#x636E;&#x5728;&#x5BFC;&#x5165;&#x3001;&#x5BFC;&#x51FA;&#x7684;&#x6574;&#x4E2A;&#x6D41;&#x7A0B;&#x4E2D;&#x5B9E;&#x73B0;&#x5B57;&#x6BB5;&#x7EA7;&#x7684;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4E0A;&#x8FF0;&#x529F;&#x80FD;&#x662F;<code>zero-crud</code>&#x6269;&#x5C55;&#x6A21;&#x5757;&#x63D0;&#x4F9B;&#x7684;&#x529F;&#x80FD;&#x652F;&#x6301;&#x8868;&#xFF0C;&#x5982;&#x679C;&#x60A8;&#x4F7F;&#x7528;&#x4E86;Zero&#x6269;&#x5C55;&#x6A21;&#x5757;&#xFF0C;&#x5219;&#x60A8;&#x5C31;&#x53EF;&#x4EE5;&#x4E0D;&#x7528;&#x5F00;&#x53D1;&#x4EFB;&#x610F;&#x7684;CRUD&#x6807;&#x51C6;&#x5316;&#x63A5;&#x53E3;&#xFF0C;&#x53EA;&#x662F;&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x9650;&#x5236;&#xFF1A;</p>
+<ol>
+<li>&#x90E8;&#x5206;&#x529F;&#x80FD;&#x4F9D;&#x8D56;&#x5176;&#x4ED6;Zero&#x6269;&#x5C55;&#x6A21;&#x5757;&#x5982;<code>zero-ambient</code>&#x6216;<code>zero-ui</code>&#xFF0C;&#x4F46;<code>zero-crud</code>&#x9879;&#x76EE;&#x53EF;&#x72EC;&#x7ACB;&#x4F7F;&#x7528;&#xFF0C;&#x5E76;&#x4E0D;&#x548C;&#x8FD9;&#x4E9B;&#x6A21;&#x5757;&#x4EA7;&#x751F;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x3002;</li>
+<li>&#x90E8;&#x5206;&#x529F;&#x80FD;&#x4F9D;&#x8D56;&#x524D;&#x7AEF;&#x8BBE;&#x7F6E;&#x542F;&#x7528;&#x548C;&#x7981;&#x7528;&#x5F00;&#x5173;&#xFF0C;&#x6839;&#x636E;&#x9002;&#x5F53;&#x7684;&#x914D;&#x7F6E;&#x6253;&#x5F00;&#x6216;&#x5173;&#x95ED;&#x76F8;&#x5173;&#x529F;&#x80FD;&#x70B9;&#x3002;</li>
+<li>&#x90E8;&#x5206;&#x8868;&#x7ED3;&#x6784;&#x5C5E;&#x6027;&#x662F;&#x57FA;&#x4E8E;Zero&#x6269;&#x5C55;&#x6A21;&#x5757;&#x8BBE;&#x8BA1;&#xFF0C;&#x6240;&#x4EE5;&#x5176;&#x5B57;&#x6BB5;&#x5C5E;&#x6027;&#x540D;&#x662F;&#x56FA;&#x5B9A;&#x800C;&#x4E0D;&#x53EF;&#x53D8;&#x66F4;&#x7684;&#x3002;</li>
+</ol>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;<strong>&#x6CE8;</strong>&#xFF1A;<code>zero-crud</code>&#x9879;&#x76EE;&#x4E00;&#x65E6;&#x5F00;&#x542F;&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x7684;RESTful&#x5B9A;&#x4E49;&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;<strong>&#x5F00;&#x53D1;&#x8DEF;&#x5F84;</strong>&#x7684;&#x51B2;&#x7A81;&#xFF0C;&#x82E5;&#x8981;&#x4F7F;&#x7528;&#x5219;&#x8BF7;&#x5148;&#x7406;&#x89E3;&#x5341;&#x4E94;&#x4E2A;&#x6807;&#x51C6;&#x5316;&#x63A5;&#x53E3;&#x4EE5;&#x907F;&#x514D;URI&#x51B2;&#x7A81;&#xFF1B;&#x5176;&#x6B21;&#x8BE5;&#x9879;&#x76EE;&#x4E0D;&#x4F1A;&#x6709;&#x4EFB;&#x4F55;&#x989D;&#x5916;&#x8868;&#x7ED3;&#x6784;&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x7684;&#x66F4;&#x591A;&#x529F;&#x80FD;&#x662F;<strong>&#x5DE5;&#x5177;&#x6027;</strong>&#x7684;&#xFF1B;&#x6700;&#x540E;&#xFF0C;&#x60A8;&#x9879;&#x8981;&#x6C42;&#x7684;&#x529F;&#x80FD;&#x8D8A;&#x590D;&#x6742;&#xFF0C;&#x5219;&#x914D;&#x7F6E;&#x4E5F;&#x4F1A;&#x76F8;&#x5BF9;&#x590D;&#x6742;&#x3002;</p>
+<blockquote>
+<p>&#x7531;&#x4E8E;&#x914D;&#x7F6E;&#x8DEF;&#x5F84;&#x4F18;&#x5148;&#x7EA7;&#x4F4E;&#x4E8E;&#x5F00;&#x53D1;&#x8DEF;&#x5F84;&#xFF0C;&#x5982;&#x679C;&#x8DEF;&#x5F84;&#x53D1;&#x751F;&#x51B2;&#x7A81;&#x4F1A;&#x4EE5;&#x5F00;&#x53D1;&#x8DEF;&#x5F84;&#x4E3A;&#x4E3B;&#x3002;</p>
+</blockquote>
+<h3 id="12-&#x63A5;&#x53E3;&#x6807;&#x51C6;&#x5316;">1.2. &#x63A5;&#x53E3;&#x6807;&#x51C6;&#x5316;</h3>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;<code>zero-crud</code>&#x4E2D;&#x63D0;&#x4F9B;&#x7684;&#x5341;&#x4E94;&#x4E2A;&#x6807;&#x51C6;&#x5316;&#x63A5;&#x53E3;&#x5982;&#x4E0B;&#xFF0C;&#x5047;&#x8BBE;&#x5B9E;&#x4F53;&#x540D;&#x79F0;&#x4E3A;<code>pojo</code>&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th style="text-align:left">&#x8DEF;&#x5F84;</th>
+<th>&#x6279;&#x91CF;</th>
+<th style="text-align:left">&#x542B;&#x4E49;&#x4EE5;&#x53CA;&#x793A;&#x4F8B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>POST</td>
+<td style="text-align:left">/api/pojo</td>
+<td>x</td>
+<td style="text-align:left">&#x5355;&#x8BB0;&#x5F55;&#x521B;&#x5EFA;</td>
+</tr>
+<tr>
+<td>GET</td>
+<td style="text-align:left">/api/pojo/:key</td>
+<td>x</td>
+<td style="text-align:left">&#x6839;&#x636E;ID&#x8BFB;&#x53D6;&#x8BB0;&#x5F55;</td>
+</tr>
+<tr>
+<td>PUT</td>
+<td style="text-align:left">/api/pojo/:key</td>
+<td>x</td>
+<td style="text-align:left">&#x6839;&#x636E;ID&#x66F4;&#x65B0;&#x8BB0;&#x5F55;</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td style="text-align:left">/api/pojo/:key</td>
+<td>x</td>
+<td style="text-align:left">&#x6839;&#x636E;ID&#x5220;&#x9664;&#x8BB0;&#x5F55;</td>
+</tr>
+<tr>
+<td>POST</td>
+<td style="text-align:left">/api/pojo/search</td>
+<td>o</td>
+<td style="text-align:left">Qr&#x67E5;&#x8BE2;&#xFF0C;&#x5206;&#x9875;&#x3001;&#x6392;&#x5E8F;&#x3001;&#x5217;&#x8FC7;&#x6EE4;&#x3001;&#x6761;&#x4EF6;&#x7EFC;&#x5408;&#x67E5;&#x8BE2;&#x63A5;&#x53E3;</td>
+</tr>
+<tr>
+<td>PUT</td>
+<td style="text-align:left">/api/batch/pojo/update</td>
+<td>o</td>
+<td style="text-align:left">&#x6279;&#x91CF;&#x66F4;&#x65B0;&#x63A5;&#x53E3;</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td style="text-align:left">/api/batch/pojo/delete</td>
+<td>o</td>
+<td style="text-align:left">&#x6279;&#x91CF;&#x5220;&#x9664;&#x63A5;&#x53E3;</td>
+</tr>
+<tr>
+<td>GET</td>
+<td style="text-align:left">/api/columns/pojo/full</td>
+<td>o</td>
+<td style="text-align:left">&#x300C;&#x89C6;&#x56FE;&#x300D;&#x8BFB;&#x53D6;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5217;&#x63A5;&#x53E3;</td>
+</tr>
+<tr>
+<td>GET</td>
+<td style="text-align:left">/api/columns/pojo/my</td>
+<td>x</td>
+<td style="text-align:left">&#x300C;&#x89C6;&#x56FE;&#x300D;&#x8BFB;&#x53D6;&#x89D2;&#x8272;&#x6216;&#x7528;&#x6237;&#x89C6;&#x56FE;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>PUT</td>
+<td style="text-align:left">/api/columns/pojo/my</td>
+<td>x</td>
+<td style="text-align:left">&#x300C;&#x89C6;&#x56FE;&#x300D;&#x66F4;&#x65B0;&#x7528;&#x6237;&#x89C6;&#x56FE;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>POST</td>
+<td style="text-align:left">/api/pojo/import</td>
+<td>o</td>
+<td style="text-align:left">&#x6279;&#x91CF;&#x5BFC;&#x5165;&#x6570;&#x636E;&#x63A5;&#x53E3;</td>
+</tr>
+<tr>
+<td>POST</td>
+<td style="text-align:left">/api/pojo/export</td>
+<td>o</td>
+<td style="text-align:left">&#x6279;&#x91CF;&#x5BFC;&#x51FA;&#x6570;&#x636E;&#x63A5;&#x53E3;</td>
+</tr>
+<tr>
+<td>POST</td>
+<td style="text-align:left">/api/pojo/existing</td>
+<td>x</td>
+<td style="text-align:left">Qr&#x67E5;&#x8BE2;&#xFF0C;&#x8BB0;&#x5F55;&#x5B58;&#x5728;true&#xFF0C;&#x4E0D;&#x5B58;&#x5728;false</td>
+</tr>
+<tr>
+<td>POST</td>
+<td style="text-align:left">/api/pojo/missing</td>
+<td>x</td>
+<td style="text-align:left">Qr&#x67E5;&#x8BE2;&#xFF0C;&#x8BB0;&#x5F55;&#x4E0D;&#x5B58;&#x5728;true&#xFF0C;&#x5B58;&#x5728;false</td>
+</tr>
+<tr>
+<td>GET</td>
+<td style="text-align:left">/api/pojo/by/sigma</td>
+<td>o</td>
+<td style="text-align:left">&#x5B8C;&#x6574;&#x8BB0;&#x5F55;&#x67E5;&#x8BE2;&#x63A5;&#x53E3;&#xFF0C;&#x67E5;&#x8BE2;&#x67D0;&#x4E2A;<code>sigma</code>&#x79DF;&#x6237;&#x65D7;&#x4E0B;&#x6240;&#x6709;&#x8BB0;&#x5F55;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;<code>zero-crud</code>&#x4E2D;&#x7684;&#x5B9E;&#x9645;&#x8DEF;&#x5F84;&#x5339;&#x914D;&#x8868;&#xFF08;Vert.x&#x4E2D;Router&#x52A0;&#x8F7D;&#x7684;&#x539F;&#x59CB;&#x8DEF;&#x5F84;&#xFF09;&#x5982;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th style="text-align:left">&#x8DEF;&#x5F84;</th>
+<th style="text-align:left">&#x5B9E;&#x9645;&#x8DEF;&#x5F84;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>POST</td>
+<td style="text-align:left">/api/pojo</td>
+<td style="text-align:left">/api/:actor</td>
+</tr>
+<tr>
+<td>GET</td>
+<td style="text-align:left">/api/pojo/:key</td>
+<td style="text-align:left">/api/:actor/:key</td>
+</tr>
+<tr>
+<td>PUT</td>
+<td style="text-align:left">/api/pojo/:key</td>
+<td style="text-align:left">/api/:actor/:key</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td style="text-align:left">/api/pojo/:key</td>
+<td style="text-align:left">/api/:actor/:key</td>
+</tr>
+<tr>
+<td>POST</td>
+<td style="text-align:left">/api/pojo/search</td>
+<td style="text-align:left">/api/:actor/search</td>
+</tr>
+<tr>
+<td>PUT</td>
+<td style="text-align:left">/api/batch/pojo/update</td>
+<td style="text-align:left">/api/batch/:actor/update</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td style="text-align:left">/api/batch/pojo/delete</td>
+<td style="text-align:left">/api/batch/:actor/delete</td>
+</tr>
+<tr>
+<td>GET</td>
+<td style="text-align:left">/api/columns/pojo/full</td>
+<td style="text-align:left">/api/columns/:actor/full</td>
+</tr>
+<tr>
+<td>GET</td>
+<td style="text-align:left">/api/columns/pojo/my</td>
+<td style="text-align:left">/api/columns/:actor/my</td>
+</tr>
+<tr>
+<td>PUT</td>
+<td style="text-align:left">/api/columns/pojo/my</td>
+<td style="text-align:left">/api/columns/:actor/my</td>
+</tr>
+<tr>
+<td>POST</td>
+<td style="text-align:left">/api/pojo/import</td>
+<td style="text-align:left">/api/:actor/import</td>
+</tr>
+<tr>
+<td>POST</td>
+<td style="text-align:left">/api/pojo/export</td>
+<td style="text-align:left">/api/:actor/export</td>
+</tr>
+<tr>
+<td>POST</td>
+<td style="text-align:left">/api/pojo/existing</td>
+<td style="text-align:left">/api/:actor/existing</td>
+</tr>
+<tr>
+<td>POST</td>
+<td style="text-align:left">/api/pojo/missing</td>
+<td style="text-align:left">/api/:actor/missing</td>
+</tr>
+<tr>
+<td>GET</td>
+<td style="text-align:left">/api/pojo/by/sigma</td>
+<td style="text-align:left">/api/:actor/by/sigma</td>
+</tr>
+</tbody>
+</table>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x5982;&#x679C;&#x60A8;&#x4E0D;&#x4F7F;&#x7528;<code>zero-crud</code>&#xFF0C;&#x90A3;&#x4E48;&#x5BF9;URI&#x7684;&#x8BBE;&#x8BA1;&#x53EF;&#x4EE5;&#x968F;&#x610F;&#x800C;&#x4E3A;&#x4E4B;&#xFF0C;&#x4F46;&#x60A8;&#x82E5;&#x4F7F;&#x7528;&#x4E86;&#x8BE5;&#x6269;&#x5C55;&#x6A21;&#x5757;&#xFF0C;&#x90A3;&#x4E48;&#x60A8;&#x6240;&#x8003;&#x8651;&#x7684;&#x8DEF;&#x5F84;&#x8BBE;&#x8BA1;&#x5C31;&#x662F;&#x907F;&#x514D;&#x548C;&#x4E0A;&#x8FF0;<strong>&#x5B9E;&#x9645;&#x8DEF;&#x5F84;</strong>&#x53D1;&#x751F;&#x51B2;&#x7A81;&#x800C;&#x4E0D;&#x662F;&#x539F;&#x59CB;&#x8DEF;&#x5F84;&#x3002;&#x4F8B;&#x5982;&#xFF1A;<code>POST /api/user/search</code>&#x548C;<code>POST /api/role/search</code>&#x5728;Zero&#x4E2D;&#x90FD;&#x4F1A;&#x88AB;&#x6620;&#x5C04;&#x5230;<code>POST /api/:actor/search</code>&#xFF0C;&#x5E95;&#x5C42;&#x5C5E;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#xFF0C;&#x8BE5;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#x5728;<code>zero-rbac</code>&#x9274;&#x6743;&#x5F15;&#x5165;&#x65F6;&#x4F1A;&#x8BB2;&#x89E3;&#x90E8;&#x5206;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x4EE5;&#x5B9E;&#x73B0;&#x4F18;&#x826F;&#x7684;<strong>&#x8DEF;&#x5F84;&#x7F16;&#x6392;</strong>&#x3002;&#x60A8;&#x4E5F;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x4E0B;&#x8FB9;&#x7684;&#x6307;&#x5BFC;&#x89C4;&#x5219;&#xFF08;&#x5B9E;&#x6218;&#x7ECF;&#x9A8C;&#xFF0C;<code>zero-crud</code>&#x7684;&#x9650;&#x5236;&#xFF09;</p>
+<ol>
+<li>&#x5F53;&#x9047;&#x5230;&#x590D;&#x6742;&#x63A5;&#x53E3;&#x9700;&#x7F16;&#x5199;&#x65F6;&#xFF0C;&#x53EF;&#x76F4;&#x63A5;&#x4F7F;&#x7528;<code>POST /api/pojo/xxx</code>&#xFF0C;&#x6B64;&#x5904;<code>xxx</code>&#x4E3A;&#x4E00;&#x4E2A;&#x52A8;&#x8BCD;&#xFF0C;&#x5982;&#xFF1A;<code>POST /api/order/submit</code>&#x8868;&#x793A;&#x63D0;&#x4EA4;&#x8BA2;&#x5355;&#x3002;</li>
+<li>&#x4E0A;&#x8FF0;&#x5341;&#x4E94;&#x4E2A;&#x63A5;&#x53E3;&#x4E2D;&#x82E5;&#x60A8;&#x7684;&#x63A5;&#x53E3;&#x6709;&#x5FC5;&#x8981;&#x91CD;&#x5199;&#xFF0C;&#x53EF;&#x76F4;&#x63A5;&#x6307;&#x5B9A;&#x8DEF;&#x5F84;&#xFF0C;&#x5982;&#x76F4;&#x63A5;&#x91CD;&#x5199;<code>GET /api/pojo/:key</code>&#xFF0C;&#x5982;&#x6B64;&#xFF0C;<code>pojo</code>&#x8FD9;&#x4E2A;&#x7C7B;&#x7684;&#x6309;ID&#x8BFB;&#x53D6;&#x8BB0;&#x5F55;&#x7684;&#x65B9;&#x6CD5;&#x4F1A;&#x88AB;&#x76F4;&#x63A5;&#x91CD;&#x5199;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x4F1A;&#x8986;&#x76D6;&#x5176;&#x4ED6;&#x914D;&#x7F6E;&#x4E0A;&#x6807;&#x51C6;&#x5316;&#x63A5;&#x53E3;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x67E5;&#x8BE2;&#x65B9;&#x5F0F;&#x5F88;&#x591A;&#x5E76;&#x4E14;&#x590D;&#x6742;&#xFF0C;&#x5C3D;&#x53EF;&#x80FD;&#x4E0D;&#x8BBE;&#x8BA1;&#x8FC7;&#x591A;&#x7684;&#x8DEF;&#x5F84;&#x53C2;&#x6570;&#xFF0C;&#x5982;<code>/api/user/:status/:name/:type</code>&#x8FD9;&#x79CD;&#x8DEF;&#x5F84;&#x5C31;&#x6709;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x5F88;&#x5927;&#x7684;&#x526F;&#x4F5C;&#x7528;&#xFF0C;&#x6709;&#x65F6;&#x5019;&#x4F1A;&#x65E0;&#x610F;&#x8BC6;&#x8986;&#x76D6;&#x60A8;&#x5DF2;&#x7ECF;&#x5F00;&#x53D1;&#x597D;&#x7684;&#x8DEF;&#x5F84;&#x3002;</li>
+<li>&#x53C2;&#x6570;&#x8FC7;&#x591A;&#x7684;&#x67E5;&#x8BE2;&#xFF0C;&#x4F7F;&#x7528;<code>POST</code>&#x5728;&#x4EE3;&#x7801;&#x7EA7;&#x522B;&#x53BB;&#x8003;&#x8651;&#x63A5;&#x53E3;&#x5E42;&#x7B49;&#x6027;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4F7F;&#x7528;<code>GET</code>&#x5E26;&#x4E0A;&#x8FC7;&#x957F;&#x7684;&#x67E5;&#x8BE2;&#x53C2;&#x6570;&#x3002;</li>
+</ol>
+<h2 id="&#x300C;&#x8D30;&#x300D;&#x914D;&#x7F6E;&#x8BE6;&#x89E3;">&#x300C;&#x8D30;&#x300D;&#x914D;&#x7F6E;&#x8BE6;&#x89E3;</h2>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;<code>zero-crud</code>&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6839;&#x636E;Zero Extension&#x7684;&#x6269;&#x5C55;&#x89C4;&#x8303;&#xFF0C;&#x4F1A;&#x653E;&#x5728;<code>plugin/crud/</code>&#x76EE;&#x5F55;&#x4E2D;&#xFF0C;&#x8BE5;&#x76EE;&#x5F55;&#x4E3A;&#x56FA;&#x5B9A;&#x76EE;&#x5F55;&#xFF0C;&#x5B83;&#x7684;&#x6574;&#x7406;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-shell">/configuration.json      # &#x4E3B;&#x914D;&#x7F6E;
+/module/                 # &#x6A21;&#x5757;&#x914D;&#x7F6E;
+/validator/              # &#x9A8C;&#x8BC1;&#x89C4;&#x5219;&#x914D;&#x7F6E;
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x9A8C;&#x8BC1;&#x89C4;&#x5219;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x548C;&#x300A;<a href="../zero/005.validation.html">1.5.&#x5B64;&#x57CE;&#x6697;&#x96EA;&#xFF1A;&#x9A8C;&#x8BC1;</a>&#x300B;&#x4E2D;&#x7684;&#x73A9;&#x6CD5;&#x4E00;&#x6837;&#xFF0C;&#x6B64;&#x5904;&#x5C31;&#x4E0D;&#x7D2F;&#x8D58;&#xFF0C;&#x672C;&#x7AE0;&#x8282;&#x4E3B;&#x8981;&#x8BB2;&#x89E3;&#x8BE5;&#x6A21;&#x5757;&#x4E2D;&#x7684;&#x6838;&#x5FC3;&#x529F;&#x80FD;&#x914D;&#x7F6E;&#x3002;</p>
+<h3 id="21-&#x4E3B;&#x914D;&#x7F6E;">2.1. &#x4E3B;&#x914D;&#x7F6E;</h3>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4E3B;&#x914D;&#x7F6E;&#x4F4D;&#x4E8E;<code>configuration.json</code>&#x4E2D;&#xFF0C;&#x5E38;&#x7528;&#x914D;&#x7F6E;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;patterns&quot;</span>: [
+        <span class="hljs-string">&quot;/api/{0}&quot;</span>,
+        <span class="hljs-string">&quot;/api/{0}/by/sigma&quot;</span>,
+        <span class="hljs-string">&quot;/api/{0}/:key&quot;</span>,
+        <span class="hljs-string">&quot;/api/batch/{0}/delete&quot;</span>,
+        <span class="hljs-string">&quot;/api/batch/{0}/update&quot;</span>,
+        <span class="hljs-string">&quot;/api/columns/{0}/my&quot;</span>,
+        <span class="hljs-string">&quot;/api/columns/{0}/full&quot;</span>,
+        <span class="hljs-string">&quot;/api/{0}/search&quot;</span>,
+        <span class="hljs-string">&quot;/api/{0}/missing&quot;</span>,
+        <span class="hljs-string">&quot;/api/{0}/existing&quot;</span>,
+        <span class="hljs-string">&quot;/api/{0}/import&quot;</span>,
+        <span class="hljs-string">&quot;/api/{0}/export&quot;</span>
+    ],
+    <span class="hljs-string">&quot;columnKeyField&quot;</span>: <span class="hljs-string">&quot;dataIndex&quot;</span>,
+    <span class="hljs-string">&quot;columnLabelField&quot;</span>: <span class="hljs-string">&quot;title&quot;</span>
+}
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x5B83;&#x5305;&#x542B;&#x4E86;&#x4E09;&#x4E2A;&#x914D;&#x7F6E;&#x9879;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8282;&#x70B9;&#x540D;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>patterns</td>
+<td>JsonArray</td>
+<td style="text-align:left">&#x6807;&#x51C6;&#x5316;&#x63A5;&#x53E3;&#x5217;&#x8868;</td>
+</tr>
+<tr>
+<td>columnKeyField</td>
+<td>String</td>
+<td style="text-align:left">&#x5C5E;&#x6027;&#x5B57;&#x6BB5;&#x540D;</td>
+</tr>
+<tr>
+<td>columnKeyLabel</td>
+<td>String</td>
+<td style="text-align:left">&#x5C5E;&#x6027;&#x663E;&#x793A;&#x5B57;&#x6BB5;&#x540D;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="211-&#x6807;&#x51C6;&#x5316;&#x6269;&#x5C55;">2.1.1. &#x6807;&#x51C6;&#x5316;&#x6269;&#x5C55;</h4>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;<code>patterns</code>&#x4E3B;&#x8981;&#x8D1F;&#x8D23;&#x6807;&#x51C6;&#x5316;&#x63A5;&#x53E3;&#x7684;&#x6269;&#x5C55;&#xFF0C;&#x9664;&#x4E86;&#x4E0A;&#x8FF0;&#x5341;&#x4E94;&#x4E2A;<strong>&#x6807;&#x51C6;&#x5316;&#x63A5;&#x53E3;</strong>&#x4EE5;&#x5916;&#xFF0C;&#x60A8;&#x8FD8;&#x53EF;&#x4EE5;&#x5F00;&#x53D1;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x6807;&#x51C6;&#x5316;&#x63A5;&#x53E3;&#xFF0C;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x7684;<code>{0}</code>&#x7B49;&#x4EF7;&#x4E8E;&#x6807;&#x51C6;&#x5316;&#x63A5;&#x53E3;&#x4E2D;&#x7684;<code>:actor</code>&#x53C2;&#x6570;&#x3002;&#x81EA;&#x5DF1;&#x5F00;&#x53D1;&#x6807;&#x51C6;&#x5316;&#x63A5;&#x53E3;&#x7684;&#x96BE;&#x70B9;&#x5728;&#x4E8E;&#x5FC5;&#x987B;&#x5BF9;<code>zero-crud</code>&#x4E2D;&#x7684;&#x6838;&#x5FC3;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x5B8C;&#x5168;&#x7406;&#x89E3;&#x5E76;&#x4E14;&#x7406;&#x89E3;&#x76F8;&#x5173;&#x6D41;&#x7A0B;&#x3002;</p>
+<blockquote>
+<p>actor&#x542B;&#x4E49;&#x4E3A;&#x884C;&#x52A8;&#x8005;&#xFF0C;&#x6B64;&#x5904;&#x4E3A;module&#x542B;&#x4E49;&#x7B49;&#x4EF7;&#xFF0C;&#x4E00;&#x65B9;&#x9762;&#x4EE3;&#x8868;&#x4E86;&#x5F53;&#x524D;API&#x5728;&#x6267;&#x884C;&#x65F6;&#x6A21;&#x5757;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x53E6;&#x5916;&#x4E00;&#x65B9;&#x9762;&#x9690;&#x55BB;&#x4E86;&#x5185;&#x90E8;&#x7B97;&#x6CD5;&#x4F7F;&#x7528;&#x4E86;Actor&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x3002;</p>
+</blockquote>
+<h4 id="212-&#x4E1A;&#x52A1;&#x5C5E;&#x6027;">2.1.2. &#x4E1A;&#x52A1;&#x5C5E;&#x6027;</h4>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;<code>columnKeyField</code>&#x548C;<code>columnKeyLabel</code>&#x914D;&#x7F6E;&#x7684;&#x662F;&#x4E1A;&#x52A1;&#x5C5E;&#x6027;&#xFF0C;&#x5982;&#x4E0B;&#x53EF;&#x770B;&#x89C1;&#x7684;&#x5217;&#x8868;&#xFF1A;</p>
+<p><img src="_image/2021-10-15-23-45-18.png" alt=""></p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x7531;&#x4E8E;<code>zero-ui</code>&#x4F7F;&#x7528;&#x4E86;&#x57FA;&#x4E8E;React&#x7684;Ant-Design&#xFF0C;&#x6B64;&#x5904;&#x5305;&#x542B;&#x4E86;&#x4E09;&#x4E2A;&#x5C5E;&#x6027;&#xFF1A;<strong>&#x7236;&#x7C7B;&#x578B;&#x3001;&#x7F16;&#x7801;&#x3001;&#x540D;&#x79F0;</strong>&#xFF0C;&#x8FD9;&#x4E09;&#x4E2A;&#x5C5E;&#x6027;&#x5728;&#x540E;&#x7AEF;&#x53EF;&#x80FD;&#x5BF9;&#x5E94;&#xFF1A;<code>parentId=&#x7236;&#x7C7B;&#x578B;,code=&#x7F16;&#x7801;,name=&#x540D;&#x79F0;</code>&#xFF0C;&#x5982;&#x679C;&#x60A8;&#x7684;&#x524D;&#x7AEF;&#x65E0;&#x9700;&#x652F;&#x6301;<strong>&#x591A;&#x8BED;&#x8A00;</strong>&#x7ED3;&#x6784;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x914D;&#x7F6E;&#x7559;&#x7A7A;&#x4E5F;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x524D;&#x7AEF;&#x5448;&#x73B0;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x914D;&#x7F6E;&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#x4E3A;&#x4E86;&#x754C;&#x9762;&#x8BED;&#x8A00;<strong>&#x53EF;&#x914D;&#x7F6E;</strong>&#x91CF;&#x8EAB;&#x5B9A;&#x5236;&#x7684;&#x5C5E;&#x6027;&#x3002;</p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x6838;&#x5FC3;&#x529F;&#x80FD;&#x5728;&#x4E8E;&#x652F;&#x6301;&#x6807;&#x51C6;&#x5316;&#x63A5;&#x53E3;&#x4E2D;&#x7684;&#x4E09;&#x4E2A;&#x300C;<strong>&#x89C6;&#x56FE;</strong>&#x300D;&#x63A5;&#x53E3;&#xFF0C;&#x6574;&#x4F53;&#x6D41;&#x7A0B;&#x53C2;&#x8003;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<p><img src="_image/2021-10-16-00-07-08.png" alt=""></p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4ECE;&#x56FE;&#x4E0A;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;<code>zero-crud</code>&#x4E2D;&#x7684;&#x89C6;&#x56FE;&#x4FE1;&#x606F;&#x4E3B;&#x8981;&#x6765;&#x81EA;&#x4E24;&#x4E2A;&#x6A21;&#x5757;<code>zero-ui</code>&#x548C;<code>zero-rbac</code>&#xFF0C;<code>zero-ui</code>&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x6574;&#x4E2A;&#x7CFB;&#x7EDF;&#x7684;&#x5168;&#x90E8;&#x89C6;&#x56FE;&#x5217;&#x4FE1;&#x606F;&#xFF0C;&#x800C;<code>zero-rbac</code>&#x4E2D;&#x4EC5;&#x5305;&#x542B;&#x4E86;<strong>&#x6211;&#x7684;</strong>&#x89C6;&#x56FE;&#xFF08;&#x4E2A;&#x4EBA;&#x89C6;&#x56FE;&#xFF09;&#x4FE1;&#x606F;&#xFF0C;&#x6574;&#x4E2A;&#x89C6;&#x56FE;&#x7684;&#x5C42;&#x6B21;&#x8FC7;&#x6EE4;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<p><img src="_image/2021-10-16-00-20-18.png" alt=""></p>
+<blockquote>
+<p>&#x5E9F;&#x8BDD;&#x8FD9;&#x4E48;&#x591A;&#x662F;&#x56E0;&#x4E3A;&#x8FD9;Zero&#x4E2D;&#x7684;&#x8FD9;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#x548C;<strong>columnKeyField</strong>&#x548C;<strong>columnKeyLabel</strong>&#x7D27;&#x5BC6;&#x76F8;&#x5173;&#x3002;</p>
+</blockquote>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x56FE;&#x4E2D;&#x5448;&#x73B0;&#x7684;&#x662F;Zero&#x4E2D;&#x7684;&#x5B8C;&#x6574;&#x89C6;&#x56FE;&#x7ED3;&#x6784;&#xFF0C;&#x89E3;&#x91CA;&#x4E00;&#x4E0B;&#x51E0;&#x4E2A;&#x5B9A;&#x4E49;&#xFF1A;</p>
+<ul>
+<li><strong>&#x53EF;&#x89C1;&#x5217;</strong>&#xFF1A;&#x9664;&#x5F00;&#x7CFB;&#x7EDF;&#x4E0D;&#x53EF;&#x89C1;&#xFF08;&#x6BD4;&#x5982;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x540E;&#x53F0;&#x4EE3;&#x7801;&#x9700;&#x8981;&#x4F7F;&#x7528;&#xFF09;&#x4EE5;&#x5916;&#x6240;&#x6709;&#x53EF;&#x8BBF;&#x95EE;&#x7684;&#x5217;&#x4FE1;&#x606F;&#x3002;</li>
+<li><strong>&#x53EF;&#x914D;&#x5217;</strong>&#xFF1A;&#x8FD9;&#x90E8;&#x5206;&#x63A7;&#x5236;&#x5728;Zero Extension&#x4E2D;&#x7531;<code>zero-ui</code>&#x5B9E;&#x73B0;&#xFF0C;&#x6BD4;&#x5982;&#x4E00;&#x4E2A;&#x56FA;&#x5B9A;&#x5217;&#x8868;&#x53EF;&#x80FD;&#x53EA;&#x663E;&#x793A;&#x6574;&#x5F20;&#x8868;&#x7684;&#x90E8;&#x5206;&#x5217;&#x4FE1;&#x606F;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x5728;<code>zero-ui</code>&#x4E2D;&#x4F7F;&#x7528;<strong>&#x52A8;&#x6001;&#x914D;&#x7F6E;</strong>&#xFF08;&#x5B58;&#x50A8;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#xFF09;&#x6216;<strong>&#x9759;&#x6001;&#x914D;&#x7F6E;</strong>&#xFF08;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x5B9A;&#x4E49;&#xFF09;&#xFF0C;&#x53EA;&#x6709;&#x52A8;&#x6001;&#x914D;&#x7F6E;&#x7684;&#x5217;&#x53EF;&#x76F4;&#x63A5;&#x5728;&#x5E73;&#x53F0;&#x7EA7;&#x7BA1;&#x7406;&#x2014;&#x2014;&#x5982;&#x6B64;&#x60A8;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4FEE;&#x6539;&#x60A8;&#x7684;&#x5217;&#x8868;&#x3002;</li>
+<li><strong>&#x53EF;&#x63A7;&#x5217;</strong>&#xFF1A;&#x53EF;&#x63A7;&#x5217;&#x4E3B;&#x8981;&#x5305;&#x542B;<strong>&#x89D2;&#x8272;&#x7EA7;</strong>&#x548C;<strong>&#x7528;&#x6237;&#x7EA7;</strong>&#x4E24;&#x79CD;&#xFF0C;&#x8FD9;&#x4E24;&#x79CD;&#x5217;&#x4FE1;&#x606F;&#x5728;Zero Extension&#x4E2D;&#x7531;<code>zero-rbac</code>&#x5B9E;&#x73B0;&#xFF0C;&#x89D2;&#x8272;&#x7EA7;&#x7684;&#x5217;&#x4E3B;&#x8981;&#x7531;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x5458;&#x521B;&#x5EFA;&#x3001;&#x7BA1;&#x7406;&#x548C;&#x5B9A;&#x4E49;&#xFF0C;&#x7528;&#x6237;&#x7EA7;&#x7684;&#x5217;&#x5C31;&#x662F;<strong>&#x4E2A;&#x4EBA;&#x89C6;&#x56FE;</strong>&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;</li>
+</ul>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x4E0A;&#x8FF0;&#x5217;&#x5448;&#x73B0;&#x529F;&#x80FD;&#xFF0C;&#x5F80;&#x5F80;&#x4F1A;&#x7528;&#x5230;&#x5982;&#x4E0B;&#x6570;&#x636E;&#x683C;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-json">[
+    {
+        <span class="hljs-string">&quot;field&quot;</span>: <span class="hljs-string">&quot;xxx&quot;</span>,
+        <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;yyy&quot;</span>
+    },
+    <span class="hljs-string">&quot;...&quot;</span>
+]
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4E0A;&#x8FF0;&#x683C;&#x5F0F;&#x4E2D;&#xFF0C;<code>field</code>&#x8868;&#x793A;&#x4ECE;&#x540E;&#x7AEF;&#x8BFB;&#x53D6;&#x5230;&#x7684;&#x6570;&#x636E;&#x7684;&#x8BB0;&#x5F55;&#x5C5E;&#x6027;&#x540D;&#xFF0C;<code>title</code>&#x5219;&#x8868;&#x793A;&#x4ECE;&#x540E;&#x7AEF;&#x8BFB;&#x53D6;&#x5230;&#x7684;&#x6570;&#x636E;&#x5BF9;&#x5E94;&#x7684;<strong>&#x5448;&#x73B0;&#x6587;&#x5B57;</strong>&#xFF0C;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#x5448;&#x73B0;&#x6587;&#x5B57;&#x5E76;&#x4E0D;&#x4F1A;&#x5305;&#x542B;&#x5728;&#x60A8;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x8FD9;&#x90E8;&#x5206;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x653E;&#x5230;<code>zero-ui</code>&#x4E2D;&#x53BB;&#x8BB2;&#xFF0C;&#x800C;<code>columnKeyField</code>&#x548C;<code>columnKeyLabel</code>&#x5C31;&#x662F;&#x5BF9;<code>field</code>&#x548C;<code>title</code>&#x7684;&#x8282;&#x70B9;&#x540D;&#x79F0;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x5982;&#x6B64;&#xFF0C;&#x60A8;&#x7684;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5B58;&#x50A8;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x548C;&#x524D;&#x7AEF;&#x5448;&#x73B0;&#x7528;&#x7684;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x90E8;&#x5206;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x5C31;&#x76F4;&#x63A5;&#x89E3;&#x8026;&#xFF08;&#x4E0D;&#x7ED1;&#x5B9A;&#xFF09;&#xFF0C;&#x6240;&#x4EE5;&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x53EF;&#x4EE5;&#x8086;&#x65E0;&#x5FCC;&#x60EE;&#x3001;&#x800C;&#x540E;&#x7AEF;&#x5F00;&#x53D1;&#x5C31;&#x53EF;&#x4EE5;&#x968F;&#x5FC3;&#x6240;&#x6B32;&#x4E86;&#xFF0C;&#x6700;&#x7EC8;&#x94FE;&#x63A5;&#x65F6;&#x4F9D;&#x8D56;&#x8FD9;&#x4E2A;&#x914D;&#x7F6E;&#x5373;&#x53EF;&#x3002;</p>
+<h3 id="22-&#x6A21;&#x5757;---&#x8868;&#x7EA7;">2.2. &#x6A21;&#x5757; - &#x8868;&#x7EA7;</h3>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x6A21;&#x5757;&#x914D;&#x7F6E;&#x662F;<code>zero-crud</code>&#x90E8;&#x5206;&#x7684;&#x91CD;&#x70B9;&#xFF0C;&#x4E5F;&#x662F;&#x96BE;&#x70B9;&#x3002;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E3A;JSON&#x683C;&#x5F0F;&#xFF0C;&#x793A;&#x4F8B;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;resource&quot;</span>,
+    <span class="hljs-string">&quot;daoCls&quot;</span>: <span class="hljs-string">&quot;cn.vertxup.rbac.domain.tables.daos.SResourceDao&quot;</span>,
+    <span class="hljs-string">&quot;field&quot;</span>: {
+        <span class="hljs-string">&quot;unique&quot;</span>: [
+            [
+                <span class="hljs-string">&quot;code&quot;</span>,
+                <span class="hljs-string">&quot;sigma&quot;</span>
+            ]
+        ]
+    }
+}
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x8BE5;&#x6587;&#x4EF6;&#x7684;&#x8868;&#x7EA7;&#x914D;&#x7F6E;&#x53EA;&#x9700;&#x914D;&#x7F6E;&#x4E09;&#x4E2A;&#xFF1A;</p>
+<ol>
+<li>&#x6587;&#x4EF6;&#x540D;&#x51B3;&#x5B9A;&#x4E86;&#x6A21;&#x578B;&#x7684;<code>identifier</code>&#x5C5E;&#x6027;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;<code>res.customer.json</code>&#xFF0C;&#x90A3;&#x4E48;&#x5BF9;&#x5E94;&#x7684;&#x6A21;&#x578B;&#x7684;&#x5168;&#x5C40;&#x6807;&#x8BC6;&#x7B26;&#x5C31;&#x662F;<code>res.customer</code>&#xFF08;&#x8BE5;&#x6A21;&#x5F0F;&#x76F4;&#x63A5;&#x501F;&#x7528;&#x4E86;&#x7CFB;&#x7EDF;&#x4E2D;&#x6587;&#x4EF6;&#x540D;&#x4E0D;&#x53EF;&#x91CD;&#x590D;&#x7684;&#x539F;&#x7406;&#xFF09;&#x3002;</li>
+<li>&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x4E2D;&#x7684;<code>name</code>&#x5BF9;&#x5E94;&#x8DEF;&#x5F84;&#x4E2D;&#x7684;<code>:actor</code>&#x53C2;&#x6570;&#xFF0C;&#x5982;&#xFF1A;<code>team</code>&#xFF0C;&#x90A3;&#x4E48;&#x8BF7;&#x6C42;&#x5C31;&#x4F1A;&#x7C7B;&#x4F3C;&#xFF1A;<code>/api/team/:key</code>&#x8FD9;&#x79CD;&#x3002;</li>
+<li>&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x4E2D;&#x7684;<code>daoCls</code>&#x5BF9;&#x5E94;Jooq&#x751F;&#x6210;&#x7684;&#x6570;&#x636E;&#x5C42;&#x8BBF;&#x95EE;Dao&#x7EC4;&#x4EF6;&#xFF0C;&#x5728;&#x65E7;&#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x8868;&#x540D;&#x548C;&#x9886;&#x57DF;&#x6A21;&#x578B;&#x540D;&#x4E5F;&#x662F;&#x9700;&#x8981;&#x914D;&#x7F6E;&#x7684;&#x3002;</li>
+</ol>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x65E7;&#x7248;&#x672C;&#x914D;&#x7F6E;&#xFF08;<code>0.8.0</code>&#x4E4B;&#x524D;&#xFF09;&#xFF0C;&#x65B0;&#x7248;&#x81EA;&#x52A8;&#x5206;&#x6790;&#xFF1A;</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;resource&quot;</span>,
+    <span class="hljs-string">&quot;table&quot;</span>: <span class="hljs-string">&quot;S_RESOURCE&quot;</span>,
+    <span class="hljs-string">&quot;daoCls&quot;</span>: <span class="hljs-string">&quot;cn.vertxup.rbac.domain.tables.daos.SResourceDao&quot;</span>,
+    <span class="hljs-string">&quot;pojoCls&quot;</span>: <span class="hljs-string">&quot;cn.vertxup.rbac.domain.tables.pojos.SResource&quot;</span>,
+    <span class="hljs-string">&quot;field&quot;</span>: {
+        <span class="hljs-string">&quot;unique&quot;</span>: [
+            [
+                <span class="hljs-string">&quot;code&quot;</span>,
+                <span class="hljs-string">&quot;sigma&quot;</span>
+            ]
+        ]
+    }
+}
+</code></pre>
+<h3 id="23-&#x6A21;&#x5757;---&#x5C5E;&#x6027;&#x7EA7;">2.3. &#x6A21;&#x5757; - &#x5C5E;&#x6027;&#x7EA7;</h3>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x5C5E;&#x6027;&#x7EA7;&#x7684;&#x914D;&#x7F6E;&#x4E3B;&#x8981;&#x4F4D;&#x4E8E;<code>field</code>&#x8282;&#x70B9;&#x4E2D;&#xFF0C;&#x7528;&#x4E8E;&#x63CF;&#x8FF0;&#x5C5E;&#x6027;&#x7684;&#x76F8;&#x5173;&#x5C5E;&#x6027;&#xFF1A;</p>
+<ol>
+<li>&#x662F;&#x5426;&#x542F;&#x7528;&#x5E8F;&#x53F7;&#x5B57;&#x6BB5;&#xFF0C;&#x542F;&#x7528;&#x540E;&#x4F1A;&#x76F4;&#x63A5;&#x5173;&#x8054;<code>zero-ambient</code>&#x4E2D;&#x7684;&#x5E8F;&#x53F7;&#x751F;&#x6210;&#x7CFB;&#x7EDF;&#xFF0C;&#x4E3A;&#x4E0D;&#x540C;&#x5B57;&#x6BB5;&#x8BBE;&#x7F6E;&#x5E8F;&#x53F7;&#x3002;</li>
+<li><strong>&#x4E1A;&#x52A1;&#x6807;&#x8BC6;&#x89C4;&#x5219;</strong>&#xFF1A;&#x7528;&#x4E8E;&#x6807;&#x8BC6;&#x5F53;&#x524D;&#x8BB0;&#x5F55;&#x662F;&#x552F;&#x4E00;&#x8BB0;&#x5F55;&#x7684;&#x5B57;&#x6BB5;&#x3001;&#x5B57;&#x6BB5;&#x96C6;&#x3001;&#x6807;&#x8BC6;&#x96C6;&#x3002;</li>
+<li>Auditor&#x76F8;&#x5173;&#x5B57;&#x6BB5;&#xFF1A;&#x521B;&#x5EFA;&#x4EBA;&#x3001;&#x521B;&#x5EFA;&#x65F6;&#x95F4;&#x3001;&#x66F4;&#x65B0;&#x4EBA;&#x3001;&#x66F4;&#x65B0;&#x65F6;&#x95F4;&#x3002;</li>
+<li>&#x590D;&#x6742;&#x5B57;&#x6BB5;&#xFF1A;JsonArray&#x548C;JsonObject&#x7C7B;&#x578B;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x4F1A;&#x6839;&#x636E;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5B58;&#x50A8;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6267;&#x884C;&#x81EA;&#x52A8;&#x5E8F;&#x5217;&#x5316;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x3002;</li>
+</ol>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;<code>field</code>&#x7247;&#x6BB5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;field&quot;</span>: {
+        <span class="hljs-string">&quot;key&quot;</span>: <span class="hljs-string">&quot;key&quot;</span>,
+        <span class="hljs-string">&quot;numbers&quot;</span>: {
+            <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-string">&quot;NUM.CUSTOMER&quot;</span>
+        },
+        <span class="hljs-string">&quot;unique&quot;</span>: [
+            [
+                <span class="hljs-string">&quot;code&quot;</span>,
+                <span class="hljs-string">&quot;sigma&quot;</span>
+            ]
+        ],
+        <span class="hljs-string">&quot;created&quot;</span>: {
+            <span class="hljs-string">&quot;by&quot;</span>: <span class="hljs-string">&quot;createdBy&quot;</span>,
+            <span class="hljs-string">&quot;at&quot;</span>: <span class="hljs-string">&quot;createdAt&quot;</span>
+        },
+        <span class="hljs-string">&quot;updated&quot;</span>: {
+            <span class="hljs-string">&quot;by&quot;</span>: <span class="hljs-string">&quot;updatedBy&quot;</span>,
+            <span class="hljs-string">&quot;at&quot;</span>: <span class="hljs-string">&quot;updatedAt&quot;</span>
+        },
+        <span class="hljs-string">&quot;object&quot;</span>: [
+            <span class="hljs-string">&quot;metadata&quot;</span>
+        ],
+        <span class="hljs-string">&quot;array&quot;</span>: [
+            <span class="hljs-string">&quot;roomAttrs&quot;</span>
+        ]
+    }
+}
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x51E0;&#x4E2A;&#x6CE8;&#x610F;&#x70B9;&#xFF1A;</p>
+<ol>
+<li><code>key</code>&#x8868;&#x793A;&#x4E3B;&#x952E;&#xFF0C;&#x4E3B;&#x952E;&#x4E0D;&#x652F;&#x6301;&#x7B26;&#x5408;&#x4E3B;&#x952E;&#x5B9A;&#x4E49;&#xFF0C;&#x5927;&#x90E8;&#x5206;&#x65F6;&#x5019;&#x53EA;&#x6709;&#x5355;&#x5B57;&#x6BB5;&#x4E3B;&#x952E;&#x3002;</li>
+<li><code>unique</code>&#x662F;&#x4E00;&#x4E2A;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x4E3A;&#x4E1A;&#x52A1;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x89C4;&#x5219;&#xFF0C;&#x4E5F;&#x53EF;&#x8BBE;&#x7F6E;&#x591A;&#x7EC4;&#x89C4;&#x5219;&#x3002;</li>
+<li><code>created</code>&#x548C;<code>updated</code>&#x5206;&#x522B;&#x5BF9;&#x5E94;&#x521B;&#x5EFA;&#x548C;&#x7F16;&#x8F91;&#x4FE1;&#x606F;&#x3002;</li>
+<li>&#x9664;&#x975E;&#x8981;&#x5BF9;&#x63A5;<code>X_NUMBER</code>&#x4E2D;&#x7684;&#x5E8F;&#x53F7;&#x751F;&#x6210;&#x7CFB;&#x7EDF;&#xFF0C;&#x5426;&#x5219;&#x4E0D;&#x7528;&#x914D;&#x7F6E;<code>numbers</code>&#xFF0C;&#x5E76;&#x4E14;&#x5E8F;&#x53F7;&#x662F;&#x4E00;&#x4E2A;Json&#x683C;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x652F;&#x6301;&#x591A;&#x4E2A;&#x5C5E;&#x6027;&#x90FD;&#x4F7F;&#x7528;&#x5E8F;&#x53F7;&#xFF08;&#x5B9E;&#x9645;&#x64CD;&#x4F5C;&#x4E2D;&#x6211;&#x4EEC;&#x5728;&#x8BA2;&#x5355;&#x91CC;&#x4F7F;&#x7528;&#x4E86;&#x8BA2;&#x5355;&#x5E8F;&#x53F7;&#x548C;&#x51ED;&#x8BC1;&#x5E8F;&#x53F7;&#xFF09;&#x3002;</li>
+</ol>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4E3A;&#x4E86;&#x7B80;&#x5316;&#x8BE5;&#x90E8;&#x5206;&#x914D;&#x7F6E;&#xFF0C;&#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;&#x4E86;&#x90E8;&#x5206;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x6240;&#x4EE5;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x5982;&#x4E0B;&#x8868;&#xFF1A;</p>
+<blockquote>
+<p>&#x6309;&#x9700;&#x914D;&#x7F6E;&#x5C3D;&#x53EF;&#x80FD;&#x5728;<code>0.6.2</code>&#x7248;&#x672C;&#x4E4B;&#x524D;&#x5E26;*&#x53F7;&#x7684;&#x662F;&#x5FC5;&#x987B;&#x914D;&#x7684;&#x3002;</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>&#x8282;&#x70B9;</th>
+<th>&#x5FC5;&#x987B;&#xFF1F;</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>numbers</td>
+<td>x</td>
+<td style="text-align:left">&#x6709;&#x9700;&#x6C42;&#x5C31;&#x914D;&#x7F6E;</td>
+</tr>
+<tr>
+<td>unique</td>
+<td>x *</td>
+<td style="text-align:left">&#x6709;&#x9700;&#x6C42;&#x5C31;&#x914D;&#x7F6E;&#xFF0C;&#x4E00;&#x822C;&#x5C5E;&#x4E8E;&#x9AD8;&#x9891;&#x9700;&#x6C42;</td>
+</tr>
+<tr>
+<td>created</td>
+<td>x *</td>
+<td style="text-align:left">&#x9ED8;&#x8BA4;&#x5C31;&#x662F;<code>createdAt, createdBy</code>&#xFF0C;&#x65E7;&#x7CFB;&#x7EDF;&#x5FC5;&#x987B;</td>
+</tr>
+<tr>
+<td>updated</td>
+<td>x *</td>
+<td style="text-align:left">&#x9ED8;&#x8BA4;&#x5C31;&#x662F;<code>updatedAt, updatedBy</code>&#xFF0C;&#x65E7;&#x7CFB;&#x7EDF;&#x5FC5;&#x987B;</td>
+</tr>
+<tr>
+<td>key</td>
+<td>x *</td>
+<td style="text-align:left">&#x9ED8;&#x8BA4;&#x5C31;&#x662F;<code>key</code>&#xFF0C;&#x65E7;&#x7CFB;&#x7EDF;&#x5FC5;&#x987B;</td>
+</tr>
+<tr>
+<td>object</td>
+<td>x</td>
+<td style="text-align:left">&#x6709;&#x9700;&#x6C42;&#x5C31;&#x914D;&#x7F6E;</td>
+</tr>
+<tr>
+<td>object</td>
+<td>x</td>
+<td style="text-align:left">&#x6709;&#x9700;&#x6C42;&#x5C31;&#x914D;&#x7F6E;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="24-&#x6A21;&#x5757;---http&#x81EA;&#x5B9A;&#x4E49;&#x5934;">2.4. &#x6A21;&#x5757; - HTTP&#x81EA;&#x5B9A;&#x4E49;&#x5934;</h3>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x81EA;&#x5B9A;&#x4E49;&#x5934;&#x914D;&#x7F6E;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#xFF1A;</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;headers&quot;</span>: {
+        <span class="hljs-string">&quot;sigma&quot;</span>: <span class="hljs-string">&quot;X-Sigma&quot;</span>,
+        <span class="hljs-string">&quot;...&quot;</span>: <span class="hljs-string">&quot;...&quot;</span>
+    }
+}
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;Zero Extension&#x6846;&#x67B6;&#x4E2D;&#x9ED8;&#x8BA4;&#x63D0;&#x4F9B;&#x4E86;sigma&#x5C5E;&#x6027;&#xFF0C;&#x518D;&#x52A0;&#x4E0A;&#x65B0;&#x7248;&#x4E2D;&#x5DF2;&#x7ECF;&#x6709;&#x4E86;Tenant&#x6A21;&#x5757;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x90E8;&#x5206;&#x914D;&#x7F6E;&#x53EA;&#x662F;&#x5728;0.6.2&#x4E4B;&#x524D;&#x4F7F;&#x7528;&#xFF0C;&#x9ED8;&#x8BA4;&#x51E0;&#x4E2A;&#x5934;&#x5982;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5C5E;&#x6027;&#x540D;</th>
+<th style="text-align:left">&#x81EA;&#x5B9A;&#x4E49;&#x5934;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">appId</td>
+<td style="text-align:left"><code>X-App-Id</code></td>
+</tr>
+<tr>
+<td style="text-align:left">appKey</td>
+<td style="text-align:left"><code>X-App-Key</code></td>
+</tr>
+<tr>
+<td style="text-align:left">tenant</td>
+<td style="text-align:left"><code>X-Tenant</code></td>
+</tr>
+<tr>
+<td style="text-align:left">sigma</td>
+<td style="text-align:left"><code>X-Sigma</code></td>
+</tr>
+<tr>
+<td style="text-align:left">language</td>
+<td style="text-align:left"><code>X-Lang</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>&#x4E4B;&#x540E;&#x771F;&#x6B63;&#x5F00;&#x53D1;&#x591A;&#x8BED;&#x8A00;&#x73AF;&#x5883;&#x65F6;&#x53EF;&#x80FD;&#x4F1A;&#x79FB;&#x9664;<code>X-Lang</code>&#xFF0C;&#x7528;&#x6807;&#x51C6;&#x7684;HTTP&#x4E2D;&#x7684;&#x5934;&#x66FF;&#x4EE3;&#x3002;</p>
+</blockquote>
+<h3 id="25-&#x6A21;&#x5757;---&#x5217;&#x8FDE;&#x63A5;">2.5. &#x6A21;&#x5757; - &#x5217;&#x8FDE;&#x63A5;</h3>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x5217;&#x8FDE;&#x63A5;&#x914D;&#x7F6E;&#x548C;&#x300A;2.1.2.&#x4E1A;&#x52A1;&#x5C5E;&#x6027;&#x300B;&#x4E2D;&#x7684;&#x914D;&#x7F6E;&#x76F8;&#x5173;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x60A8;&#x7684;&#x524D;&#x7AEF;&#x5E94;&#x7528;&#x4E0D;&#x662F;&#x4ECE;<code>zero-ui</code>&#x4E2D;&#x8BFB;&#x53D6;&#x5217;&#x4FE1;&#x606F;&#xFF0C;&#x5219;&#x8BE5;&#x914D;&#x7F6E;&#x53EF;&#x4EE5;&#x5FFD;&#x7565;&#x4E0D;&#x8BA1;&#x3002;</li>
+<li><code>0.8.0</code>&#x4E4B;&#x540E;&#x4F7F;&#x7528;&#x4E86;<strong>&#x7EA6;&#x5B9A;&#x547D;&#x540D;</strong>&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#x8BE5;&#x914D;&#x7F6E;&#x3002;</li>
+</ul>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x8BE5;&#x914D;&#x7F6E;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-json">    <span class="hljs-string">&quot;column&quot;</span>: {
+        <span class="hljs-string">&quot;identifier&quot;</span>: <span class="hljs-string">&quot;sec.resource&quot;</span>
+    }
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x6B64;&#x5904;<code>identifier</code>&#x5BF9;&#x5E94;&#x5230;<code>plugin/ui/configuration.json</code>&#x4E2D;&#x7684;&#x5217;&#x914D;&#x7F6E;&#x7684;JSON&#x952E;&#x3002;</p>
+<h3 id="26-&#x6A21;&#x5757;---&#x5C5E;&#x6027;&#x8F6C;&#x6362;">2.6. &#x6A21;&#x5757; - &#x5C5E;&#x6027;&#x8F6C;&#x6362;</h3>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x5C5E;&#x6027;&#x8F6C;&#x6362;&#x7684;&#x914D;&#x7F6E;&#x4E3B;&#x8981;&#x662F;&#x670D;&#x52A1;&#x4E8E;<strong>&#x5BFC;&#x5165;&#x3001;&#x5BFC;&#x51FA;&#x3001;&#x96C6;&#x6210;</strong>&#xFF0C;&#x4E1A;&#x52A1;&#x590D;&#x6742;&#x5EA6;&#x8D8A;&#x9AD8;&#x7684;&#x573A;&#x666F;&#x4E0B;&#xFF0C;&#x901A;&#x5E38;&#x4F1A;&#x91C7;&#x7528;&#x591A;&#x5F20;&#x8868;&#x505A;&#x5173;&#x8054;&#xFF0C;&#x5982;&#x4E0B;&#x8868;&#xFF08;&#x8BA2;&#x5355;&#x8868;&#xFF09;&#x90E8;&#x5206;&#x793A;&#x4F8B;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th>&#x5173;&#x8054;&#x8868;</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>&#x8BA2;&#x5355;&#x7C7B;&#x578B;&#x8868;</td>
+<td style="text-align:left">&#x8BA2;&#x5355;&#x7C7B;&#x578B;&#xFF0C;type&#x5173;&#x8054;&#x5230;&#x8BA2;&#x5355;&#x7C7B;&#x578B;ID&#x3002;</td>
+</tr>
+<tr>
+<td>sourceId</td>
+<td>&#x5E02;&#x573A;&#x6765;&#x6E90;</td>
+<td style="text-align:left">&#x8BA2;&#x5355;&#x6240;&#x5C5E;&#x5E02;&#x573A;&#x6765;&#x6E90;&#x3002;</td>
+</tr>
+<tr>
+<td>productId</td>
+<td>&#x4EA7;&#x54C1;&#x8868;</td>
+<td style="text-align:left">&#x8BA2;&#x5355;&#x5173;&#x8054;&#x4EA7;&#x54C1;&#x3002;</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td style="text-align:left">...</td>
+</tr>
+</tbody>
+</table>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x60A8;&#x53EF;&#x4EE5;&#x8BA9;&#x8BBE;&#x8BA1;&#x53D8;&#x5F97;&#x8F7B;&#x91CF;&#x7EA7;&#xFF0C;&#x751A;&#x81F3;&#x6D88;&#x9664;&#x8FD9;&#x4E9B;&#x5173;&#x8054;&#xFF0C;&#x4F46;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x4E1A;&#x52A1;&#x7CFB;&#x7EDF;&#x65E0;&#x6CD5;&#x5F7B;&#x5E95;&#x6D88;&#x9664;&#x5173;&#x8054;&#xFF0C;&#x5728;&#x8FD9;&#x6837;&#x7684;&#x573A;&#x666F;&#x4E0B;&#xFF0C;&#x60A8;&#x5C31;&#x9700;&#x8981;&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C;&#x6570;&#x636E;&#x5206;&#x6790;&#x4E2D;&#x7684;<strong>&#x5BBD;&#x8868;</strong>&#x7ED3;&#x6784;&#xFF0C;&#x8FD9;&#x79CD;&#x7ED3;&#x6784;&#x4E2D;&#x4F60;&#x65E0;&#x6CD5;&#x907F;&#x514D;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#x6765;&#x81EA;&#x4E8E;&#x4E00;&#x5F20;&#x8868;&#xFF0C;&#x5728;&#x524D;&#x7AEF;&#x4E1A;&#x52A1;&#x5217;&#x8868;&#x4E2D;&#xFF0C;<strong>&#x5BFC;&#x5165;&#x3001;&#x5BFC;&#x51FA;&#x3001;&#x96C6;&#x6210;</strong>&#x5C31;&#x9700;&#x8981;&#x6267;&#x884C;&#x8F6C;&#x6362;&#x3002;</p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x8F6C;&#x6362;&#x7684;&#x5B8C;&#x6574;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;transform&quot;</span>: {
+        <span class="hljs-string">&quot;initial&quot;</span>: {
+            <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;`${module}`&quot;</span>,
+            <span class="hljs-string">&quot;identifier&quot;</span>: <span class="hljs-string">&quot;`${module}`&quot;</span>
+        },
+        <span class="hljs-string">&quot;tree&quot;</span>: {
+            <span class="hljs-string">&quot;in&quot;</span>: <span class="hljs-string">&quot;code&quot;</span>
+        },
+        <span class="hljs-string">&quot;mapping&quot;</span>: {
+            <span class="hljs-string">&quot;owner&quot;</span>: {
+                <span class="hljs-string">&quot;IN&quot;</span>: <span class="hljs-string">&quot;&#x8D37;&#x65B9;&quot;</span>,
+                <span class="hljs-string">&quot;OUT&quot;</span>: <span class="hljs-string">&quot;&#x501F;&#x65B9;&quot;</span>
+            }
+        },
+        <span class="hljs-string">&quot;fabric&quot;</span>: {
+            <span class="hljs-string">&quot;source&quot;</span>: [
+                {
+                    <span class="hljs-string">&quot;source&quot;</span>: <span class="hljs-string">&quot;TABULAR&quot;</span>,
+                    <span class="hljs-string">&quot;types&quot;</span>: [
+                        <span class="hljs-string">&quot;pay.term.type&quot;</span>
+                    ]
+                }
+            ],
+            <span class="hljs-string">&quot;epsilon&quot;</span>: {
+                <span class="hljs-string">&quot;termType&quot;</span>: {
+                    <span class="hljs-string">&quot;source&quot;</span>: <span class="hljs-string">&quot;pay.term.type&quot;</span>,
+                    <span class="hljs-string">&quot;in&quot;</span>: <span class="hljs-string">&quot;name&quot;</span>,
+                    <span class="hljs-string">&quot;out&quot;</span>: <span class="hljs-string">&quot;key&quot;</span>
+                }
+            }
+        }
+    }
+}
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;<code>zero-crud</code>&#x4E2D;&#x652F;&#x6301;&#x7684;&#x8F6C;&#x6362;&#x65B9;&#x5F0F;&#x4E3B;&#x8981;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#xFF1A;</p>
+<h4 id="261-&#x521D;&#x59CB;&#x503C;&#x8BA1;&#x7B97;">2.6.1. &#x521D;&#x59CB;&#x503C;&#x8BA1;&#x7B97;</h4>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x521D;&#x59CB;&#x503C;&#x8BA1;&#x7B97;&#x89C4;&#x5219;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x4E00;&#x4E9B;&#x7CFB;&#x7EDF;&#x540E;&#x53F0;&#x503C;&#x5728;&#x5BFC;&#x5165;&#x6570;&#x636E;&#x65F6;&#x7684;&#x89C4;&#x5219;&#x586B;&#x5145;&#xFF0C;&#x6BD4;&#x5982;&#x6709;10&#x4E2A;&#x5C5E;&#x6027;&#x7684;&#x8868;&#xFF0C;&#x771F;&#x6B63;&#x5728;&#x505A;Excel&#x6570;&#x636E;&#x5BFC;&#x5165;&#x65F6;&#x53EF;&#x80FD;&#x53EA;&#x63D0;&#x4F9B;&#x4E86;6&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x800C;&#x5269;&#x4F59;&#x7684;4&#x4E2A;&#x5C5E;&#x6027;&#x5728;&#x7CFB;&#x7EDF;&#x4E2D;&#x53C8;&#x662F;&#x5FC5;&#x987B;&#x7684;&#xFF0C;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5C31;&#x53EA;&#x80FD;&#x4F7F;&#x7528;&#x521D;&#x59CB;&#x503C;&#x6765;&#x586B;&#x5145;&#xFF0C;&#x8FD9;&#x4E9B;&#x521D;&#x59CB;&#x503C;&#x4E0D;&#x80FD;<strong>&#x786C;&#x7F16;&#x7801;</strong>&#x5230;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;Zero Extension&#x4E2D;&#x63D0;&#x4F9B;&#x4E86;&#x90E8;&#x5206;&#x7EC4;&#x4EF6;&#x53EF;&#x4EE5;&#x8BA9;&#x521D;&#x59CB;&#x503C;&#x7ECF;&#x8FC7;&#x8BA1;&#x7B97;&#x6765;&#x5B8C;&#x6210;&#x5BFC;&#x5165;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x586B;&#x5145;&#x8FC7;&#x7A0B;&#x3002;</p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x5BFC;&#x5165;&#x9ED8;&#x8BA4;&#x503C;&#x4E3B;&#x8981;&#x5206;&#x4E24;&#x79CD;&#xFF1A;</p>
+<ul>
+<li>Tenant&#x79DF;&#x6237;&#x4FE1;&#x606F;&#xFF1A;<code>zero-ifx-excel</code>&#x53EF;&#x5B8C;&#x6210;</li>
+<li>&#x7279;&#x6B8A;&#x7CFB;&#x7EDF;&#x503C;</li>
+</ul>
+<p><em>1. Tenant&#x79DF;&#x6237;&#x5168;&#x5C40;&#x4FE1;&#x606F;</em></p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x65B0;&#x7248;&#x7684;<code>zero-ifx-excel</code>&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x914D;&#x7F6E;&#x8282;&#x70B9;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">excel:</span>
+<span class="hljs-attr">    tenant:</span> <span class="hljs-string">&quot;init/environment.json&quot;</span>
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x8BE5;&#x8282;&#x70B9;&#x6307;&#x5B9A;&#x7684;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x5982;&#xFF08;&#x53EA;&#x622A;&#x53D6;&#x521D;&#x59CB;&#x503C;&#x76F8;&#x5173;&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;global&quot;</span>: {
+        <span class="hljs-string">&quot;sigma&quot;</span>: <span class="hljs-string">&quot;xxx&quot;</span>,
+        <span class="hljs-string">&quot;appId&quot;</span>: <span class="hljs-string">&quot;xxx&quot;</span>,
+        <span class="hljs-string">&quot;appKey&quot;</span>: <span class="hljs-string">&quot;xxx&quot;</span>,
+        <span class="hljs-string">&quot;language&quot;</span>: <span class="hljs-string">&quot;cn&quot;</span>,
+        <span class="hljs-string">&quot;active&quot;</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-string">&quot;createdBy&quot;</span>: <span class="hljs-string">&quot;zero-environment&quot;</span>,
+        <span class="hljs-string">&quot;hotelId&quot;</span>: <span class="hljs-string">&quot;xxx&quot;</span>
+    },
+}
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x6B64;&#x5904;<code>global</code>&#x8282;&#x70B9;&#x7684;&#x5C5E;&#x6027;&#x4FE1;&#x606F;&#x4F1A;&#x5168;&#x90E8;&#x8FFD;&#x52A0;&#x5230;&#x6240;&#x6709;<strong>&#x5BFC;&#x5165;</strong>&#x6570;&#x636E;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x8BE5;&#x9886;&#x57DF;&#x6A21;&#x578B;&#x5B58;&#x5728;&#x6B64;&#x5C5E;&#x6027;&#xFF0C;&#x5219;&#x8D4B;&#x503C;&#xFF0C;&#x4E0D;&#x5B58;&#x5728;&#x6B64;&#x5C5E;&#x6027;&#xFF0C;&#x5219;&#x5FFD;&#x7565;&#xFF0C;&#x5047;&#x8BBE;&#x6709;&#x4E0B;&#x8868;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;&#x540D;</th>
+<th>&#x9886;&#x57DF;&#x6A21;&#x578B;</th>
+<th>Excel&#x5BFC;&#x5165;&#x6587;&#x4EF6;</th>
+<th>global&#x8865;&#x5145;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>o</td>
+<td>o</td>
+<td></td>
+</tr>
+<tr>
+<td>code</td>
+<td>o</td>
+<td>o</td>
+<td></td>
+</tr>
+<tr>
+<td>sigma</td>
+<td>o</td>
+<td></td>
+<td>o</td>
+</tr>
+<tr>
+<td>language</td>
+<td>o</td>
+<td></td>
+<td>o</td>
+</tr>
+<tr>
+<td>active</td>
+<td>o</td>
+<td></td>
+<td>o</td>
+</tr>
+</tbody>
+</table>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;<code>sigma, language, active</code>&#x4E09;&#x4E2A;&#x5C5E;&#x6027;&#x7684;&#x503C;&#x6765;&#x81EA;&#x4E8E;Tenant&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x5168;&#x5C40;&#x5C5E;&#x6027;&#x503C;&#x3002;</p>
+<p><em>2. &#x521D;&#x59CB;&#x503C;&#x8BA1;&#x7B97;</em></p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x8865;&#x5145;&#x6570;&#x636E;&#x7684;&#x65B9;&#x5F0F;&#x5C31;&#x662F;&#x521D;&#x59CB;&#x503C;&#x8BA1;&#x7B97;&#xFF0C;&#x5373;&#x4E0A;&#x8FB9;&#x914D;&#x7F6E;&#x6BB5;&#xFF1A;</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;transform&quot;</span>: {
+        <span class="hljs-string">&quot;initial&quot;</span>: {
+            <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;`${module}`&quot;</span>,
+            <span class="hljs-string">&quot;identifier&quot;</span>: <span class="hljs-string">&quot;`${module}`&quot;</span>
+        }
+    }
+}
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x6B64;&#x5904;<code>initial</code>&#x7684;&#x5DE6;&#x503C;&#x8868;&#x793A;&#x9886;&#x57DF;&#x6A21;&#x578B;&#x4E2D;&#x62E5;&#x6709;&#x7684;&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x53F3;&#x503C;&#x5219;&#x662F;&#x4F7F;&#x7528;<code>common-jexl3</code>&#x7684;&#x89E3;&#x6790;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x8BED;&#x6CD5;&#x53C2;&#x8003;<code>JEXL3</code>&#x7684;&#x6587;&#x6863;&#xFF0C;&#x76EE;&#x524D;&#x6240;&#x6709;&#x7684;&#x5165;&#x53C2;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;module&quot;</span>: <span class="hljs-string">&quot;xxx&quot;</span>,
+    <span class="hljs-string">&quot;sigma&quot;</span>: <span class="hljs-string">&quot;xxx&quot;</span>,
+    <span class="hljs-string">&quot;appId&quot;</span>: <span class="hljs-string">&quot;xxx&quot;</span>,
+    <span class="hljs-string">&quot;appKey&quot;</span>: <span class="hljs-string">&quot;xxx&quot;</span>,
+    <span class="hljs-string">&quot;language&quot;</span>: <span class="hljs-string">&quot;xxx&quot;</span>
+}
+</code></pre>
+<blockquote>
+<p>&#x8FD9;&#x662F;&#x76EE;&#x524D;&#x652F;&#x6301;&#x7684;&#x5165;&#x53C2;&#x683C;&#x5F0F;&#xFF0C;&#x540E;&#x7EED;&#x6709;&#x9700;&#x6C42;&#x53EF;&#x6269;&#x5C55;&#x3002;</p>
+</blockquote>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x5176;&#x4ED6;&#x56DB;&#x4E2A;&#x53C2;&#x6570;&#x6B64;&#x5904;&#x4E0D;&#x89E3;&#x91CA;&#xFF0C;<code>module</code>&#x662F;&#x5728;<strong>&#x53CC;&#x8868;&#x8FDE;&#x63A5;</strong>&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x5173;&#x952E;&#x53C2;&#x6570;&#xFF0C;&#x6807;&#x51C6;&#x5316;&#x63A5;&#x53E3;&#x4E2D;&#x652F;&#x6301;<code>view</code>&#x548C;<code>module</code>&#x7684;&#x5B8C;&#x6574;&#x652F;&#x6301;&#x5982;&#x4E0B;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th style="text-align:left">&#x5B9E;&#x9645;&#x8DEF;&#x5F84;</th>
+<th>module</th>
+<th>view</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>POST</td>
+<td style="text-align:left">/api/:actor</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>GET</td>
+<td style="text-align:left">/api/:actor/:key</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>PUT</td>
+<td style="text-align:left">/api/:actor/:key</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td style="text-align:left">/api/:actor/:key</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>POST</td>
+<td style="text-align:left">/api/:actor/search</td>
+<td>o</td>
+<td>o</td>
+</tr>
+<tr>
+<td>PUT</td>
+<td style="text-align:left">/api/batch/:actor/update</td>
+<td>o</td>
+<td></td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td style="text-align:left">/api/batch/:actor/delete</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>GET</td>
+<td style="text-align:left">/api/columns/:actor/full</td>
+<td>o</td>
+<td>o</td>
+</tr>
+<tr>
+<td>GET</td>
+<td style="text-align:left">/api/columns/:actor/my</td>
+<td>o</td>
+<td>o</td>
+</tr>
+<tr>
+<td>PUT</td>
+<td style="text-align:left">/api/columns/:actor/my</td>
+<td>o</td>
+<td>o</td>
+</tr>
+<tr>
+<td>POST</td>
+<td style="text-align:left">/api/:actor/import</td>
+<td>o</td>
+<td></td>
+</tr>
+<tr>
+<td>POST</td>
+<td style="text-align:left">/api/:actor/export</td>
+<td>o</td>
+<td>o</td>
+</tr>
+<tr>
+<td>POST</td>
+<td style="text-align:left">/api/:actor/existing</td>
+<td>o</td>
+<td></td>
+</tr>
+<tr>
+<td>POST</td>
+<td style="text-align:left">/api/:actor/missing</td>
+<td>o</td>
+<td></td>
+</tr>
+<tr>
+<td>GET</td>
+<td style="text-align:left">/api/:actor/by/sigma</td>
+<td>o</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>&#x5173;&#x4E8E;<code>view</code>&#x53C2;&#x6570;&#x7684;&#x4F7F;&#x7528;&#x6211;&#x4EEC;&#x5728;<code>zero-rbac</code>&#x4E2D;&#x4F1A;&#x8BE6;&#x7EC6;&#x8BB2;&#x89E3;&#x3002;</p>
+</blockquote>
+<h4 id="262-&#x6811;&#x8BA1;&#x7B97;">2.6.2. &#x6811;&#x8BA1;&#x7B97;</h4>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../zero-extensiongi/002.ambient.md" class="navigation navigation-prev " aria-label="Previous page: 2.2.漆冰裂：Ambient（zero-ambient）">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../zero/000.index.html" class="navigation navigation-next " aria-label="Next page: 3.䆐之疆（Σύνορα της χώρας）">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.3.木叶鸢：CRUD（zero-crud）","level":"1.3.3","depth":2,"next":{"title":"3.䆐之疆（Σύνορα της χώρας）","level":"1.4","depth":1,"path":"document/zero/000.index.md","ref":"document/zero/000.index.md","articles":[{"title":"3.1.信封模型：Envelop","level":"1.4.1","depth":2,"anchor":"#er-tong-yi-mo-xing","url":"https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/006.async#er-tong-yi-mo-xing","ref":"https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/006.async#er-tong-yi-mo-xing","articles":[]},{"title":"3.2.任务模型：Mission","level":"1.4.2","depth":2,"anchor":"#1-6-mission","url":"https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/017.job#1-6-mission","ref":"https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/017.job#1-6-mission","articles":[]},{"title":"3.3.集成模型：Integration","level":"1.4.3","depth":2,"anchor":"#2-1-integration","url":"https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/018.integration#2-1-integration","ref":"https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/018.integration#2-1-integration","articles":[]},{"title":"3.4.异常查询表","level":"1.4.4","depth":2,"anchor":"#er-yi-chang-cha-xun-biao","url":"https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/007.error#er-yi-chang-cha-xun-biao","ref":"https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/007.error#er-yi-chang-cha-xun-biao","articles":[]},{"title":"3.5.异步模式：5 Style","level":"1.4.5","depth":2,"anchor":"#1-2-zero-mo-shi","url":"https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/006.async#1-2-zero-mo-shi","ref":"https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/006.async#1-2-zero-mo-shi","articles":[]},{"title":"3.6.参数签名：Agent组件","level":"1.4.6","depth":2,"anchor":"#3-4-shang-xia-wen","url":"https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/004.param#3-4-shang-xia-wen","ref":"https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/004.param#3-4-shang-xia-wen","articles":[]},{"title":"3.7.参数签名：Worker组件","level":"1.4.7","depth":2,"anchor":"#3-2-kuo-zhan-can-shu","url":"https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/008.worker#3-2-kuo-zhan-can-shu","ref":"https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/008.worker#3-2-kuo-zhan-can-shu","articles":[]},{"title":"3.8.参数签名：Job组件","level":"1.4.8","depth":2,"anchor":"#2-2-on-off","url":"https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/017.job#2-2-on-off","ref":"https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/017.job#2-2-on-off","articles":[]},{"title":"3.9.查询引擎语法","level":"1.4.9","depth":2,"anchor":"#san-cha-xun-yin-qing","url":"https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/010.jooq#san-cha-xun-yin-qing","ref":"https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/010.jooq#san-cha-xun-yin-qing","articles":[]},{"title":"3.10.Ex: ServiceLoader通道","level":"1.4.10","depth":2,"anchor":"#2-2-tong-dao-ding-yi","url":"https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index-1/001.extension#2-2-tong-dao-ding-yi","ref":"https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index-1/001.extension#2-2-tong-dao-ding-yi","articles":[]}]},"previous":{"title":"2.2.漆冰裂：Ambient（zero-ambient）","level":"1.3.2","depth":2,"path":"document/zero-extensiongi/002.ambient.md","ref":"document/zero-extensiongi/002.ambient.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chapter-fold","expandable-chapters-small","expandable-chapters","code","copy-code-button","github","splitter"],"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/silentbalanceyh/vertx-zero-example"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"size":1},"highlight":{},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"document/zero-extension/003.crud.md","mtime":"2021-10-16T02:43:53.368Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-10-16T02:52:57.212Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

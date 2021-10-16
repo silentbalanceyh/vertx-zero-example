@@ -1,0 +1,5 @@
+databaseChangeLog:
+  # 系统表
+  - include:
+      file: plugin/sql/ambient.yml
+      relativeToChangelogFile: false

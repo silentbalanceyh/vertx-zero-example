@@ -1,0 +1,8 @@
+zero:
+    lime: extension
+    vertx:
+        instance:
+            -   name: extension-up
+                options:
+                    maxEventLoopExecuteTime: 300_000_000_000
+                    maxWorkerExecuteTime: 1200_000_000_000

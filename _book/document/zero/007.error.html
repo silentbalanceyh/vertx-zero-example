@@ -1,0 +1,2426 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.7.珠玉在侧：容错 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="008.worker.html" />
+    
+    
+    <link rel="prev" href="006.async.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="000.index.html">
+            
+                <a href="000.index.html">
+            
+                    
+                    1.零之遥（Απόλλων）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="001.first.html">
+            
+                <a href="001.first.html">
+            
+                    
+                    1.1.启航：Zero
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="002.uri.html">
+            
+                <a href="002.uri.html">
+            
+                    
+                    1.2.曲径通幽：@Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="003.method.html">
+            
+                <a href="003.method.html">
+            
+                    
+                    1.3.四叶葎：Http方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="004.param.html">
+            
+                <a href="004.param.html">
+            
+                    
+                    1.4.思无邪：入参
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="005.validation.html">
+            
+                <a href="005.validation.html">
+            
+                    
+                    1.5.孤城暗雪：验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="006.async.html">
+            
+                <a href="006.async.html">
+            
+                    
+                    1.6.潘多拉魔盒：异步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.7" data-path="007.error.html">
+            
+                <a href="007.error.html">
+            
+                    
+                    1.7.珠玉在侧：容错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="008.worker.html">
+            
+                <a href="008.worker.html">
+            
+                    
+                    1.8.铁马冰河：细谈Worker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="009.security.html">
+            
+                <a href="009.security.html">
+            
+                    
+                    1.9.虚之墙：安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="010.jooq.html">
+            
+                <a href="010.jooq.html">
+            
+                    
+                    1.10.珷玞：Jooq
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="011.jsr330.html">
+            
+                <a href="011.jsr330.html">
+            
+                    
+                    1.11.笙歌散：JSR330/JSR340
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="012.function.html">
+            
+                <a href="012.function.html">
+            
+                    
+                    1.12.阡陌：Ux编排
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="013.native.html">
+            
+                <a href="013.native.html">
+            
+                    
+                    1.13.始源之地：Vert.x集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="014.configuration.html">
+            
+                <a href="014.configuration.html">
+            
+                    
+                    1.14.俯瞰：配置地图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="015.devops.html">
+            
+                <a href="015.devops.html">
+            
+                    
+                    1.15.鼚乎：Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="016.excel.html">
+            
+                <a href="016.excel.html">
+            
+                    
+                    1.16.二向箔：Excel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="017.job.html">
+            
+                <a href="017.job.html">
+            
+                    
+                    1.17.隐匿者：Job
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="018.integration.html">
+            
+                <a href="018.integration.html">
+            
+                    
+                    1.18.天下：集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../zero-extension/000.index.html">
+            
+                <a href="../zero-extension/000.index.html">
+            
+                    
+                    2.风之殇（Πόλεμος ανέμου）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../zero-extension/001.extension.html">
+            
+                <a href="../zero-extension/001.extension.html">
+            
+                    
+                    2.1.扬帆：Zero Extension（zero-ke）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../zero-extensiongi/002.ambient.md">
+            
+                <span>
+            
+                    
+                    2.2.漆冰裂：Ambient（zero-ambient）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../zero-extension/003.crud.html">
+            
+                <a href="../zero-extension/003.crud.html">
+            
+                    
+                    2.3.木叶鸢：CRUD（zero-crud）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="000.index.html">
+            
+                <a href="000.index.html">
+            
+                    
+                    3.䆐之疆（Σύνορα της χώρας）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/006.async#er-tong-yi-mo-xing">
+            
+                    
+                    3.1.信封模型：Envelop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/017.job#1-6-mission">
+            
+                    
+                    3.2.任务模型：Mission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/018.integration#2-1-integration">
+            
+                    
+                    3.3.集成模型：Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/007.error#er-yi-chang-cha-xun-biao">
+            
+                    
+                    3.4.异常查询表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/006.async#1-2-zero-mo-shi">
+            
+                    
+                    3.5.异步模式：5 Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/004.param#3-4-shang-xia-wen">
+            
+                    
+                    3.6.参数签名：Agent组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/008.worker#3-2-kuo-zhan-can-shu">
+            
+                    
+                    3.7.参数签名：Worker组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/017.job#2-2-on-off">
+            
+                    
+                    3.8.参数签名：Job组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index/010.jooq#san-cha-xun-yin-qing">
+            
+                    
+                    3.9.查询引擎语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" >
+            
+                <a target="_blank" href="https://lang-yu.gitbook.io/zero/hou-duan-zero/000.index-1/001.extension#2-2-tong-dao-ding-yi">
+            
+                    
+                    3.10.Ex: ServiceLoader通道
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../zero-ui/000.index.html">
+            
+                <a href="../zero-ui/000.index.html">
+            
+                    
+                    4.影之月（Σάντοου μήνα）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../zero-ui/001.structure.html">
+            
+                <a href="../zero-ui/001.structure.html">
+            
+                    
+                    4.1.初赦：Zero Ui
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >1.7.珠玉在侧：容错</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="7-&#x73E0;&#x7389;&#x5728;&#x4FA7;&#xFF1A;&#x5BB9;&#x9519;">7. &#x73E0;&#x7389;&#x5728;&#x4FA7;&#xFF1A;&#x5BB9;&#x9519;</h1>
+<blockquote>
+<p>&#x5176;&#x8349;&#x6709;&#x8406;&#x8354;&#xFF0C;&#x72B6;&#x5982;&#x4E4C;&#x97ED;&#xFF0C;&#x800C;&#x751F;&#x4E8E;&#x77F3;&#x4E0A;&#xFF0C;&#x4EA6;&#x7F18;&#x6728;&#x800C;&#x751F;&#xFF0C;&#x98DF;&#x4E4B;&#x5DF2;&#x5FC3;&#x75DB;&#x3002;&#x2014;&#x2014;&#x300A;&#x5C71;&#x6D77;&#x7ECF;&#xB7;&#x897F;&#x5C71;&#x7ECF;&#x300B;</p>
+</blockquote>
+<ul>
+<li>&#x9879;&#x76EE;&#x5730;&#x5740;&#xFF1A;<a href="https://github.com/silentbalanceyh/vertx-zero-example/" target="_blank">https://github.com/silentbalanceyh/vertx-zero-example/</a>&#xFF08;&#x5B50;&#x9879;&#x76EE;&#xFF1A;<strong>up-rhea</strong>&#xFF09;</li>
+</ul>
+<h2 id="&#x300C;&#x58F9;&#x300D;&#x5F02;&#x5E38;&#x5904;&#x7406;">&#x300C;&#x58F9;&#x300D;&#x5F02;&#x5E38;&#x5904;&#x7406;</h2>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x672C;&#x6587;&#x4E3B;&#x8981;&#x8BB2;&#x89E3;Zero&#x4E2D;&#x7684;<strong>&#x5BB9;&#x9519;</strong>&#x7CFB;&#x7EDF;&#xFF0C;&#x5F88;&#x591A;&#x8BFB;&#x8005;&#x5728;&#x5F00;&#x53D1;&#x4F01;&#x4E1A;&#x7EA7;&#x7CFB;&#x7EDF;&#x65F6;&#x7ECF;&#x5E38;&#x4F1A;&#x9762;&#x4E34;&#x4E00;&#x4E9B;&#x95EE;&#x9898;&#xFF0C;&#x5982;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x4F55;&#x5904;&#x7406;JVM&#x629B;&#x51FA;&#x7684;&#x5F02;&#x5E38;&#x4FE1;&#x606F;&#xFF1F;</li>
+<li>&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x4F7F;&#x7528;Runtime&#x5F02;&#x5E38;&#xFF0C;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x53C8;&#x8BE5;&#x4F7F;&#x7528;Checked&#x5F02;&#x5E38;&#xFF1F;</li>
+<li>&#x5982;&#x4F55;&#x4F18;&#x96C5;&#x5730;catch&#x7CFB;&#x7EDF;&#x8FD0;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x5F02;&#x5E38;&#x4FE1;&#x606F;&#xFF1F;</li>
+</ul>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x62B1;&#x6B49;&#xFF0C;&#x6211;&#x7ED9;&#x4E0D;&#x4E86;&#x4F60;&#x51C6;&#x786E;&#x7684;&#x7B54;&#x6848;&#xFF0C;&#x53EA;&#x80FD;&#x7528;&#x672C;&#x7AE0;&#x7684;&#x5185;&#x5BB9;&#x7ED9;&#x4F60;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x53C2;&#x8003;&#xFF0C;&#x8FD9;&#x4E5F;&#x662F;Zero&#x5BB9;&#x9519;&#x7CFB;&#x7EDF;&#x5B58;&#x5728;&#x7684;&#x610F;&#x4E49;&#x3002;</p>
+<h3 id="11-&#x5F02;&#x5E38;&#x7ED3;&#x6784;">1.1. &#x5F02;&#x5E38;&#x7ED3;&#x6784;</h3>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x5982;&#x679C;&#x8981;&#x5728;&#x81EA;&#x5DF1;&#x7684;&#x7CFB;&#x7EDF;&#x4E2D;&#x5904;&#x7406;&#x597D;&#x5BB9;&#x9519;&#xFF0C;&#x6211;&#x80FD;&#x7ED9;&#x7684;&#x6700;&#x597D;&#x7684;&#x65B9;&#x6848;&#x5C31;&#x662F;<strong>&#x8BBE;&#x8BA1;&#x81EA;&#x5DF1;&#x7684;&#x57FA;&#x7840;&#x5F02;&#x5E38;&#x7ED3;&#x6784;</strong>
+&#xFF0C;&#x8BA9;&#x7CFB;&#x7EDF;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x5F02;&#x5E38;&#x6309;&#x7C7B;&#x522B;&#x4ECE;&#x81EA;&#x5B9A;&#x4E49;&#x5F02;&#x5E38;&#x57FA;&#x7840;&#x5C42;&#x53BB;&#x7EE7;&#x627F;&#xFF0C;&#x5E76;&#x5C06;&#x81EA;&#x5B9A;&#x4E49;&#x5F02;&#x5E38;&#x548C;JVM&#x629B;&#x51FA;&#x7684;&#x5F02;&#x5E38;&#x4E25;&#x683C;&#x533A;&#x5206;&#x3002;Zero&#x7684;&#x57FA;&#x7840;&#x5F02;&#x5E38;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#x56FE;&#xFF08;&#x5305;&#x542B;Vert.x&#x5B9A;&#x4E49;&#x7684;&#x5F02;&#x5E38;&#xFF09;&#xFF1A;</p>
+<p><img src="_image/2021-08-02/2021-08-04-10-40-44.jpg" alt=""></p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;Zero&#x4E2D;&#x7684;&#x9876;&#x5C42;&#x5F02;&#x5E38;&#x7C7B;&#x5B9A;&#x4E49;&#x5728;<code>io.vertx.up.exception</code>&#x5305;&#x4E2D;&#xFF0C;&#x4E24;&#x4E2A;&#x6839;&#x5F02;&#x5E38;&#x7C7B;&#x548C;Java&#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x5B9A;&#x4E49;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#xFF1A;</p>
+<ul>
+<li>Checked&#x5F02;&#x5E38;&#xFF1A;ZeroException&#xFF08;&#x4EE3;&#x7801;&#x4E2D;&#x5FC5;&#x987B;&#x52A0;&#x4E0A;try/catch&#xFF09;&#x3002;</li>
+<li>Runtime&#x5F02;&#x5E38;&#xFF1A;ZeroRunException&#xFF08;&#x7236;&#x7C7B;&#x662F;VertxException&#xFF0C;&#x548C;Vert.x&#x5B9A;&#x4E49;&#x4E00;&#x81F4;&#xFF09;&#x3002;</li>
+</ul>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x57FA;&#x4E8E;&#x4E0A;&#x8FF0;&#x4E24;&#x4E2A;&#x9876;&#x5C42;&#x5F02;&#x5E38;&#x7C7B;&#xFF0C;&#x6309;&#x804C;&#x8D23;&#x5206;&#x4E3A;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">&#x7C7B;&#x540D;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">DemonException</td>
+<td>Checked&#x5F02;&#x5E38;</td>
+<td style="text-align:left">&#x7CFB;&#x7EDF;&#x5F02;&#x5E38;&#xFF0C;&#x4EE3;&#x7801;&#x4E2D;&#x5FC5;&#x987B;try/catch&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:right">UpException</td>
+<td>Runtime&#x5F02;&#x5E38;</td>
+<td style="text-align:left">&#x7CFB;&#x7EDF;&#x5F02;&#x5E38;&#xFF0C;Runtime&#x7C7B;&#x578B;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:right">WebException</td>
+<td>Runtime&#x5F02;&#x5E38;</td>
+<td style="text-align:left">&#x4E1A;&#x52A1;&#x5F02;&#x5E38;&#xFF08;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x5173;&#x6CE8;&#x70B9;&#xFF09;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>UpException&#x548C;DemonException&#x90E8;&#x5206;&#x4E3A;&#x7814;&#x53D1;Zero&#x65F6;&#x5185;&#x90E8;&#x4E13;&#x7528;&#x5F02;&#x5E38;&#xFF0C;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x4E0D;&#x7528;&#x5173;&#x6CE8;&#x3002;</p>
+</blockquote>
+<h3 id="12-webexception">1.2. WebException</h3>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;Zero&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x771F;&#x6B63;&#x5728;&#x4F7F;&#x7528;&#x65F6;&#x51E0;&#x4E4E;&#x53EA;&#x4F1A;&#x7528;&#x5230;<code>io.vertx.up.exception.WebException</code>&#xFF0C;&#x6240;&#x4EE5;&#x8BFB;&#x8005;&#x9700;&#x8981;&#x7406;&#x89E3;&#x8BE5;&#x5F02;&#x5E38;&#x7684;&#x6838;&#x5FC3;&#x5185;&#x5BB9;&#x3002;</p>
+<h4 id="121-&#x6838;&#x5FC3;&#x6210;&#x5458;">1.2.1. &#x6838;&#x5FC3;&#x6210;&#x5458;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x6210;&#x5458;&#x540D;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>target</td>
+<td style="text-align:left">Class&lt;?&gt;</td>
+<td style="text-align:left">&#x4EA7;&#x751F;&#x8BE5;&#x5F02;&#x5E38;&#x7684;&#x7C7B;&#xFF0C;&#x53EF;&#x5B9A;&#x4F4D;&#x5F02;&#x5E38;&#x51FA;&#x73B0;&#x4F4D;&#x7F6E;&#x3002;</td>
+</tr>
+<tr>
+<td>status</td>
+<td style="text-align:left">HttpStatusCode</td>
+<td style="text-align:left">&#x8BE5;&#x5F02;&#x5E38;&#x7ED1;&#x5B9A;&#x7684;HTTP&#x72B6;&#x6001;&#x4EE3;&#x7801;&#xFF0C;&#x9ED8;&#x8BA4;400 Bad Request&#x3002;</td>
+</tr>
+<tr>
+<td>message</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x300C;&#x7CFB;&#x7EDF;&#x7EA7;&#x300D;&#x6700;&#x7EC8;&#x751F;&#x6210;&#x7684;&#x5F02;&#x5E38;&#x63CF;&#x8FF0;&#x4FE1;&#x606F;&#x3002;</td>
+</tr>
+<tr>
+<td>readible</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x300C;&#x4E1A;&#x52A1;&#x7EA7;&#x300D;&#x6700;&#x7EC8;&#x751F;&#x6210;&#x7684;&#x5448;&#x73B0;&#x5728;&#x4E1A;&#x52A1;&#x7CFB;&#x7EDF;&#x524D;&#x7AEF;&#x7684;&#x53EF;&#x8BFB;&#x4FE1;&#x606F;&#x3002;</td>
+</tr>
+<tr>
+<td>params</td>
+<td style="text-align:left">Object[]</td>
+<td style="text-align:left">&#x6784;&#x9020;&#x8BE5;&#x5F02;&#x5E38;&#x7684;&#x53C2;&#x6570;&#x8868;&#xFF08;&#x52A8;&#x53C2;&#xFF09;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x9664;&#x5F00;&#x4E0A;&#x8FF0;&#x6210;&#x5458;&#x4E4B;&#x5916;&#xFF0C;WebException&#x8FD8;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getCode</span><span class="hljs-params">()</span>
+</span></code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x6240;&#x6709;&#x5B50;&#x7C7B;&#x5FC5;&#x987B;&#x91CD;&#x5199;&#x8BE5;&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x4E14;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5C0F;&#x4E8E;<code>-10000</code>&#x7684;&#x5E38;&#x91CF;&#x6570;&#x503C;&#xFF0C;&#x7CFB;&#x7EDF;&#x4F1A;&#x6839;&#x636E;&#x8BE5;&#x6570;&#x503C;&#x4ECE;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x751F;&#x6210;&#x5F02;&#x5E38;&#x63CF;&#x8FF0;&#x4FE1;&#x606F;&#xFF0C;&#x7531;&#x4E8E;&#x6BCF;&#x4E2A;&#x7C7B;&#x7684;&#x503C;&#x90FD;&#x56FA;&#x5B9A;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x5B58;&#x5728;<strong>&#x6210;&#x5458;</strong>&#x5C5E;&#x6027;&#x3002;</p>
+<h4 id="122-&#x4EE3;&#x7801;&#x793A;&#x4F8B;">1.2.2. &#x4EE3;&#x7801;&#x793A;&#x4F8B;</h4>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x901A;&#x5E38;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;WebException&#x5B50;&#x7C7B;&#x7684;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> io.vertx.up.exception.web;
+
+<span class="hljs-keyword">import</span> io.vertx.core.http.HttpStatusCode;
+<span class="hljs-keyword">import</span> io.vertx.up.exception.WebException;
+
+<span class="hljs-keyword">import</span> javax.ws.rs.core.MediaType;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">_415MediaDeclareException</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">WebException</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">_415MediaDeclareException</span><span class="hljs-params">(<span class="hljs-keyword">final</span> Class&lt;?&gt; clazz,
+                                     <span class="hljs-keyword">final</span> Class&lt;?&gt; argType, <span class="hljs-keyword">final</span> MediaType type)</span> </span>{
+        <span class="hljs-keyword">super</span>(clazz, argType.getName(), type.toString());
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getCode</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> -<span class="hljs-number">40069</span>;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> HttpStatusCode <span class="hljs-title">getStatus</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> HttpStatusCode.UNSUPPORTED_MEDIA_TYPE;
+    }
+}
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">E40069:</span> <span class="hljs-string">&quot;(415) - The declared type {0} is not match to MIME {1}&quot;</span>
+</code></pre>
+<h4 id="123-&#x5F00;&#x53D1;&#x89C4;&#x5219;">1.2.3. &#x5F00;&#x53D1;&#x89C4;&#x5219;</h4>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x5F00;&#x53D1;WebException&#x7684;&#x57FA;&#x672C;&#x89C4;&#x5219;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ol>
+<li>&#x5B9A;&#x4E49;&#x7684;WebException&#x5B50;&#x7C7B;&#x540D;&#x79F0;&#x7EDF;&#x4E00;&#x4F7F;&#x7528;<code>_NxxxException</code>&#x7684;&#x683C;&#x5F0F;<ul>
+<li>N&#xFF1A;&#x4E00;&#x4E2A;&#x4E09;&#x4F4D;&#x7684;&#x6570;&#x5B57;&#xFF0C;&#x5BF9;&#x5E94;HTTP&#x72B6;&#x6001;&#x4EE3;&#x7801;&#x3002;</li>
+<li>xxx&#xFF1A;&#x8BE5;&#x5F02;&#x5E38;&#x7684;&#x4E3B;&#x4F53;&#x63CF;&#x8FF0;&#x4FE1;&#x606F;&#xFF0C;&#x901A;&#x5E38;&#x662F;1 ~ 4&#x4E2A;&#x5355;&#x8BCD;&#x63CF;&#x8FF0;&#x3002;</li>
+</ul>
+</li>
+<li>getStatus()&#xFF1A;&#x5982;&#x679C;&#x60A8;&#x5B9A;&#x4E49;&#x7684;&#x5F02;&#x5E38;&#x662F;400&#xFF08;Bad Request&#xFF09;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x5FFD;&#x7565;&#x8BE5;&#x65B9;&#x6CD5;&#x7684;&#x91CD;&#x5199;&#xFF0C;&#x800C;&#x5176;&#x4ED6;&#x503C;&#x5FC5;&#x987B;&#x91CD;&#x5199;&#xFF0C;&#x2014;&#x2014;&#x6CE8;&#xFF1A;getStatus()&#x8FD4;&#x56DE;&#x7684;&#x72B6;&#x6001;&#x63CF;&#x8FF0;&#x4FE1;&#x606F;&#x5FC5;&#x987B;&#x548C;&#x7C7B;&#x540D;&#x4E2D;&#x7684;&#x6570;&#x5B57;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#x3002;</li>
+<li>&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF1A;<ul>
+<li>&#x9996;&#x53C2;&#x5FC5;&#x987B;&#x662F;<code>Class&lt;?&gt;</code>&#x2014;&#x2014;&#x6807;&#x8BC6;&#x8BE5;&#x5F02;&#x5E38;&#x4EA7;&#x751F;&#x7684;&#x7C7B;&#x3002;</li>
+<li>&#x9664;&#x5F00;&#x9996;&#x53C2;&#x4EE5;&#x5916;&#xFF0C;&#x540E;&#x7EED;&#x53C2;&#x6570;&#x8868;&#x548C;&#x5B9A;&#x4E49;&#x5728;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x4E00;&#x81F4;&#xFF0C;&#x5305;&#x542B;&#x7C7B;&#x4F3C;<code>{0},{1}</code>&#x7684;&#x5360;&#x4F4D;&#x7B26;&#xFF1A;</li>
+</ul>
+</li>
+<li>getCode()&#xFF1A;&#x8BE5;&#x65B9;&#x6CD5;&#x5FC5;&#x987B;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x8D1F;&#x6570;&#xFF0C;&#x7CFB;&#x7EDF;&#x4F1A;&#x6839;&#x636E;&#x5B83;&#x7684;&#x503C;&#x53BB;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x67E5;&#x627E;&#x5BF9;&#x5E94;&#x7684;&#x6587;&#x5B57;&#x63CF;&#x8FF0;&#x6A21;&#x677F;&#xFF0C;&#x5982;&#x679C;&#x5B9A;&#x4E49;&#x7684;&#x9519;&#x8BEF;&#x4EE3;&#x7801;&#x4E3A;<code>-40069</code>&#xFF0C;&#x5219;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x952E;&#x503C;&#x4E3A;<code>E40069</code>&#xFF08;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#x4E3A;yaml&#xFF09;&#x3002;</li>
+</ol>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x7531;&#x4E8E;&#x5F02;&#x5E38;&#x4FE1;&#x606F;&#x7684;&#x751F;&#x6210;&#x4F7F;&#x7528;&#x4E86;MessageFormat&#x6784;&#x9020;&#xFF0C;&#x6240;&#x4EE5;&#x63D0;&#x53CA;&#x90E8;&#x5206;Java&#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x7279;&#x6B8A;&#x7B26;&#x53F7;&#x89C4;&#x5219;&#xFF1A;</p>
+<ol>
+<li>&#x5982;&#x679C;&#x8981;&#x5728;&#x6587;&#x5B57;&#x4E2D;&#x8F93;&#x51FA;&#x5355;&#x5F15;&#x53F7;<code>&apos;</code>&#xFF0C;&#x5FC5;&#x987B;&#x4F7F;&#x7528;<code>&apos;&apos;</code>&#x4EE3;&#x66FF;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x8981;&#x5728;&#x6587;&#x5B57;&#x4E2D;&#x8F93;&#x51FA;&#x53CC;&#x5F15;&#x53F7;<code>&quot;</code>&#xFF0C;&#x5FC5;&#x987B;&#x4F7F;&#x7528;<code>\&quot;</code>&#x8F6C;&#x4E49;&#x7B26;&#x53F7;&#x4EE3;&#x66FF;&#x3002;</li>
+</ol>
+<h3 id="13-&#x76F8;&#x5173;&#x914D;&#x7F6E;">1.3. &#x76F8;&#x5173;&#x914D;&#x7F6E;</h3>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;Zero&#x5BB9;&#x9519;&#x7CFB;&#x7EDF;&#x4E3B;&#x8981;&#x5305;&#x542B;&#x4E09;&#x4E2A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF08;src/main/resources&#x76EE;&#x5F55;&#x4E2D;&#xFF09;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</th>
+<th>&#x5206;&#x7C7B;</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">up/config/vertx-error.yml</td>
+<td>&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;</td>
+<td style="text-align:left">&#x8BE5;&#x914D;&#x7F6E;&#x4E0D;&#x53EF;&#x53D8;&#x66F4;&#xFF0C;&#x968F;&#x7740;Zero&#x7248;&#x672C;&#x5347;&#x7EA7;&#x4F1A;&#x6709;&#x6240;&#x6539;&#x52A8;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">vertx-error.yml</td>
+<td>&#x7528;&#x6237;&#x914D;&#x7F6E;</td>
+<td style="text-align:left">&#x8BE5;&#x6587;&#x4EF6;&#x7531;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x63D0;&#x4F9B;&#xFF0C;&#x5BF9;WebException&#x8FDB;&#x884C;&#x6269;&#x5C55;&#x65F6;&#x4E13;&#x7528;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">vertx-readible.yml</td>
+<td>&#x7528;&#x6237;&#x914D;&#x7F6E;</td>
+<td style="text-align:left">&#x8BE5;&#x6587;&#x4EF6;&#x7531;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x63D0;&#x4F9B;&#xFF0C;&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x5BF9;&#x5E94;&#x7684;&#x6587;&#x5B57;&#x63CF;&#x8FF0;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;WebException&#x88AB;&#x5E8F;&#x5217;&#x5316;&#x6210;Json&#x65F6;&#x4F1A;&#x751F;&#x6210;&#x5982;&#x4E0B;&#x683C;&#x5F0F;&#x7684;&#x5F02;&#x5E38;&#x4FE1;&#x606F;&#xFF1A;</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-string">&quot;&#x6570;&#x503C;&#xFF0C;&#x5BF9;&#x5E94;getCode()&#x8FD4;&#x56DE;&#x503C;&quot;</span>,
+    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;&#x7CFB;&#x7EDF;&#x63CF;&#x8FF0;&#x4FE1;&#x606F;&#xFF0C;&#x5BF9;&#x5E94;vertx-error.yml&#x4E2D;&#x683C;&#x5F0F;&#x5316;&#x540E;&#x7684;&#x63CF;&#x8FF0;&#x4FE1;&#x606F;&quot;</span>,
+    <span class="hljs-string">&quot;info&quot;</span>: <span class="hljs-string">&quot;&#x4E1A;&#x52A1;&#x63CF;&#x8FF0;&#x4FE1;&#x606F;&#xFF0C;&#x82E5;&#x5728;vertx-readible.yml&#x4E2D;&#x5B9A;&#x4E49;&#x4E86;&#x8BE5;&#x5F02;&#x5E38;&#xFF0C;&#x5219;&#x8BE5;&#x8282;&#x70B9;&#x5B58;&#x5728;&quot;</span>
+}
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4E00;&#x4E2A;<code>vertx-readible.yml</code>&#x4E2D;&#x7684;&#x7247;&#x6BB5;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-yaml"><span class="hljs-number">80220</span>: <span class="hljs-string">&quot;&#x5BF9;&#x4E0D;&#x8D77;&#xFF0C;&#x60A8;&#x7684;&#x8D26;&#x53F7;&#x88AB;&#x9501;&#x5B9A;&#x4E86;&#xFF0C;&#x8BF7;&#x8054;&#x7CFB;&#x7BA1;&#x7406;&#x5458;&#xFF01;&quot;</span>
+</code></pre>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4F7F;&#x7528;<code>vertx-readible.yml</code>&#x6269;&#x5C55;&#x5F02;&#x5E38;&#x4FE1;&#x606F;&#x65F6;&#xFF0C;&#x5B83;&#x7684;&#x4EE3;&#x7801;&#x503C;&#x53EF;&#x4EE5;&#x662F;&#x7CFB;&#x7EDF;&#x5185;&#x7F6E;&#x5B9A;&#x4E49;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4E14;&#x4EE3;&#x7801;&#x65E0;&#x9700;&#x4F7F;&#x7528;<code>E</code>
+&#x524D;&#x7F00;&#x3002;&#x8FD9;&#x79CD;&#x8BBE;&#x8BA1;&#x4E3B;&#x8981;&#x9488;&#x5BF9;&#x5BB9;&#x9519;&#x7CFB;&#x7EDF;&#x7684;&#x6269;&#x5C55;&#x70B9;&#xFF0C;&#x6700;&#x521D;&#x7684;&#x914D;&#x7F6E;&#x8BBE;&#x8BA1;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="_image/2021-08-02/2021-08-04-11-59-38.jpg" alt=""></p>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x5728;&#x8FD9;&#x79CD;&#x8BBE;&#x8BA1;&#x4E2D;&#xFF0C;&#x540C;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x4EE3;&#x7801;&#x53EF;&#x5728;<strong>&#x65E5;&#x5FD7;&#x7CFB;&#x7EDF;</strong>
+&#x4E2D;&#x6267;&#x884C;&#x7B49;&#x7EA7;&#x5207;&#x6362;&#xFF0C;&#xFF08;I-Info&#xFF0C;W-Warn&#xFF0C;E-Error&#xFF09;&#xFF0C;&#x800C;&#x8FD9;&#x4E09;&#x79CD;&#x4FE1;&#x606F;&#x5728;&#x4E1A;&#x52A1;&#x73AF;&#x5883;&#x4E2D;&#x53EF;&#x80FD;&#x662F;&#x4E00;&#x81F4;&#x7684;&#xFF0C;&#x4E8E;&#x662F;&#x5C31;&#x6709;&#x4E86;<code>vertx-error.yml</code>&#x4E2D;&#x7684;&#x591A;&#x91CD;&#x5B9A;&#x4E49;&#x952E;&#x503C;&#x5E26;<code>E</code>&#x524D;&#x7F00;&#x3002;</p>
+<blockquote>
+<p>&#x76EE;&#x524D;&#x7684;&#x7248;&#x672C;&#x4E2D;&#x5F88;&#x5C11;&#x51FA;&#x73B0;W&#x548C;I&#x7684;&#x573A;&#x666F;&#xFF0C;&#x4E8E;&#x662F;&#x8FD9;&#x4E2A;&#x8BBE;&#x8BA1;&#x5C31;&#x4FDD;&#x7559;&#x4E0B;&#x6765;&#x4E86;&#x3002;</p>
+</blockquote>
+<h2 id="&#x300C;&#x8D30;&#x300D;&#x5F02;&#x5E38;&#x67E5;&#x8BE2;&#x8868;">&#x300C;&#x8D30;&#x300D;&#x5F02;&#x5E38;&#x67E5;&#x8BE2;&#x8868;</h2>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;Zero&#x4E2D;&#x4F7F;&#x7528;&#x4E86;&#x4E25;&#x683C;&#x7684;&#x5F02;&#x5E38;&#x5B9A;&#x4E49;&#xFF0C;&#x6709;&#x4E86;&#x8BE5;&#x67E5;&#x8BE2;&#x8868;&#xFF0C;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x5185;&#x90E8;&#x5F02;&#x5E38;&#x53D1;&#x751F;&#x65F6;&#x66F4;&#x5BB9;&#x6613;<strong>&#x8C03;&#x8BD5;</strong>&#xFF0C;&#x5F02;&#x5E38;&#x67E5;&#x8BE2;&#x8868;&#x4E2D;&#x53EA;&#x5305;&#x542B;&#x975E;<code>abstract</code>&#x7C7B;&#x578B;&#x7684;&#x5F02;&#x5E38;&#x7C7B;&#x3002;</p>
+<blockquote>
+<p>&#x6587;&#x5B57;&#x4E2D;&#x7684;&#x63CF;&#x8FF0;&#x662F;&#x89E6;&#x53D1;&#x8BE5;&#x5F02;&#x5E38;&#x7684;&#x6761;&#x4EF6;&#xFF0C;&#x5373;&#x5F02;&#x5E38;&#x53D1;&#x751F;&#x6761;&#x4EF6;&#x3002;</p>
+</blockquote>
+<h3 id="21-zerorunexception&#x5B50;&#x7C7B;">2.1. ZeroRunException&#x5B50;&#x7C7B;</h3>
+<p>&#x5305;&#x540D;&#xFF1A;<strong>io.vertx.up.exception.heart</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">&#x7C7B;&#x540D;</th>
+<th style="text-align:left">&#x89E6;&#x53D1;&#x6761;&#x4EF6;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">AptParameterException</td>
+<td style="text-align:left">Apt&#x662F;Zero&#x4E2D;&#x7684;&#x6BD4;&#x5BF9;&#x4E13;&#x7528;&#x5BF9;&#x8C61;&#xFF0C;&#x6BD4;&#x5BF9;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x65E7;&#x503C;&#x65B0;&#x503C;&#x540C;&#x65F6;&#x4E3A;&#x7A7A;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:right">ArgumentException</td>
+<td style="text-align:left">&#x51FD;&#x6570;&#x53C2;&#x6570;&#x975E;&#x6CD5;&#x5F02;&#x5E38;&#xFF0C;&#x5F53;&#x524D;&#x7248;&#x672C;&#x7528;&#x4E8E;&#x68C0;&#x67E5;&#x53C2;&#x6570;&#x957F;&#x5EA6;&#x4E0D;&#x7B26;&#x5408;&#x9884;&#x671F;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:right">EmptyStreamException</td>
+<td style="text-align:left">&#x6587;&#x4EF6;&#x65E0;&#x6CD5;&#x8BFB;&#x53D6;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:right">ErrorMissingException</td>
+<td style="text-align:left">&#x68C0;&#x67E5;vertx-error.yml&#x4E2D;&#x672A;&#x627E;&#x5230;&#x5BF9;&#x5E94;code&#x7684;&#x9519;&#x8BEF;&#x63CF;&#x8FF0;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:right">JexlExpressionException</td>
+<td style="text-align:left">JEXL&#x8868;&#x8FBE;&#x5F0F;&#x89E3;&#x6790;&#x51FA;&#x9519;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:right">LimeFileException</td>
+<td style="text-align:left">vertx.yml&#x6587;&#x4EF6;&#x4E2D;&#x914D;&#x7F6E;&#x7684;lime&#x8282;&#x70B9;&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:right">PoolKeyNullException</td>
+<td style="text-align:left">&#x6C60;&#x5316;&#x4F20;&#x5165;&#x53C2;&#x6570;<code>key</code>&#x4E3A;null&#xFF0C;ConcurrentHashMap&#x4E0D;&#x5141;&#x8BB8;null&#x952E;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:right">DateFormatException</td>
+<td style="text-align:left">&#x300C;&#x4FDD;&#x7559;&#x300D;&#x65F6;&#x95F4;&#x683C;&#x5F0F;&#x975E;&#x6CD5;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:right">JsonFormatException</td>
+<td style="text-align:left">&#x300C;&#x4FDD;&#x7559;&#x300D;&#x8BFB;&#x53D6;&#x5185;&#x5BB9;&#x683C;&#x5F0F;&#x4E3A;&#x975E;&#x6CD5;Json&#x683C;&#x5F0F;&#xFF0C;&#x65E0;&#x6CD5;&#x5E8F;&#x5217;&#x5316;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:right">OperationException</td>
+<td style="text-align:left">&#x300C;&#x4FDD;&#x7559;&#x300D;&#x53CD;&#x5C04;&#x51FD;&#x6570;&#x6267;&#x884C;&#x51FA;&#x9519;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22-demonexception&#x5B50;&#x7C7B;">2.2. DemonException&#x5B50;&#x7C7B;</h3>
+<p>&#x5305;&#x540D;&#xFF1A;<strong>io.vertx.up.exception.demon</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x9519;&#x8BEF;&#x7801;</th>
+<th style="text-align:right">&#x7C7B;&#x540D;</th>
+<th style="text-align:left">&#x89E6;&#x53D1;&#x6761;&#x4EF6;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-10001</td>
+<td style="text-align:right">JObjectElementException</td>
+<td style="text-align:left">&#x4E00;&#x4E2A;JsonArray&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x4E0D;&#x5168;&#x662F;JsonObject&#x3002;</td>
+</tr>
+<tr>
+<td>-10002</td>
+<td style="text-align:right">RequiredFieldException</td>
+<td style="text-align:left">JsonObject&#x4E2D;&#x4E22;&#x5931;/&#x4E0D;&#x5305;&#x542B;&#x67D0;&#x4E2A;field&#x6570;&#x636E;&#x3002;</td>
+</tr>
+<tr>
+<td>-10003</td>
+<td style="text-align:right">DataTypeWrongException</td>
+<td style="text-align:left">JsonObject&#x4E2D;&#x67D0;&#x4E2A;field&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E0D;&#x7B26;&#x5408;&#x9884;&#x671F;&#x3002;</td>
+</tr>
+<tr>
+<td>-10004</td>
+<td style="text-align:right">ClusterConflictException</td>
+<td style="text-align:left">Vert.x&#x96C6;&#x7FA4;&#x73AF;&#x5883;&#x548C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x51B2;&#x7A81;&#x3002;</td>
+</tr>
+<tr>
+<td>-10006</td>
+<td style="text-align:right">ForbiddenFieldException</td>
+<td style="text-align:left">JsonObject&#x51FA;&#x73B0;&#x4E86;&#x4E0D;&#x652F;&#x6301;&#x7684;&#x5C5E;&#x6027;&#x3002;</td>
+</tr>
+<tr>
+<td>-30001</td>
+<td style="text-align:right">ServerConfigException</td>
+<td style="text-align:left">vertx.yml&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;<code>server</code>&#x8282;&#x70B9;&#x914D;&#x7F6E;&#x975E;&#x6CD5;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="23-upexception&#x5B50;&#x7C7B;">2.3. UpException&#x5B50;&#x7C7B;</h3>
+<p>&#x5305;&#x540D;&#xFF1A;<strong>io.vertx.zero.exception</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x9519;&#x8BEF;&#x7801;</th>
+<th style="text-align:right">&#x7C7B;&#x540D;</th>
+<th style="text-align:left">&#x89E6;&#x53D1;&#x6761;&#x4EF6;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-40001</td>
+<td style="text-align:right">UpClassArgsException</td>
+<td style="text-align:left">&#x4E3B;&#x7A0B;&#x5E8F;run&#x65B9;&#x6CD5;&#x4F20;&#x5165;clazz&#x4E3A;&#x7A7A;&#x3002;</td>
+</tr>
+<tr>
+<td>-40002</td>
+<td style="text-align:right">UpClassInvalidException</td>
+<td style="text-align:left">&#x4E3B;&#x7A0B;&#x5E8F;run&#x65B9;&#x6CD5;&#x4F20;&#x5165;&#x7684;clazz&#x4E22;&#x5931;&#x4E86;@Up&#x6CE8;&#x89E3;&#x3002;</td>
+</tr>
+<tr>
+<td>-40003</td>
+<td style="text-align:right">VertxCallbackException</td>
+<td style="text-align:left">Zero&#x542F;&#x52A8;&#x5668;&#x65E0;&#x6CD5;&#x6B63;&#x786E;&#x8FDE;&#x63A5;Vertx&#x5B9E;&#x4F8B;&#x3002;</td>
+</tr>
+<tr>
+<td>-40004</td>
+<td style="text-align:right">AgentDuplicatedException</td>
+<td style="text-align:left">&#x9488;&#x5BF9;&#x67D0;&#x4E00;&#x79CD;&#x670D;&#x52A1;&#x5668;&#x7C7B;&#x578B;&#xFF0C;Agent&#x5B9A;&#x4E49;&#x51FA;&#x73B0;&#x4E86;&#x91CD;&#x590D;&#xFF01;</td>
+</tr>
+<tr>
+<td>-40005</td>
+<td style="text-align:right">EventSourceException</td>
+<td style="text-align:left">&#x626B;&#x63CF;&#x7684;Event&#x6267;&#x884C;&#x7C7B;&#x6CA1;&#x6709;&#x88AB;@EndPoint&#x6CE8;&#x89E3;&#x3002;</td>
+</tr>
+<tr>
+<td>-40006</td>
+<td style="text-align:right">PathAnnoEmptyException</td>
+<td style="text-align:left">JSR311&#x4E2D;@Path&#x6CE8;&#x89E3;&#x4E0D;&#x5B8C;&#x5168;&#xFF0C;&#x4E0D;&#x7B26;&#x5408;&#x89C4;&#x8303;&#x3002;</td>
+</tr>
+<tr>
+<td>-40007</td>
+<td style="text-align:right">MethodNullException</td>
+<td style="text-align:left">&#x89E3;&#x6790;HTTP&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x6CA1;&#x627E;&#x5230;&#x5408;&#x6CD5;&#x7684;Method&#x3002;</td>
+</tr>
+<tr>
+<td>-40008</td>
+<td style="text-align:right">EventActionNoneException</td>
+<td style="text-align:left">Java&#x5B9A;&#x4E49;&#x7684;Handler&#x6267;&#x884C;&#x65B9;&#x6CD5;Method&#x4E3A;null&#xFF0C;&#x65E0;&#x6CD5;&#x6267;&#x884C;&#x3002;</td>
+</tr>
+<tr>
+<td>-40009</td>
+<td style="text-align:right">NoArgConstructorException</td>
+<td style="text-align:left">Zero&#x8981;&#x6C42;&#x7684;&#x7C7B;&#x6CA1;&#x5305;&#x542B;&#x65E0;&#x53C2;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</td>
+</tr>
+<tr>
+<td>-40010</td>
+<td style="text-align:right">AccessProxyException</td>
+<td style="text-align:left">Java&#x65B9;&#x6CD5;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x57DF;&#x4E0D;&#x662F;public&#x3002;</td>
+</tr>
+<tr>
+<td>-40011</td>
+<td style="text-align:right">ParameterConflictException</td>
+<td style="text-align:left">&#x300C;&#x4FDD;&#x7559;&#x300D;Zero&#x626B;&#x63CF;&#x65F6;&#x53D1;&#x73B0;&#x4E86;&#x6E38;&#x79BB;&#x65B9;&#x6CD5;&#x3002;</td>
+</tr>
+<tr>
+<td>-40012</td>
+<td style="text-align:right">AddressWrongException</td>
+<td style="text-align:left">@Address&#x6CE8;&#x89E3;&#x4E22;&#x5931;&#x4E86;&#x914D;&#x7F6E;&#xFF0C;Agent&#x6216;Worker&#x4E22;&#x5931;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x3002;</td>
+</tr>
+<tr>
+<td>-40013</td>
+<td style="text-align:right">ReturnTypeException</td>
+<td style="text-align:left">&#x542F;&#x7528;EventBus&#x65F6;&#xFF0C;Agent&#x7EC4;&#x4EF6;&#x7684;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;void&#x3002;</td>
+</tr>
+<tr>
+<td>-40014</td>
+<td style="text-align:right">WorkerMissingException</td>
+<td style="text-align:left">&#x65E0;&#x6CD5;&#x627E;&#x5230;&#x6B63;&#x786E;&#x7684;@Queue,@Address&#x6CE8;&#x89E3;&#x7684;Worker&#x7EC4;&#x4EF6;&#x3002;</td>
+</tr>
+<tr>
+<td>-40017</td>
+<td style="text-align:right">WorkerArgumentException</td>
+<td style="text-align:left">Worker&#x7EC4;&#x4EF6;&#x65B9;&#x6CD5;&#x7B7E;&#x540D;&#x4E2D;&#x53C2;&#x6570;&#x5217;&#x8868;&#x975E;&#x6CD5;&#x3002;</td>
+</tr>
+<tr>
+<td>-40018</td>
+<td style="text-align:right">AsyncSignatureException</td>
+<td style="text-align:left">&#x5F02;&#x6B65;&#x6A21;&#x5F0F;&#x4E0B;&#x65B9;&#x6CD5;&#x7B7E;&#x540D;&#x51FA;&#x9519;&#xFF0C;&#x975E;&#x5F02;&#x6B65;&#x65B9;&#x6CD5;&#x5B9A;&#x4E49;&#x3002;</td>
+</tr>
+<tr>
+<td>-40021</td>
+<td style="text-align:right">MultiAnnotatedException</td>
+<td style="text-align:left">Zero&#x6CE8;&#x89E3;&#x5728;&#x67D0;&#x4E9B;&#x573A;&#x666F;&#x4E0B;&#x51FA;&#x73B0;&#x4E86;&#x91CD;&#x590D;&#x4F7F;&#x7528;&#x548C;&#x5B9A;&#x4E49;&#x3002;</td>
+</tr>
+<tr>
+<td>-40023</td>
+<td style="text-align:right">QualifierMissedException</td>
+<td style="text-align:left">JSR330&#x626B;&#x63CF;&#x65F6;&#x4E22;&#x5931;&#x4E86;@Qualifier&#x6CE8;&#x89E3;&#x3002;</td>
+</tr>
+<tr>
+<td>-40024</td>
+<td style="text-align:right">NamedImplementionException</td>
+<td style="text-align:left">JSR330&#x5B9A;&#x4E49;&#x65F6;&#x4E22;&#x5931;&#x4E86;@Named&#x6CE8;&#x89E3;&#x3002;</td>
+</tr>
+<tr>
+<td>-40025</td>
+<td style="text-align:right">NamedNotFoundException</td>
+<td style="text-align:left">JSR330&#x626B;&#x63CF;&#x65F6;&#x6CA1;&#x627E;&#x5230;@Named&#x5339;&#x914D;&#x7684;&#x7C7B;&#x3002;</td>
+</tr>
+<tr>
+<td>-40029</td>
+<td style="text-align:right">AnnotationRepeatException</td>
+<td style="text-align:left">&#x5143;&#x6570;&#x636E;&#x6CE8;&#x89E3;&#x6B21;&#x6570;&#x4E0D;&#x7B26;&#x5408;&#x9884;&#x671F;&#x3002;</td>
+</tr>
+<tr>
+<td>-40030</td>
+<td style="text-align:right">ParamAnnotationException</td>
+<td style="text-align:left">JSR311&#x6CE8;&#x89E3;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x51FA;&#x73B0;&#x4E86;&#x591A;&#x7C7B;&#x578B;&#x91CD;&#x590D;&#x53C2;&#x6570;&#x5B9A;&#x4E49;&#x3002;</td>
+</tr>
+<tr>
+<td>-40032</td>
+<td style="text-align:right">IndexExceedException</td>
+<td style="text-align:left">Envelop&#x6309;&#x7D22;&#x5F15;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x7684;&#x4F20;&#x5165;&#x7D22;&#x5F15;&#x975E;&#x6CD5;&#xFF08;&#x5927;&#x4E8E;&#x7B49;&#x4E8E;0&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td>-40042</td>
+<td style="text-align:right">ChannelMultiException</td>
+<td style="text-align:left">@Address&#x548C;@Ipc&#x4E24;&#x4E2A;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#xFF08;&#x4E8C;&#x9009;&#x4E00;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td>-40043</td>
+<td style="text-align:right">IpcMethodTargetException</td>
+<td style="text-align:left">&#x627E;&#x5230;@Ipc&#x7684;&#x53D1;&#x9001;&#x8005;&#xFF0C;&#x4F46;&#x6CA1;&#x627E;&#x5230;&#x63A5;&#x53D7;&#x8005;&#x3002;</td>
+</tr>
+<tr>
+<td>-40044</td>
+<td style="text-align:right">IpcMethodReturnException</td>
+<td style="text-align:left">@Ipc&#x6CE8;&#x89E3;&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;void&#xFF08;&#x5FC5;&#x987B;&#x5305;&#x542B;&#x8FD4;&#x56DE;&#x503C;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td>-40045</td>
+<td style="text-align:right">UnknownDirectionException</td>
+<td style="text-align:left">RPC&#x6D41;&#x5F0F;&#x6A21;&#x5F0F;&#x6570;&#x636E;&#x53D1;&#x9001;&#x65B9;&#x5411;&#x65E0;&#x6CD5;&#x5224;&#x65AD;&#x3002;</td>
+</tr>
+<tr>
+<td>-40046</td>
+<td style="text-align:right">IpcMethodArgException</td>
+<td style="text-align:left">@Ipc&#x6CE8;&#x89E3;&#x65B9;&#x6CD5;&#x53C2;&#x6570;&#x7B7E;&#x540D;&#x9519;&#x8BEF;&#xFF08;&#x53EA;&#x80FD;&#x662F;Envelop&#x5355;&#x53C2;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td>-40047</td>
+<td style="text-align:right">InvokerNullException</td>
+<td style="text-align:left">&#x626B;&#x63CF;@Queue&#x65F6;&#x6CA1;&#x6709;&#x5339;&#x914D;&#x5230;&#x6B63;&#x786E;&#x7684;&#x8C03;&#x7528;&#x65B9;&#x6CD5;Method&#x3002;</td>
+</tr>
+<tr>
+<td>-40048</td>
+<td style="text-align:right">RpcAgentAbsenceException</td>
+<td style="text-align:left">RPC&#x6D41;&#x5F0F;&#x7CFB;&#x7EDF;&#x4E2D;&#x51FA;&#x73B0;&#x4E86;&#x6CA1;&#x6709;&#x5B9E;&#x73B0;&#x7C7B;&#x7684;&#x72EC;&#x7ACB;&#x63A5;&#x53E3;&#x3002;</td>
+</tr>
+<tr>
+<td>-40049</td>
+<td style="text-align:right">WorkerConflictException</td>
+<td style="text-align:left">Worker&#x7EC4;&#x4EF6;&#x7B7E;&#x540D;&#x51B2;&#x7A81;&#x3002;</td>
+</tr>
+<tr>
+<td>-40050</td>
+<td style="text-align:right">MicroModeUpException</td>
+<td style="text-align:left">&#x5FAE;&#x670D;&#x52A1;&#x6A21;&#x5F0F;&#x4E0B;etcd&#x7684;&#x57FA;&#x7840;&#x914D;&#x7F6E;&#x6CA1;&#x51C6;&#x5907;&#x597D;&#x3002;</td>
+</tr>
+<tr>
+<td>-40051</td>
+<td style="text-align:right">FilterContextException</td>
+<td style="text-align:left">JSR340&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x672A;&#x6B63;&#x786E;&#x7ED1;&#x5B9A;RoutingContext&#x5F15;&#x7528;&#x3002;</td>
+</tr>
+<tr>
+<td>-40052</td>
+<td style="text-align:right">FilterSpecificationException</td>
+<td style="text-align:left">JSR340&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x88AB;@WebFilter&#x6CE8;&#x89E3;&#x7684;&#x7C7B;&#x672A;&#x5B9E;&#x73B0;<code>Filter</code>&#x63A5;&#x53E3;</td>
+</tr>
+<tr>
+<td>-40053</td>
+<td style="text-align:right">FilterOrderException</td>
+<td style="text-align:left">JSR340&#x6267;&#x884C;&#x65F6;&#xFF0C;Handler&#x7684;&#x987A;&#x5E8F;order&#x4E3A;&#x8D1F;&#xFF08;&#x5927;&#x4E8E;&#x7B49;&#x4E8E;0&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td>-40054</td>
+<td style="text-align:right">FilterInitialException</td>
+<td style="text-align:left">JSR340&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x672A;&#x627E;&#x5230;&#x6CE8;&#x89E3;&#x4E86;@WebFilter&#x7684;&#x7C7B;&#x3002;</td>
+</tr>
+<tr>
+<td>-40064</td>
+<td style="text-align:right">ActSpecificationException</td>
+<td style="text-align:left">&#x6279;&#x91CF;&#x6A21;&#x5F0F;&#x548C;&#x5355;&#x91CF;&#x6A21;&#x5F0F;&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#x548C;&#x6570;&#x636E;&#x4E0D;&#x4E00;&#x81F4;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5305;&#x540D;&#xFF1A;<strong>io.vertx.up.exception.zero</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x9519;&#x8BEF;&#x7801;</th>
+<th style="text-align:right">&#x7C7B;&#x540D;</th>
+<th style="text-align:left">&#x89E6;&#x53D1;&#x6761;&#x4EF6;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-10005</td>
+<td style="text-align:right">DynamicKeyMissingException</td>
+<td style="text-align:left">&#x7EDF;&#x4E00;&#x914D;&#x7F6E;&#x4E2D;&#x4E22;&#x5931;&#x4E86;&#x52A8;&#x6001;key&#x914D;&#x7F6E;&#x3002;</td>
+</tr>
+<tr>
+<td>-10007</td>
+<td style="text-align:right">DynamicConfigTypeException</td>
+<td style="text-align:left">&#x67D0;&#x4E2A;&#x52A8;&#x6001;key&#x5BF9;&#x5E94;&#x914D;&#x7F6E;&#x4E0D;&#x662F;JsonObject&#x3002;</td>
+</tr>
+<tr>
+<td>-40020</td>
+<td style="text-align:right">ConfigKeyMissingException</td>
+<td style="text-align:left">&#x5BB9;&#x5668;&#x914D;&#x7F6E;&#x4E2D;&#x9700;&#x8981;&#x7684;&#x67D0;&#x4E2A;&#x914D;&#x7F6E;&#x4E22;&#x5931;&#x3002;</td>
+</tr>
+<tr>
+<td>-40026</td>
+<td style="text-align:right">InjectionLimeKeyException</td>
+<td style="text-align:left">&#x542F;&#x7528;&#x4E86;&#x63D2;&#x4EF6;&#xFF0C;&#x4F46;lime&#x6269;&#x5C55;&#x914D;&#x7F6E;&#x4E22;&#x5931;&#x3002;</td>
+</tr>
+<tr>
+<td>-40027</td>
+<td style="text-align:right">EtcdConfigEmptyException</td>
+<td style="text-align:left">EtcdClient&#x914D;&#x7F6E;&#x4E22;&#x5931;&#x3002;</td>
+</tr>
+<tr>
+<td>-40028</td>
+<td style="text-align:right">DuplicatedImplException</td>
+<td style="text-align:left">&#x67D0;&#x4E2A;&#x63A5;&#x53E3;&#x4E2D;&#x51FA;&#x73B0;&#x4E86;&#x591A;&#x4E2A;&#x5B9E;&#x73B0;&#x7C7B;&#xFF08;&#x8981;&#x6C42;&#x5355;class&#x5B9E;&#x73B0;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td>-40039</td>
+<td style="text-align:right">EtcdNetworkException</td>
+<td style="text-align:left">Etcd&#x914D;&#x7F6E;&#x7684;&#x670D;&#x52A1;&#x7AEF;&#x65E0;&#x6CD5;&#x8FDE;&#x63A5;&#xFF0C;&#x7F51;&#x7EDC;&#x51FA;&#x9519;&#x3002;</td>
+</tr>
+<tr>
+<td>-40055</td>
+<td style="text-align:right">JooqCondFieldException</td>
+<td style="text-align:left">&#x65E0;&#x6CD5;&#x6839;&#x636E;&#x5B57;&#x6BB5;&#x627E;&#x5230;&#x6B63;&#x786E;&#x7684;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#x5206;&#x6790;&#x5668;&#x3002;</td>
+</tr>
+<tr>
+<td>-40057</td>
+<td style="text-align:right">JooqMergeException</td>
+<td style="text-align:left">&#x4E24;&#x4E2A;&#x5B9E;&#x4F53;&#x62F7;&#x8D1D;&#x51FA;&#x73B0;&#x4E86;null&#x6307;&#x9488;&#xFF0C;&#x65E0;&#x6CD5;&#x6267;&#x884C;&#x3002;</td>
+</tr>
+<tr>
+<td>-40058</td>
+<td style="text-align:right">JooqModeConflictException</td>
+<td style="text-align:left">&#x300C;&#x4FDD;&#x7559;&#x300D;Jooq&#x6A21;&#x5F0F;&#x975E;&#x6CD5;&#x3002;</td>
+</tr>
+<tr>
+<td>-40059</td>
+<td style="text-align:right">JooqFieldMissingException</td>
+<td style="text-align:left">&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x540D;&#x5728;&#x5B9E;&#x4F53;&#x7C7B;&#x4E2D;&#x627E;&#x4E0D;&#x5230;&#xFF0C;&#x5B57;&#x6BB5;&#x540D;&#x975E;&#x6CD5;&#x3002;</td>
+</tr>
+<tr>
+<td>-40060</td>
+<td style="text-align:right">JooqVertxNullException</td>
+<td style="text-align:left">Jooq&#x672A;&#x6B63;&#x786E;&#x7ED1;&#x5B9A;Vertx&#x5B9E;&#x4F8B;&#x3002;</td>
+</tr>
+<tr>
+<td>-40062</td>
+<td style="text-align:right">TestCaseNameException</td>
+<td style="text-align:left">&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x540D;&#x79F0;&#x4E0D;&#x7B26;&#x5408;Zero&#x6D4B;&#x8BD5;&#x6846;&#x67B6;&#x89C4;&#x8303;&#x3002;</td>
+</tr>
+<tr>
+<td>-40063</td>
+<td style="text-align:right">InvokingSpecException</td>
+<td style="text-align:left">&#x5B9A;&#x4E49;&#x4E86;&#x8FD4;&#x56DE;&#x503C;void&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4F46;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4E0D;&#x7B26;&#x5408;&#x89C4;&#x8303;&#x3002;</td>
+</tr>
+<tr>
+<td>-40065</td>
+<td style="text-align:right">JooqConfigurationException</td>
+<td style="text-align:left">&#x914D;&#x7F6E;&#x6570;&#x636E;&#x4E2D;&#x6CA1;&#x627E;&#x5230;&#x6B63;&#x786E;&#x7684;Jooq&#x6570;&#x636E;&#x5E93;&#x914D;&#x7F6E;&#xFF08;provider&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td>-40066</td>
+<td style="text-align:right">JooqClassInvalidException</td>
+<td style="text-align:left">Jooq&#x4F20;&#x5165;&#x7C7B;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;VertxDAO&#x3002;</td>
+</tr>
+<tr>
+<td>-40067</td>
+<td style="text-align:right">JooqCondClauseException</td>
+<td style="text-align:left">&#x65E0;&#x6CD5;&#x6839;&#x636E;&#x5B57;&#x6BB5;&#x7C7B;&#x578B;&#x627E;&#x5230;Jooq&#x5B50;&#x53E5;&#x6267;&#x884C;&#x5668;&#x3002;</td>
+</tr>
+<tr>
+<td>-45001</td>
+<td style="text-align:right">ReduceVerticalException</td>
+<td style="text-align:left">&#x300C;&#x4FDD;&#x7559;&#x300D;JsonArray&#x4E2D;&#x67D0;&#x4E00;&#x5217;&#x7684;&#x503C;&#x4E0D;&#x662F;&#x5355;&#x503C;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5305;&#x540D;&#xFF1A;<strong>io.vertx.tp.error</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x9519;&#x8BEF;&#x7801;</th>
+<th style="text-align:right">&#x7C7B;&#x540D;</th>
+<th style="text-align:left">&#x89E6;&#x53D1;&#x6761;&#x4EF6;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-40015</td>
+<td style="text-align:right">PluginOptionException</td>
+<td style="text-align:left">&#x63D2;&#x4EF6;&#x7CFB;&#x7EDF;&#x8BFB;&#x53D6;&#x5931;&#x8D25;&#x3002;</td>
+</tr>
+<tr>
+<td>-40016</td>
+<td style="text-align:right">PluginSpecificationException</td>
+<td style="text-align:left">&#x63D2;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E0D;&#x7B26;&#x5408;&#x89C4;&#x8303;&#xFF0C;&#x4E22;&#x5931;&#x9759;&#x6001;&#x65B9;&#x6CD5;<code>init(Vertx)</code>&#x3002;</td>
+</tr>
+<tr>
+<td>-40019</td>
+<td style="text-align:right">PluginUpException</td>
+<td style="text-align:left">&#x63D2;&#x4EF6;&#x7CFB;&#x7EDF;&#x542F;&#x52A8;&#x5931;&#x8D25;&#x3002;</td>
+</tr>
+<tr>
+<td>-40033</td>
+<td style="text-align:right">XtorConnectException</td>
+<td style="text-align:left">&#x300C;&#x4FDD;&#x7559;&#x300D;XTor&#x7EC4;&#x4EF6;&#x8FDE;&#x63A5;&#x5931;&#x8D25;&#x3002;</td>
+</tr>
+<tr>
+<td>-40034</td>
+<td style="text-align:right">XtorNotReadyException</td>
+<td style="text-align:left">&#x300C;&#x4FDD;&#x7559;&#x300D;XTor&#x7EC4;&#x4EF6;&#x6CA1;&#x51C6;&#x5907;&#x597D;&#xFF0C;&#x521D;&#x59CB;&#x5316;&#x5931;&#x8D25;&#x3002;</td>
+</tr>
+<tr>
+<td>-40035</td>
+<td style="text-align:right">XtorExecuteException</td>
+<td style="text-align:left">&#x300C;&#x4FDD;&#x7559;&#x300D;XTor&#x7EC4;&#x4EF6;&#x6267;&#x884C;&#x5931;&#x8D25;&#x3002;</td>
+</tr>
+<tr>
+<td>-40036</td>
+<td style="text-align:right">EventCodexMultiException</td>
+<td style="text-align:left">@Codex&#x6CE8;&#x89E3;&#x591A;&#x6B21;&#xFF0C;&#x9A8C;&#x8BC1;&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;&#x51FA;&#x9519;&#x3002;</td>
+</tr>
+<tr>
+<td>-40037</td>
+<td style="text-align:right">RpcPreparingException</td>
+<td style="text-align:left">&#x5F00;&#x542F;RPC&#xFF0C;&#x4F46;&#x8FDC;&#x7A0B;Etcd&#x73AF;&#x5883;&#x672A;&#x51C6;&#x5907;&#x597D;&#x3002;</td>
+</tr>
+<tr>
+<td>-40038</td>
+<td style="text-align:right">WallDuplicatedException</td>
+<td style="text-align:left">&#x5B89;&#x5168;&#x6A21;&#x5F0F;&#x4E2D;&#xFF0C;@Wall&#x6CE8;&#x89E3;&#x7684;&#x7C7B;&#x51FA;&#x73B0;&#x91CD;&#x590D;&#x3002;</td>
+</tr>
+<tr>
+<td>-40040</td>
+<td style="text-align:right">WallKeyMissingException</td>
+<td style="text-align:left">@Wall&#x6CE8;&#x89E3;&#x5173;&#x8054;&#x914D;&#x7F6E;&#x4E22;&#x5931;&#x3002;</td>
+</tr>
+<tr>
+<td>-40041</td>
+<td style="text-align:right">WallMethodMultiException</td>
+<td style="text-align:left">@Wall&#x7C7B;&#x4E2D;&#x65B9;&#x6CD5;&#x5B9A;&#x4E49;&#x89C4;&#x8303;&#x9519;&#x8BEF;&#x3002;</td>
+</tr>
+<tr>
+<td>-40056</td>
+<td style="text-align:right">DataSourceException</td>
+<td style="text-align:left">&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x521D;&#x59CB;&#x5316;&#x5931;&#x8D25;&#x3002;</td>
+</tr>
+<tr>
+<td>-40070</td>
+<td style="text-align:right">InternalConflictException</td>
+<td style="text-align:left">&#x63A7;&#x5236;&#x53F0;&#x542F;&#x52A8;&#x5668;&#x88AB;&#x91CD;&#x5199;&#x6216;&#x7834;&#x574F;&#x3002;</td>
+</tr>
+<tr>
+<td>-40071</td>
+<td style="text-align:right">CommandParseException</td>
+<td style="text-align:left">&#x63A7;&#x5236;&#x53F0;&#x8F93;&#x5165;&#x7684;&#x547D;&#x4EE4;&#x65E0;&#x6CD5;&#x88AB;&#x6B63;&#x786E;&#x89E3;&#x6790;&#x3002;</td>
+</tr>
+<tr>
+<td>-40072</td>
+<td style="text-align:right">CommandMissingException</td>
+<td style="text-align:left">&#x63A7;&#x5236;&#x53F0;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#x4E22;&#x5931;&#x3002;</td>
+</tr>
+<tr>
+<td>-40073</td>
+<td style="text-align:right">CommandUnknownException</td>
+<td style="text-align:left">&#x63A7;&#x5236;&#x53F0;&#x547D;&#x4EE4;&#x65E0;&#x6CD5;&#x8BC6;&#x522B;&#x3002;</td>
+</tr>
+<tr>
+<td>-40074</td>
+<td style="text-align:right">PluginMissingException</td>
+<td style="text-align:left">&#x65E0;&#x6CD5;&#x627E;&#x5230;&#x63A7;&#x5236;&#x53F0;&#x547D;&#x4EE4;&#x7684;&#x6267;&#x884C;&#x5668;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="24-webexception&#x5B50;&#x7C7B;">2.4. WebException&#x5B50;&#x7C7B;</h3>
+<blockquote>
+<p>&#x7C7B;&#x540D;&#x81EA;&#x5E26;&#x72B6;&#x6001;&#x4EE3;&#x7801;&#xFF0C;&#x6B64;&#x5904;&#x4E0D;&#x65B0;&#x589E;&#x5217;&#x679A;&#x4E3E;&#x3002;</p>
+</blockquote>
+<h4 id="241-&#x6807;&#x51C6;&#x5F02;&#x5E38;">2.4.1. &#x6807;&#x51C6;&#x5F02;&#x5E38;</h4>
+<p>&#x5305;&#x540D;&#xFF1A;<strong>io.vertx.up.exception.web</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x9519;&#x8BEF;&#x7801;</th>
+<th style="text-align:right">&#x7C7B;&#x540D;</th>
+<th style="text-align:left">&#x89E6;&#x53D1;&#x6761;&#x4EF6;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-20005</td>
+<td style="text-align:right">_500SessionClientInitException</td>
+<td style="text-align:left">SessionClient&#x521D;&#x59CB;&#x5316;&#x5931;&#x8D25;&#x3002;</td>
+</tr>
+<tr>
+<td>-40061</td>
+<td style="text-align:right">_500SecurityNotImplementException</td>
+<td style="text-align:left">&#x7CFB;&#x7EDF;&#x6253;&#x5F00;&#x4E86;Zero&#x5B89;&#x5168;&#x6A21;&#x5757;&#xFF0C;&#x4F46;&#x672A;&#x627E;&#x5230;@Wall&#x6CE8;&#x89E3;&#x7C7B;&#x3002;</td>
+</tr>
+<tr>
+<td>-40069</td>
+<td style="text-align:right">_415MediaDeclareException</td>
+<td style="text-align:left">&#x300C;&#x4FDD;&#x7559;&#x300D;&#x670D;&#x52A1;&#x7AEF;&#x504F;&#x597D;MIME&#x9519;&#x8BEF;&#x3002;</td>
+</tr>
+<tr>
+<td>-40068</td>
+<td style="text-align:right">_411ContentLengthException</td>
+<td style="text-align:left">&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x975E;&#x6CD5;&#xFF0C;Content-Length&#x4E0D;&#x5339;&#x914D;&#x3002;</td>
+</tr>
+<tr>
+<td>-60000</td>
+<td style="text-align:right">_400ValidationException</td>
+<td style="text-align:left">&#x6807;&#x51C6;400&#x9A8C;&#x8BC1;&#x5F02;&#x5E38;&#xFF0C;&#x53C2;&#x6570;&#x9A8C;&#x8BC1;&#x5931;&#x8D25;&#x3002;</td>
+</tr>
+<tr>
+<td>-60001</td>
+<td style="text-align:right">_400ResourceBuildingException</td>
+<td style="text-align:left">&#x300C;&#x4FDD;&#x7559;&#x300D;&#x8BF7;&#x6C42;&#x5185;&#x5BB9;&#x65E0;&#x6CD5;&#x6B63;&#x786E;&#x8F6C;&#x6362;&#x3002;</td>
+</tr>
+<tr>
+<td>-60002</td>
+<td style="text-align:right">_500DeliveryErrorException</td>
+<td style="text-align:left">&#x6570;&#x636E;&#x5728;Delivery&#x8FC7;&#x7A0B;&#x4E2D;&#x51FA;&#x9519;&#x3002;</td>
+</tr>
+<tr>
+<td>-60003</td>
+<td style="text-align:right">_500EntityCastException</td>
+<td style="text-align:left">&#x5B9E;&#x4F53;&#x3001;&#x5BF9;&#x8C61;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x51FA;&#x9519;&#x3002;</td>
+</tr>
+<tr>
+<td>-60004</td>
+<td style="text-align:right">_400ParameterFromStringException</td>
+<td style="text-align:left">&#x53C2;&#x6570;&#x6570;&#x636E;&#x8F6C;&#x578B;&#x51FA;&#x9519;&#x3002;</td>
+</tr>
+<tr>
+<td>-60005</td>
+<td style="text-align:right">_400ValidationRuleException</td>
+<td style="text-align:left">&#x6807;&#x51C6;400&#x9A8C;&#x8BC1;&#x5F02;&#x5E38;&#xFF0C;Body&#x9A8C;&#x8BC1;&#x5931;&#x8D25;&#x3002;</td>
+</tr>
+<tr>
+<td>-60006</td>
+<td style="text-align:right">_415MediaNotSupportException</td>
+<td style="text-align:left">MIME&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x4E0D;&#x5339;&#x914D;&#x3002;</td>
+</tr>
+<tr>
+<td>-60007</td>
+<td style="text-align:right">_500InternalServerException</td>
+<td style="text-align:left">&#x6807;&#x51C6;500&#x5F02;&#x5E38;&#x3002;</td>
+</tr>
+<tr>
+<td>-60008</td>
+<td style="text-align:right">_404RecordNotFoundException</td>
+<td style="text-align:left">&#x300C;&#x4FDD;&#x7559;&#x300D;&#x5B58;&#x50A8;storage&#x4E2D;&#x65E0;&#x6CD5;&#x627E;&#x5230;&#x6570;&#x636E;&#x3002;</td>
+</tr>
+<tr>
+<td>-60009</td>
+<td style="text-align:right">_400DuplicatedRecordException</td>
+<td style="text-align:left">&#x300C;&#x4FDD;&#x7559;&#x300D;&#x5B58;&#x50A8;storage&#x8BB0;&#x5F55;&#x91CD;&#x590D;&#x5F02;&#x5E38;&#x3002;</td>
+</tr>
+<tr>
+<td>-60010</td>
+<td style="text-align:right">_404ServiceNotFoundException</td>
+<td style="text-align:left">&#x6807;&#x51C6;404&#x5F02;&#x5E38;&#x3002;</td>
+</tr>
+<tr>
+<td>-60011</td>
+<td style="text-align:right">_400BadRequestException</td>
+<td style="text-align:left">&#x6807;&#x51C6;400&#x5F02;&#x5E38;&#x3002;</td>
+</tr>
+<tr>
+<td>-60012</td>
+<td style="text-align:right">_401UnauthorizedException</td>
+<td style="text-align:left">&#x6807;&#x51C6;401&#x5F02;&#x5E38;&#x3002;</td>
+</tr>
+<tr>
+<td>-60013</td>
+<td style="text-align:right">_403ForbiddenException</td>
+<td style="text-align:left">&#x6807;&#x51C6;403&#x5F02;&#x5E38;&#x3002;</td>
+</tr>
+<tr>
+<td>-60014</td>
+<td style="text-align:right">_405MethodForbiddenException</td>
+<td style="text-align:left">&#x6807;&#x51C6;405&#x5F02;&#x5E38;&#x3002;</td>
+</tr>
+<tr>
+<td>-60015</td>
+<td style="text-align:right">_501RpcImplementException</td>
+<td style="text-align:left">RPC&#x670D;&#x52A1;&#x65E0;&#x6CD5;&#x627E;&#x5230;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x65E0;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x3002;</td>
+</tr>
+<tr>
+<td>-60016</td>
+<td style="text-align:right">_501RpcAddressWrongException</td>
+<td style="text-align:left">RPC&#x901A;&#x8BAF;&#x5730;&#x5740;&#x51FA;&#x9519;&#x3002;</td>
+</tr>
+<tr>
+<td>-60017</td>
+<td style="text-align:right">_504RemoteRpcException</td>
+<td style="text-align:left">&#x300C;&#x4FDD;&#x7559;&#x300D;RPC&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x6267;&#x884C;&#x4EE3;&#x7801;&#x51FA;&#x9519;&#x3002;</td>
+</tr>
+<tr>
+<td>-60018</td>
+<td style="text-align:right">_501RpcMethodMissingException</td>
+<td style="text-align:left">&#x5FAE;&#x670D;&#x52A1;&#x65E0;&#x6CD5;&#x627E;&#x5230;RPC&#x6267;&#x884C;&#x65B9;&#x6CD5;&#x3002;</td>
+</tr>
+<tr>
+<td>-60019</td>
+<td style="text-align:right">_500UnexpectedRpcException</td>
+<td style="text-align:left">RPC&#x901A;&#x8BAF;&#x5F02;&#x5E38;&#x3002;</td>
+</tr>
+<tr>
+<td>-60020</td>
+<td style="text-align:right">_424RpcServiceException</td>
+<td style="text-align:left">&#x65E0;&#x6CD5;&#x6839;&#x636E;&#x540D;&#x79F0;&#x627E;&#x5230;&#x5339;&#x914D;&#x7684;RPC&#x670D;&#x52A1;&#x3002;</td>
+</tr>
+<tr>
+<td>-60021</td>
+<td style="text-align:right">_400FilePathMissingException</td>
+<td style="text-align:left">&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x51FA;&#x9519;&#x3002;</td>
+</tr>
+<tr>
+<td>-60022</td>
+<td style="text-align:right">_400QueryKeyTypeException</td>
+<td style="text-align:left">Ir&#x914D;&#x7F6E;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x7C7B;&#x578B;&#x975E;&#x6CD5;&#x3002;</td>
+</tr>
+<tr>
+<td>-60023</td>
+<td style="text-align:right">_400PagerInvalidException</td>
+<td style="text-align:left">pager&#x53C2;&#x6570;&#x4E22;&#x5931;&#x4E86;&#x5FC5;&#x987B;&#x5C5E;&#x6027;&#x3002;</td>
+</tr>
+<tr>
+<td>-60024</td>
+<td style="text-align:right">_500QueryMetaNullException</td>
+<td style="text-align:left">&#x67E5;&#x8BE2;&#x5F15;&#x64CE;&#x53C2;&#x6570;&#x5143;&#x6570;&#x636E;&#x5B9A;&#x4E49;&#x4E3A;null&#x3002;</td>
+</tr>
+<tr>
+<td>-60025</td>
+<td style="text-align:right">_400PagerIndexException</td>
+<td style="text-align:left">&#x300C;&#x4FDD;&#x7559;&#x300D;pager&#x53C2;&#x6570;&#x7684;page&#x5C5E;&#x6027;&#x975E;&#x6CD5;&#x3002;</td>
+</tr>
+<tr>
+<td>-60026</td>
+<td style="text-align:right">_400OpUnsupportException</td>
+<td style="text-align:left">&#x67E5;&#x8BE2;&#x5F15;&#x64CE;&#x64CD;&#x4F5C;&#x7B26;&#x975E;&#x6CD5;&#x3002;</td>
+</tr>
+<tr>
+<td>-60027</td>
+<td style="text-align:right">_501RpcRejectException</td>
+<td style="text-align:left">&#x5F53;&#x524D;&#x8BF7;&#x6C42;&#x7684;RPC&#x88AB;&#x62D2;&#x7EDD;&#xFF0C;&#x4E0D;&#x652F;&#x6301;&#x8BE5;&#x670D;&#x52A1;&#x3002;</td>
+</tr>
+<tr>
+<td>-60028</td>
+<td style="text-align:right">_500RpcMethodInvokeException</td>
+<td style="text-align:left">RPC&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x8FC7;&#x7A0B;&#x4E2D;&#x51FA;&#x73B0;&#x4E86;&#x4E0D;&#x53EF;&#x9884;&#x77E5;&#x7684;&#x9519;&#x8BEF;&#x3002;</td>
+</tr>
+<tr>
+<td>-60029</td>
+<td style="text-align:right">_401JwtExpiredException</td>
+<td style="text-align:left">Jwt&#x7684;&#x4EE4;&#x724C;token&#x8FC7;&#x671F;&#xFF0C;&#x8BF7;&#x91CD;&#x65B0;&#x7533;&#x8BF7;&#x3002;</td>
+</tr>
+<tr>
+<td>-60030</td>
+<td style="text-align:right">_401JwtAudientException</td>
+<td style="text-align:left">Jwt&#x7684;audient&#x53C2;&#x6570;&#x975E;&#x6CD5;&#xFF0C;&#x8BA4;&#x8BC1;&#x5931;&#x8D25;&#x3002;</td>
+</tr>
+<tr>
+<td>-60031</td>
+<td style="text-align:right">_401JwtIssuerException</td>
+<td style="text-align:left">Jwt&#x7684;issuer&#x53C2;&#x6570;&#x975E;&#x6CD5;&#xFF0C;&#x8BA4;&#x8BC1;&#x5931;&#x8D25;&#x3002;</td>
+</tr>
+<tr>
+<td>-60032</td>
+<td style="text-align:right">_500JwtRuntimeException</td>
+<td style="text-align:left">Jwt&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x5F02;&#x5E38;&#x3002;</td>
+</tr>
+<tr>
+<td>-60033</td>
+<td style="text-align:right">_401JwtExecutorException</td>
+<td style="text-align:left">Jwt&#x6267;&#x884C;&#x7ED3;&#x679C;&#x4E3A;false&#xFF0C;&#x8BA4;&#x8BC1;&#x5931;&#x8D25;&#x3002;</td>
+</tr>
+<tr>
+<td>-60034</td>
+<td style="text-align:right">_501SharedDataModeException</td>
+<td style="text-align:left">SharedMap&#x8C03;&#x7528;&#x4E2D;&#x540C;&#x5F02;&#x6B65;&#x6A21;&#x5F0F;&#x51B2;&#x7A81;&#x3002;</td>
+</tr>
+<tr>
+<td>-60035</td>
+<td style="text-align:right">_500PoolInternalException</td>
+<td style="text-align:left">SharedMap&#x5171;&#x4EAB;&#x6C60;&#x64CD;&#x4F5C;&#x8FC7;&#x7A0B;&#x51FA;&#x9519;&#x3002;</td>
+</tr>
+<tr>
+<td>-60036</td>
+<td style="text-align:right">_500RpcTransitInvokeException</td>
+<td style="text-align:left">RPC&#x6D41;&#x6A21;&#x5F0F;&#x4E2D;Transit&#x8C03;&#x7528;&#x51FA;&#x9519;&#x3002;</td>
+</tr>
+<tr>
+<td>-60040</td>
+<td style="text-align:right">_412ContractFieldException</td>
+<td style="text-align:left">@Contract&#x4FEE;&#x9970;&#x5C5E;&#x6027;&#x65F6;&#x51FA;&#x73B0;&#x4E86;&#x91CD;&#x590D;&#xFF08;&#x53EA;&#x80FD;&#x6CE8;&#x89E3;&#x4E00;&#x6B21;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td>-60041</td>
+<td style="text-align:right">_417JobMethodException</td>
+<td style="text-align:left">&#x540E;&#x53F0;&#x4EFB;&#x52A1;&#x7684;&#x65B9;&#x6CD5;&#x53C2;&#x6570;&#x5B9A;&#x4E49;&#x9519;&#x8BEF;&#x3002;</td>
+</tr>
+<tr>
+<td>-60042</td>
+<td style="text-align:right">_501JobOnMissingException</td>
+<td style="text-align:left">&#x540E;&#x53F0;&#x4EFB;&#x52A1;&#x7C7B;&#x4E2D;&#x672A;&#x5B9A;&#x4E49;&#x4EFB;&#x4F55;@On&#x7684;&#x65B9;&#x6CD5;&#x3002;</td>
+</tr>
+<tr>
+<td>-60044</td>
+<td style="text-align:right">_500PointerPluginException</td>
+<td style="text-align:left">&#x300C;&#x4FDD;&#x7559;&#x300D;&#x63D2;&#x4EF6;&#x5F15;&#x7528;&#x51FA;&#x9519;&#x3002;</td>
+</tr>
+<tr>
+<td>-60046</td>
+<td style="text-align:right">_500RequestConfigException</td>
+<td style="text-align:left">WebClient&#x914D;&#x7F6E;&#x6570;&#x636E;&#x51FA;&#x9519;&#x3002;</td>
+</tr>
+<tr>
+<td>-60047</td>
+<td style="text-align:right">_501HttpClientNullException</td>
+<td style="text-align:left">WebClient&#x5B9E;&#x73B0;&#x7C7B;&#x627E;&#x4E0D;&#x5230;&#xFF0C;&#x73AF;&#x5883;&#x51FA;&#x9519;&#x3002;</td>
+</tr>
+<tr>
+<td>-60045</td>
+<td style="text-align:right">_400SigmaMissingException</td>
+<td style="text-align:left">Header&#x4E2D;&#x4E22;&#x5931;&#x4E86;X-Sigma&#x53C2;&#x6570;&#x5BFC;&#x81F4;sigma&#x65E0;&#x6CD5;&#x8BFB;&#x53D6;&#x3002;</td>
+</tr>
+<tr>
+<td>-60048</td>
+<td style="text-align:right">_415PointDefineException</td>
+<td style="text-align:left">&#x5750;&#x6807;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x5931;&#x8D25;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="242-&#x63D2;&#x4EF6;&#x5F02;&#x5E38;">2.4.2. &#x63D2;&#x4EF6;&#x5F02;&#x5E38;</h4>
+<p>&#x5305;&#x540D;&#xFF1A;<strong>io.vertx.tp.error</strong></p>
+<h5 id="zero-ifx-es">zero-ifx-es</h5>
+<table>
+<thead>
+<tr>
+<th>&#x9519;&#x8BEF;&#x7801;</th>
+<th style="text-align:right">&#x7C7B;&#x540D;</th>
+<th style="text-align:left">&#x89E6;&#x53D1;&#x6761;&#x4EF6;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-20006</td>
+<td style="text-align:right">_404ConfigurationMissingExceptionn</td>
+<td style="text-align:left">ElasticSearch&#x914D;&#x7F6E;&#x4E22;&#x5931;&#x3002;</td>
+</tr>
+<tr>
+<td>-20007</td>
+<td style="text-align:right">_404IndexNameMissingExceptionn</td>
+<td style="text-align:left">&#x8F93;&#x5165;&#x6570;&#x636E;&#x4E2D;&#x4E22;&#x5931;&#x4E86;Index&#x540D;&#x3002;</td>
+</tr>
+<tr>
+<td>-20008</td>
+<td style="text-align:right">_404SearchTextMissingExceptionn</td>
+<td style="text-align:left">&#x5168;&#x6587;&#x68C0;&#x7D22;&#x4E2D;&#x4E22;&#x5931;&#x4E86;&#x8F93;&#x5165;&#x5173;&#x952E;&#x5B57;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="zero-ifx-excel">zero-ifx-excel</h5>
+<table>
+<thead>
+<tr>
+<th>&#x9519;&#x8BEF;&#x7801;</th>
+<th style="text-align:right">&#x7C7B;&#x540D;</th>
+<th style="text-align:left">&#x89E6;&#x53D1;&#x6761;&#x4EF6;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-60037</td>
+<td style="text-align:right">_404ExcelFileNullException</td>
+<td style="text-align:left">Excel&#x6587;&#x4EF6;&#x4E22;&#x5931;&#xFF0C;&#x65E0;&#x6CD5;&#x6784;&#x9020;Workbook&#x3002;</td>
+</tr>
+<tr>
+<td>-60038</td>
+<td style="text-align:right">_404ConnectMissingException</td>
+<td style="text-align:left">ExcelClient&#x4E13;&#x7528;&#x914D;&#x7F6E;&#x4E22;&#x5931;&#x3002;</td>
+</tr>
+<tr>
+<td>-60039</td>
+<td style="text-align:right">_500ExportingErrorException</td>
+<td style="text-align:left">Excel&#x5BFC;&#x51FA;&#x6570;&#x636E;&#x51FA;&#x9519;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="zero-ifx-iqiy">zero-ifx-iqiy</h5>
+<table>
+<thead>
+<tr>
+<th>&#x9519;&#x8BEF;&#x7801;</th>
+<th style="text-align:right">&#x7C7B;&#x540D;</th>
+<th style="text-align:left">&#x89E6;&#x53D1;&#x6761;&#x4EF6;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-20001</td>
+<td style="text-align:right">_401QiyAuthorizedException</td>
+<td style="text-align:left">&#x8BBF;&#x95EE;&#x7231;&#x5947;&#x827A;&#x63A5;&#x53E3;<code>/iqiyi/authorize</code>&#x51FA;&#x9519;&#x3002;</td>
+</tr>
+<tr>
+<td>-20001</td>
+<td style="text-align:right">_401QiyExecuteException</td>
+<td style="text-align:left">&#x540C;&#x4E0A;&#xFF0C;&#x4E14;code&#x4E00;&#x81F4;&#x3002;</td>
+</tr>
+<tr>
+<td>-20002</td>
+<td style="text-align:right">_401QiyTokenException</td>
+<td style="text-align:left">&#x6570;&#x636E;&#x8BB0;&#x5F55;&#x4E2D;&#x7F3A;&#x5C11;<code>access_token</code>&#xFF0C;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;API&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="zero-ifx-redis">zero-ifx-redis</h5>
+<table>
+<thead>
+<tr>
+<th>&#x9519;&#x8BEF;&#x7801;</th>
+<th style="text-align:right">&#x7C7B;&#x540D;</th>
+<th style="text-align:left">&#x89E6;&#x53D1;&#x6761;&#x4EF6;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-60043</td>
+<td style="text-align:right">_409SessionVersionException</td>
+<td style="text-align:left">&#x4F1A;&#x8BDD;Session&#x4E2D;&#x7684;&#x65B0;&#x65E7;&#x7248;&#x672C;&#x4E0D;&#x4E00;&#x81F4;&#xFF0C;&#x5339;&#x914D;&#x5931;&#x8D25;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="zero-ifx-sms">zero-ifx-sms</h5>
+<table>
+<thead>
+<tr>
+<th>&#x9519;&#x8BEF;&#x7801;</th>
+<th style="text-align:right">&#x7C7B;&#x540D;</th>
+<th style="text-align:left">&#x89E6;&#x53D1;&#x6761;&#x4EF6;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-20003</td>
+<td style="text-align:right">_424ProfileEndPointException</td>
+<td style="text-align:left">&#x963F;&#x91CC;&#x77ED;&#x4FE1;&#x5BA2;&#x6237;&#x7AEF;&#x65E0;&#x6CD5;&#x6267;&#x884C;&#x521D;&#x59CB;&#x5316;&#x3002;</td>
+</tr>
+<tr>
+<td>-20004</td>
+<td style="text-align:right">_424MessageSendException</td>
+<td style="text-align:left">&#x963F;&#x91CC;&#x77ED;&#x4FE1;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x5931;&#x8D25;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="243-&#x6269;&#x5C55;&#x6A21;&#x5757;&#x5F02;&#x5E38;">2.4.3. &#x6269;&#x5C55;&#x6A21;&#x5757;&#x5F02;&#x5E38;</h4>
+<p>&#x5305;&#x540D;&#xFF1A;<strong>io.vertx.tp.error</strong></p>
+<blockquote>
+<p>Extension&#x6A21;&#x5757;&#x4E2D;&#x7684;OOB&#x5B9A;&#x4E49;&#x3002;</p>
+</blockquote>
+<h5 id="zero-ambient">zero-ambient</h5>
+<table>
+<thead>
+<tr>
+<th>&#x9519;&#x8BEF;&#x7801;</th>
+<th style="text-align:right">&#x7C7B;&#x540D;</th>
+<th style="text-align:left">&#x89E6;&#x53D1;&#x6761;&#x4EF6;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-80300</td>
+<td style="text-align:right">_500AmbientErrorException</td>
+<td style="text-align:left">&#x65E0;&#x6CD5;&#x8BFB;&#x53D6;&#x5E94;&#x7528;&#x6570;&#x636E;&#x3002;</td>
+</tr>
+<tr>
+<td>-80301</td>
+<td style="text-align:right">_500ApplicationInitException</td>
+<td style="text-align:left">&#x65E0;&#x6CD5;&#x521D;&#x59CB;&#x5316;name&#x5BF9;&#x5E94;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF0C;&#x5305;&#x62EC;&#x914D;&#x7F6E;&#x3002;</td>
+</tr>
+<tr>
+<td>-80302</td>
+<td style="text-align:right">_500InitSpecificationException</td>
+<td style="text-align:left">&#x65E0;&#x6CD5;&#x627E;&#x5230;Init&#x521D;&#x59CB;&#x5316;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;&#x7C7B;&#x3002;</td>
+</tr>
+<tr>
+<td>-80303</td>
+<td style="text-align:right">_500PrerequisiteSpecException</td>
+<td style="text-align:left">&#x65E0;&#x6CD5;&#x627E;&#x5230;Prerequisite&#x9884;&#x5904;&#x7406;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;&#x7C7B;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="zero-atom">zero-atom</h5>
+<table>
+<thead>
+<tr>
+<th>&#x9519;&#x8BEF;&#x7801;</th>
+<th style="text-align:right">&#x7C7B;&#x540D;</th>
+<th style="text-align:left">&#x89E6;&#x53D1;&#x6761;&#x4EF6;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-80500</td>
+<td style="text-align:right">_409UniqueConstraintException</td>
+<td style="text-align:left">&#x300C;&#x4FDD;&#x7559;&#x300D;&#x6570;&#x636E;&#x5E93;&#x5E95;&#x5C42;&#x51FA;&#x73B0;&#x4E86;Unique&#x7EA6;&#x675F;&#x5F02;&#x5E38;&#x3002;</td>
+</tr>
+<tr>
+<td>-80501</td>
+<td style="text-align:right">_500DdlExecuteException</td>
+<td style="text-align:left">&#x6570;&#x636E;&#x5E93;SQL&#x7684;DDL&#x8BED;&#x53E5;&#x6267;&#x884C;&#x5931;&#x8D25;&#x3002;</td>
+</tr>
+<tr>
+<td>-80502</td>
+<td style="text-align:right">_500EmptySQLException</td>
+<td style="text-align:left">&#x6267;&#x884C;&#x7684;SQL&#x8BED;&#x53E5;&#x4E3A;&#x7A7A;&#xFF08;null&#x6216;&quot;&quot;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td>-80503</td>
+<td style="text-align:right">_501IngestImplementException</td>
+<td style="text-align:left">Ingest&#x63A5;&#x53E3;&#x5B9E;&#x73B0;&#x7C7B;&#x975E;&#x6CD5;&#x3002;</td>
+</tr>
+<tr>
+<td>-80504</td>
+<td style="text-align:right">_500NullableAddException</td>
+<td style="text-align:left">&#x65E0;&#x6CD5;&#x7528;DDL&#x6DFB;&#x52A0;NOT NULL&#x5217;&#x3002;</td>
+</tr>
+<tr>
+<td>-80505</td>
+<td style="text-align:right">_500NullableAlterException</td>
+<td style="text-align:left">&#x56E0;&#x4E3A;&#x4FEE;&#x6539;&#x5217;&#x6709;&#x6570;&#x636E;&#x65E0;&#x6CD5;&#x4FEE;&#x6539;&#x4E3A;NOT NULL&#x3002;</td>
+</tr>
+<tr>
+<td>-80506</td>
+<td style="text-align:right">_501AoReflectorNullException</td>
+<td style="text-align:left">&#x5173;&#x8054;&#x7EC4;&#x4EF6;AoReflector&#x4E3A;null&#xFF0C;&#x8DE8;&#x8868;&#x4FEE;&#x6539;&#x4F1A;&#x5931;&#x8D25;&#x3002;</td>
+</tr>
+<tr>
+<td>-80507</td>
+<td style="text-align:right">_501AoSentenceNullException</td>
+<td style="text-align:left">&#x8BED;&#x53E5;&#x7EC4;&#x4EF6;AoSentence&#x4E3A;null&#xFF0C;&#x65E0;&#x6CD5;&#x57AE;&#x5E93;&#x517C;&#x5BB9;&#x3002;</td>
+</tr>
+<tr>
+<td>-80508</td>
+<td style="text-align:right">_501PinNotFoundException</td>
+<td style="text-align:left">&#x65E0;&#x6CD5;&#x521D;&#x59CB;&#x5316;&#x73AF;&#x5883;&#x4E2D;&#x7684;Pin&#x7EC4;&#x4EF6;&#xFF0C;&#x4E0D;&#x80FD;&#x8BBF;&#x95EE;&#x5E93;&#x3002;</td>
+</tr>
+<tr>
+<td>-80509</td>
+<td style="text-align:right">_500TypeAlterException</td>
+<td style="text-align:left">&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x5217;&#x7C7B;&#x578B;&#x65E0;&#x6CD5;&#x66F4;&#x6539;&#xFF08;&#x7C7B;&#x578B;&#x4E0D;&#x517C;&#x5BB9;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td>-80510</td>
+<td style="text-align:right">_404ModelNotFoundException</td>
+<td style="text-align:left">&#x65E0;&#x6CD5;&#x6839;&#x636E;identifier&#x67E5;&#x627E;&#x5230;&#x5408;&#x6CD5;&#x7684;Atom&#x6A21;&#x578B;&#x5B9A;&#x4E49;&#x3002;</td>
+</tr>
+<tr>
+<td>-80511</td>
+<td style="text-align:right">_400ExcelAppConflictException</td>
+<td style="text-align:left">Excel&#x5BFC;&#x5165;&#x5BFC;&#x51FA;&#x6A21;&#x5757;&#x683C;&#x5F0F;&#x5F02;&#x5E38;&#xFF0C;&#x51FA;&#x73B0;&#x4E86;&#x51B2;&#x7A81;&#x3002;</td>
+</tr>
+<tr>
+<td>-80512</td>
+<td style="text-align:right">_400ExcelTplErrorException</td>
+<td style="text-align:left">Excel&#x5BFC;&#x5165;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x5185;&#x5BB9;&#x4E0D;&#x7B26;&#x5408;&#x6A21;&#x677F;&#x5B9A;&#x4E49;&#x3002;</td>
+</tr>
+<tr>
+<td>-80514</td>
+<td style="text-align:right">_417PrimaryKeyResultException</td>
+<td style="text-align:left">&#x4E3B;&#x952E;&#x4E94;&#x79CD;&#x6A21;&#x5F0F;&#x548C;&#x6267;&#x884C;&#x5668;&#x4EA7;&#x751F;&#x4E86;&#x51B2;&#x7A81;&#x3002;</td>
+</tr>
+<tr>
+<td>-80515</td>
+<td style="text-align:right">_417PrimaryKeySizeException</td>
+<td style="text-align:left">&#x4E00;&#x4E2A;&#x6A21;&#x578B;Model&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x4E3B;&#x952E;&#x89C4;&#x8303;&#x5C3A;&#x5BF8;&#x4E0D;&#x5BF9;&#x3002;</td>
+</tr>
+<tr>
+<td>-80516</td>
+<td style="text-align:right">_417PrimaryKeySpecException</td>
+<td style="text-align:left">&#x6A21;&#x578B;&#x4E2D;&#x4E3B;&#x952E;&#x5B9A;&#x4E49;&#x89C4;&#x8303;&#x51FA;&#x9519;&#xFF0C;&#x672A;&#x6EE1;&#x8DB3;Zero&#x5B9A;&#x4E49;&#x7684;&#x8303;&#x5F0F;&#x3002;</td>
+</tr>
+<tr>
+<td>-80517</td>
+<td style="text-align:right">_417DataAtomNullException</td>
+<td style="text-align:left">&#x7CFB;&#x7EDF;&#x68C0;&#x6D4B;&#x5230;&#x4E3A;null&#x7684;DataAtom&#x5F15;&#x7528;&#x3002;</td>
+</tr>
+<tr>
+<td>-80518</td>
+<td style="text-align:right">_417DataTransactionException</td>
+<td style="text-align:left">&#x6570;&#x636E;&#x5E93;DML&#x8BED;&#x53E5;&#x6267;&#x884C;&#x65F6;&#x51FA;SQL&#x5E95;&#x5C42;&#x9519;&#x3002;</td>
+</tr>
+<tr>
+<td>-80519</td>
+<td style="text-align:right">_417DataUnexpectException</td>
+<td style="text-align:left">&#x6570;&#x636E;&#x5E93;DML&#x6570;&#x636E;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x4E0D;&#x5339;&#x914D;&#x3002;</td>
+</tr>
+<tr>
+<td>-80520</td>
+<td style="text-align:right">_417PrimaryKeyMissingException</td>
+<td style="text-align:left">&#xFF08;&#x540C;80535&#xFF09;&#x6A21;&#x578B;&#x5B9A;&#x4E49;&#x4E2D;&#x4E2D;&#x6CA1;&#x627E;&#x5230;&#x4EFB;&#x4F55;&#x4E3B;&#x952E;&#x5B9A;&#x4E49;&#x3002;</td>
+</tr>
+<tr>
+<td>-80521</td>
+<td style="text-align:right">_417SqlExecutingException</td>
+<td style="text-align:left">&#x6570;&#x636E;&#x5E93;SQL&#x7684;DML&#x8BED;&#x53E5;&#x6267;&#x884C;&#x5931;&#x8D25;&#x3002;</td>
+</tr>
+<tr>
+<td>-80522</td>
+<td style="text-align:right">_417ConditionEmptyException</td>
+<td style="text-align:left">&#x60A8;&#x60F3;&#x6784;&#x9020;&#x67E5;&#x8BE2;&#x5F15;&#x64CE;&#x6240;&#x9700;&#x6761;&#x4EF6;&#xFF0C;&#x4F46;DataMatrix&#x4E3A;&#x7A7A;&#x3002;</td>
+</tr>
+<tr>
+<td>-80523</td>
+<td style="text-align:right">_417ConditionWhereException</td>
+<td style="text-align:left">Where&#x5B50;&#x53E5;&#x65E0;&#x53C2;&#x6570;&#x5143;&#x7D20;&#xFF0C;&#x65E0;&#x6CD5;&#x6784;&#x9020;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#x3002;</td>
+</tr>
+<tr>
+<td>-80524</td>
+<td style="text-align:right">_417TableCounterException</td>
+<td style="text-align:left">&#x8868;&#x6267;&#x884C;Join&#x65F6;&#x8868;&#x6570;&#x91CF;&#x548C;&#x6A21;&#x578B;&#x5B9A;&#x4E49;&#x4E2D;&#x4E0D;&#x5339;&#x914D;&#x3002;</td>
+</tr>
+<tr>
+<td>-80525</td>
+<td style="text-align:right">_500ConditionFieldException</td>
+<td style="text-align:left">&#x67E5;&#x8BE2;&#x5B57;&#x6BB5;&#x8F6C;&#x6362;&#x6210;&#x8868;&#x5B57;&#x6BB5;&#x540E;&#x975E;&#x6CD5;&#xFF0C;&#x5728;&#x8868;&#x4E2D;&#x4E0D;&#x5B58;&#x5728;&#x3002;</td>
+</tr>
+<tr>
+<td>-80526</td>
+<td style="text-align:right">_400FileRequiredException</td>
+<td style="text-align:left">&#x4E0A;&#x4F20;&#x7684;&#x6587;&#x4EF6;&#x4E3A;null&#xFF0C;&#x8BF7;&#x4E0A;&#x4F20;&#x5408;&#x6CD5;&#x6587;&#x4EF6;&#x3002;</td>
+</tr>
+<tr>
+<td>-80527</td>
+<td style="text-align:right">_400KeyLengthException</td>
+<td style="text-align:left">&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x4E3A;&#x7A7A;&#x6216;&#x8005;&#x6587;&#x4EF6;&#x6570;&#x91CF;&#x4E0D;&#x5408;&#x6CD5;&#x3002;</td>
+</tr>
+<tr>
+<td>-80529</td>
+<td style="text-align:right">_404RecordMissingException</td>
+<td style="text-align:left">&#x65E0;&#x6CD5;&#x67E5;&#x8BE2;&#x5230;&#x60A8;&#x60F3;&#x8981;&#x7684;&#x6570;&#x636E;&#x8BB0;&#x5F55;&#x3002;</td>
+</tr>
+<tr>
+<td>-80530</td>
+<td style="text-align:right">_409CodeUnsupportException</td>
+<td style="text-align:left">code&#x5B57;&#x6BB5;&#x76F8;&#x5173;&#x903B;&#x8F91;&#x4E0D;&#x5408;&#x6CD5;&#xFF0C;&#x7CFB;&#x7EDF;&#x4E0D;&#x652F;&#x6301;&#x3002;</td>
+</tr>
+<tr>
+<td>-80531</td>
+<td style="text-align:right">_409IdentifierConflictException</td>
+<td style="text-align:left">&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6A21;&#x578B;&#x6807;&#x8BC6;identifier&#x4E0D;&#x5339;&#x914D;&#x3002;</td>
+</tr>
+<tr>
+<td>-80532</td>
+<td style="text-align:right">_417DataEmptyException</td>
+<td style="text-align:left">&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x4E2D;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x6570;&#x636E;&#x3002;</td>
+</tr>
+<tr>
+<td>-80533</td>
+<td style="text-align:right">_417DataRowNullException</td>
+<td style="text-align:left">&#x6784;&#x9020;&#x7684;DataRow&#x4E3A;null&#x3002;</td>
+</tr>
+<tr>
+<td>-80534</td>
+<td style="text-align:right">_417EventTypeConflictException</td>
+<td style="text-align:left">&#x6784;&#x9020;&#x5355;&#x8BB0;&#x5F55;DataEvent&#x65F6;&#x4F7F;&#x7528;&#x4E86;&#x591A;&#x53C2;&#x6570;&#xFF0C;&#x7C7B;&#x578B;&#x51B2;&#x7A81;&#x3002;</td>
+</tr>
+<tr>
+<td>-80535</td>
+<td style="text-align:right">_417PrimaryAttrWrongException</td>
+<td style="text-align:left">&#x6A21;&#x578B;&#x5B9A;&#x4E49;&#x4E2D;&#x6CA1;&#x627E;&#x5230;&#x4EFB;&#x4F55;&#x4E3B;&#x952E;&#x3002;</td>
+</tr>
+<tr>
+<td>-80536</td>
+<td style="text-align:right">_417RelatedFieldMissingException</td>
+<td style="text-align:left">&#x65E0;&#x6CD5;&#x627E;&#x5230;<code>M_JOIN</code>&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x5173;&#x8054;&#x6A21;&#x578B;&#x5B57;&#x6BB5;&#x3002;</td>
+</tr>
+<tr>
+<td>-80537</td>
+<td style="text-align:right">_417RelatedSchemaMissingException</td>
+<td style="text-align:left">&#x65E0;&#x6CD5;&#x627E;&#x5230;<code>M_JOIN</code>&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x5173;&#x8054;&#x6A21;&#x578B;&#x3002;</td>
+</tr>
+<tr>
+<td>-80538</td>
+<td style="text-align:right">_417RelationCounterException</td>
+<td style="text-align:left">&#x4E00;&#x4E2A;&#x6A21;&#x578B;Model&#x5173;&#x8054;&#x7684;Schema&#x6570;&#x91CF;&#x4E0D;&#x5BF9;&#x3002;</td>
+</tr>
+<tr>
+<td>-80539</td>
+<td style="text-align:right">_501FabricIssueException</td>
+<td style="text-align:left">&#x5F53;&#x524D;&#x73AF;&#x5883;&#x7684;&#x5B57;&#x5178;&#x7FFB;&#x8BD1;&#x5668;&#x4E3A;null&#x3002;</td>
+</tr>
+<tr>
+<td>-80540</td>
+<td style="text-align:right">_501AnonymousAtomException</td>
+<td style="text-align:left">&#x7CFB;&#x7EDF;&#x65E0;&#x6CD5;&#x65AD;&#x5B9A;DataAtom&#x5173;&#x8054;&#x5230;&#x54EA;&#x4E2A;&#x5B9A;&#x4E49;&#x7684;&#x6A21;&#x578B;&#x3002;</td>
+</tr>
+<tr>
+<td>-80541</td>
+<td style="text-align:right">_409ReferenceDaoException</td>
+<td style="text-align:left">&#x300C;&#x4FDD;&#x7559;&#x300D;sourceReference&#x4E2D;&#x914D;&#x7F6E;&#x7684;Dao&#x8FC7;&#x91CF;&#xFF0C;&#x51B2;&#x7A81;&#x3002;</td>
+</tr>
+<tr>
+<td>-80544</td>
+<td style="text-align:right">_500AtomFirstException</td>
+<td style="text-align:left">&#x300C;&#x4FDD;&#x7559;&#x300D;&#x672A;&#x7ED1;&#x5B9A;DataAtom&#x4E4B;&#x524D;&#x4E0D;&#x53EF;&#x6267;&#x884C;Model&#x7684;&#x7ED1;&#x5B9A;&#x3002;</td>
+</tr>
+<tr>
+<td>-80545</td>
+<td style="text-align:right">_400TrackingErrorException</td>
+<td style="text-align:left">&#x65B0;&#x65E7;&#x8BB0;&#x5F55;&#x540C;&#x65F6;&#x4E3A;&#x7A7A;&#xFF0C;&#x65E0;&#x6CD5;&#x751F;&#x6210;&#x53D8;&#x66F4;&#x5386;&#x53F2;&#x3002;</td>
+</tr>
+<tr>
+<td>-80546</td>
+<td style="text-align:right">_500ExcelFileNullException</td>
+<td style="text-align:left">&#x300C;&#x4FDD;&#x7559;&#x300D;Excel&#x6587;&#x4EF6;&#x5BF9;&#x8C61;&#x51FA;&#x73B0;&#x4E86;null&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="zero-crud">zero-crud</h5>
+<table>
+<thead>
+<tr>
+<th>&#x9519;&#x8BEF;&#x7801;</th>
+<th style="text-align:right">&#x7C7B;&#x540D;</th>
+<th style="text-align:left">&#x89E6;&#x53D1;&#x6761;&#x4EF6;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-80100</td>
+<td style="text-align:right">_404ModuleMissingException</td>
+<td style="text-align:left">plugin/crud/module&#x76EE;&#x5F55;&#x4E0B;&#x4E22;&#x5931;&#x4E86;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3002;</td>
+</tr>
+<tr>
+<td>-80101</td>
+<td style="text-align:right">_404ColumnStubNullException</td>
+<td style="text-align:left">&#x542F;&#x7528;CRUD&#x65F6;&#x4E22;&#x5931;&#x4E86;<code>column</code>&#x7684;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#x3002;</td>
+</tr>
+<tr>
+<td>-80102</td>
+<td style="text-align:right">_409MultiModuleException</td>
+<td style="text-align:left">&#x7CFB;&#x7EDF;&#x65E0;&#x6CD5;&#x5B9A;&#x4F4D;&#x552F;&#x4E00;&#x6A21;&#x578B;&#xFF0C;&#x6A21;&#x578B;&#x4E8C;&#x4E49;&#x3002;</td>
+</tr>
+<tr>
+<td>-80103</td>
+<td style="text-align:right">_409ModuleConflictException</td>
+<td style="text-align:left">&#x8BF7;&#x6C42;&#x8868;&#x540D;&#x548C;&#x5B9E;&#x9645;&#x5B9A;&#x4E49;&#x8868;&#x540D;&#x4E0D;&#x5339;&#x914D;&#xFF0C;&#x51B2;&#x7A81;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="zero-jet">zero-jet</h5>
+<blockquote>
+<p>&#x8FD9;&#x91CC;&#x5B9A;&#x4E49;&#x7684;WebException&#x662F;&#x914D;&#x7F6E;&#x548C;&#x52A8;&#x6001;&#x8DEF;&#x7531;&#x6A21;&#x5757;&#x4E13;&#x7528;&#xFF0C;&#x8BF7;&#x548C;&#x6807;&#x51C6;&#x7684;400&#x533A;&#x5206;&#x3002;</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>&#x9519;&#x8BEF;&#x7801;</th>
+<th style="text-align:right">&#x7C7B;&#x540D;</th>
+<th style="text-align:left">&#x89E6;&#x53D1;&#x6761;&#x4EF6;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-80400</td>
+<td style="text-align:right">_500AmbientConnectException</td>
+<td style="text-align:left">UnityApp&#x4E3A;&#x7A7A;&#xFF0C;&#x65E0;&#x6CD5;&#x8FDE;&#x63A5;Ambient&#x73AF;&#x5883;&#x3002;</td>
+</tr>
+<tr>
+<td>-80401</td>
+<td style="text-align:right">_501IngestMissingException</td>
+<td style="text-align:left">DEFINE&#x6A21;&#x5F0F;&#x4E0B;&#x6444;&#x53D6;&#x5668;&#x63D2;&#x4EF6;&#x5B9E;&#x73B0;&#x7C7B;&#x4E22;&#x5931;&#x3002;</td>
+</tr>
+<tr>
+<td>-80402</td>
+<td style="text-align:right">_501IngestSpecException</td>
+<td style="text-align:left">DEFINE&#x6A21;&#x5F0F;&#x4E0B;&#x6444;&#x53D6;&#x5668;&#x63D2;&#x4EF6;&#x672A;&#x5B9E;&#x73B0;JtIngest&#x3002;</td>
+</tr>
+<tr>
+<td>-80403</td>
+<td style="text-align:right">_400RequiredParamException</td>
+<td style="text-align:left">Web&#x8BF7;&#x6C42;&#x4E2D;&#x5FC5;&#x586B;&#x53C2;&#x6570;&#x4E22;&#x5931;&#x3002;</td>
+</tr>
+<tr>
+<td>-80404</td>
+<td style="text-align:right">_500WorkerSpecException</td>
+<td style="text-align:left">Worker&#x7EC4;&#x4EF6;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;Verticle&#x3002;</td>
+</tr>
+<tr>
+<td>-80405</td>
+<td style="text-align:right">_500ConsumerSpecException</td>
+<td style="text-align:left">JtConsumer&#x7EC4;&#x4EF6;&#x5B9A;&#x4E49;&#x9519;&#x8BEF;&#x3002;</td>
+</tr>
+<tr>
+<td>-80406</td>
+<td style="text-align:right">_500DefinitionErrorException</td>
+<td style="text-align:left">IApi/IService&#x57FA;&#x7840;&#x914D;&#x7F6E;&#x51FA;&#x9519;&#x3002;</td>
+</tr>
+<tr>
+<td>-80407</td>
+<td style="text-align:right">_501ChannelErrorException</td>
+<td style="text-align:left">&#x901A;&#x9053;&#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;&#x5931;&#x8D25;&#x3002;</td>
+</tr>
+<tr>
+<td>-80408</td>
+<td style="text-align:right">_424ChannelConflictException</td>
+<td style="text-align:left">&#x901A;&#x9053;&#x7EC4;&#x4EF6;&#x548C;&#x901A;&#x9053;&#x7C7B;&#x578B;&#x51B2;&#x7A81;&#x3002;</td>
+</tr>
+<tr>
+<td>-80409</td>
+<td style="text-align:right">_424ChannelDefinitionException</td>
+<td style="text-align:left">&#x901A;&#x9053;&#x7C7B;&#x7684;Java&#x5B9A;&#x4E49;&#x9519;&#x8BEF;&#x3002;</td>
+</tr>
+<tr>
+<td>-80410</td>
+<td style="text-align:right">_424ChannelDefineException</td>
+<td style="text-align:left">&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x901A;&#x9053;DEFINE&#xFF0C;&#x4F46;&#x7F3A;&#x5C11;&#x5B9E;&#x73B0;&#x7C7B;&#x3002;</td>
+</tr>
+<tr>
+<td>-80411</td>
+<td style="text-align:right">_500EnvironmentException</td>
+<td style="text-align:left">sigma&#x65E0;&#x6CD5;&#x67E5;&#x8BE2;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6570;&#x636E;&#x53CA;&#x5F15;&#x7528;&#x3002;</td>
+</tr>
+<tr>
+<td>-80412</td>
+<td style="text-align:right">_501DataSourceException</td>
+<td style="text-align:left">&#x6570;&#x636E;&#x6E90;&#x5207;&#x6362;&#x65F6;&#x51FA;&#x9519;&#xFF0C;&#x591A;&#x6570;&#x636E;&#x6E90;&#x52A8;&#x6001;&#x73AF;&#x5883;&#x5F02;&#x5E38;&#x3002;</td>
+</tr>
+<tr>
+<td>-80413</td>
+<td style="text-align:right">_501NotImplementException</td>
+<td style="text-align:left">&#xFF08;&#x540C;80218&#xFF09;&#x7CFB;&#x7EDF;&#x6267;&#x884C;&#x4E86;&#x672A;&#x5B9E;&#x73B0;&#x7684;API&#xFF0C;&#x5FD8;&#x8BB0;&#x91CD;&#x5199;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="zero-ke">zero-ke</h5>
+<table>
+<thead>
+<tr>
+<th>&#x9519;&#x8BEF;&#x7801;</th>
+<th style="text-align:right">&#x7C7B;&#x540D;</th>
+<th style="text-align:left">&#x89E6;&#x53D1;&#x6761;&#x4EF6;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-80214</td>
+<td style="text-align:right">_409SessionConflictException</td>
+<td style="text-align:left">Session&#x4F1A;&#x8BDD;&#x8FC7;&#x671F;&#x6216;&#x5DF2;&#x9500;&#x6BC1;&#x3002;</td>
+</tr>
+<tr>
+<td>-80216</td>
+<td style="text-align:right">_501ChannelNotImplementException</td>
+<td style="text-align:left">ServiceLoader&#x89E6;&#x53D1;&#x65F6;&#x65E0;&#x6CD5;&#x627E;&#x5230;&#x5408;&#x6CD5;&#x5B9E;&#x73B0;&#x7C7B;&#x3002;</td>
+</tr>
+<tr>
+<td>-80217</td>
+<td style="text-align:right">_501JooqReferenceException</td>
+<td style="text-align:left">&#x65E0;&#x6CD5;&#x6784;&#x9020;&#x5408;&#x6CD5;&#x7684;UxJooq&#x5B9E;&#x4F8B;&#x3002;</td>
+</tr>
+<tr>
+<td>-80218</td>
+<td style="text-align:right">_501NotSupportException</td>
+<td style="text-align:left">&#x7CFB;&#x7EDF;&#x6267;&#x884C;&#x4E86;&#x672A;&#x5B9E;&#x73B0;&#x7684;API&#xFF0C;&#x5FD8;&#x8BB0;&#x91CD;&#x5199;&#x3002;</td>
+</tr>
+<tr>
+<td>-80219</td>
+<td style="text-align:right">_403TokenGenerationException</td>
+<td style="text-align:left">&#x65E0;&#x6743;&#x9650;&#x521B;&#x5EFA;&#x8DE8;&#x5E94;&#x7528;&#x8D26;&#x53F7;&#x4EE4;&#x724C;&#x3002;</td>
+</tr>
+<tr>
+<td>-80542</td>
+<td style="text-align:right">_409JoinTargetException</td>
+<td style="text-align:left">&#x53CC;&#x8868;JOIN&#x65F6;&#x672A;&#x627E;&#x5230;&#x5BF9;&#x7AEF;&#x5B9E;&#x4F53;&#x3002;</td>
+</tr>
+<tr>
+<td>-80543</td>
+<td style="text-align:right">_404IndentParsingException</td>
+<td style="text-align:left">&#x53CC;&#x8868;JOIN&#x65F6;&#x672A;&#x627E;&#x5230;&#x5BF9;&#x7AEF;&#x5B9E;&#x4F53;&#x7C7B;&#x4E3B;&#x952E;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="zero-rbac">zero-rbac</h5>
+<table>
+<thead>
+<tr>
+<th>&#x9519;&#x8BEF;&#x7801;</th>
+<th style="text-align:right">&#x7C7B;&#x540D;</th>
+<th style="text-align:left">&#x89E6;&#x53D1;&#x6761;&#x4EF6;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-80200</td>
+<td style="text-align:right">_401CodeWrongException</td>
+<td style="text-align:left">&#x60A8;&#x63D0;&#x4F9B;&#x7684;&#x4E34;&#x65F6;&#x6388;&#x6743;&#x7801;&#x4E0D;&#x5339;&#x914D;&#x3002;</td>
+</tr>
+<tr>
+<td>-80201</td>
+<td style="text-align:right">_401CodeExpiredException</td>
+<td style="text-align:left">&#x4E34;&#x65F6;&#x6388;&#x6743;&#x7801;&#x8FC7;&#x671F;&#xFF0C;&#x8D85;&#x8FC7;30&#x79D2;&#x3002;</td>
+</tr>
+<tr>
+<td>-80202</td>
+<td style="text-align:right">_401CodeGenerationException</td>
+<td style="text-align:left">&#x4E34;&#x65F6;&#x6388;&#x6743;&#x7801;&#x751F;&#x6210;&#x51FA;&#x9519;&#x3002;</td>
+</tr>
+<tr>
+<td>-80203</td>
+<td style="text-align:right">_449UserNotFoundException</td>
+<td style="text-align:left">&#x8D26;&#x53F7;&#x4E0D;&#x5B58;&#x5728;&#x3002;</td>
+</tr>
+<tr>
+<td>-80204</td>
+<td style="text-align:right">_401PasswordWrongException</td>
+<td style="text-align:left">&#x767B;&#x5F55;&#x8FC7;&#x7A0B;&#x5BC6;&#x7801;&#x9519;&#x3002;</td>
+</tr>
+<tr>
+<td>-80205</td>
+<td style="text-align:right">_403ProfileConflictException</td>
+<td style="text-align:left">&#x767B;&#x5F55;&#x7684;Profile&#x548C;&#x8D44;&#x6E90;&#x9700;&#x6C42;Profile&#x4E0D;&#x5339;&#x914D;&#x3002;</td>
+</tr>
+<tr>
+<td>-80206</td>
+<td style="text-align:right">_401TokenCounterException</td>
+<td style="text-align:left">&#x8BE5;&#x7528;&#x6237;&#x7684;Token&#x4EE4;&#x724C;&#x6570;&#x91CF;&#x4E0D;&#x5BF9;&#x3002;</td>
+</tr>
+<tr>
+<td>-80207</td>
+<td style="text-align:right">_401TokenInvalidException</td>
+<td style="text-align:left">&#x8BE5;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x7684;Token&#x4E0D;&#x5339;&#x914D;&#x3002;</td>
+</tr>
+<tr>
+<td>-80208</td>
+<td style="text-align:right">_401TokenExpiredException</td>
+<td style="text-align:left">&#x8BE5;&#x7528;&#x6237;&#x7684;Token&#x8FC7;&#x671F;&#x3002;</td>
+</tr>
+<tr>
+<td>-80209</td>
+<td style="text-align:right">_403ActionMissingException</td>
+<td style="text-align:left">&#x8BF7;&#x6C42;&#x7684;&#x5B89;&#x5168;&#x64CD;&#x4F5C;&#x672A;&#x5B9A;&#x4E49;&#x6216;&#x627E;&#x4E0D;&#x5230;&#x3002;</td>
+</tr>
+<tr>
+<td>-80210</td>
+<td style="text-align:right">_404ResourceMissingException</td>
+<td style="text-align:left">&#x8BF7;&#x6C42;&#x8D44;&#x6E90;&#x4E0D;&#x5B58;&#x5728;&#x3002;</td>
+</tr>
+<tr>
+<td>-80211</td>
+<td style="text-align:right">_403ActionDinnedException</td>
+<td style="text-align:left">&#x64CD;&#x4F5C;&#x7EA7;&#x522B;&#x65E0;&#x6CD5;&#x8FBE;&#x5230;&#x8D44;&#x6E90;&#x5B9A;&#x4E49;&#x7EA7;&#x522B;&#x3002;</td>
+</tr>
+<tr>
+<td>-80212</td>
+<td style="text-align:right">_403NoPermissionException</td>
+<td style="text-align:left">&#x8D26;&#x53F7;&#x65E0;&#x6743;&#x9650;&#x3002;</td>
+</tr>
+<tr>
+<td>-80213</td>
+<td style="text-align:right">_403PermissionLimitException</td>
+<td style="text-align:left">&#x8D26;&#x53F7;&#x6743;&#x9650;&#x88AB;&#x9650;&#x5236;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x8D44;&#x6E90;&#x3002;</td>
+</tr>
+<tr>
+<td>-80215</td>
+<td style="text-align:right">_500DwarfInstanceNullException</td>
+<td style="text-align:left">Acl&#x8BA1;&#x7B97;&#x65F6;Dwarf&#x5F15;&#x7528;&#x4E3A;null&#xFF0C;&#x68C0;&#x67E5;&#x914D;&#x7F6E;&#x3002;</td>
+</tr>
+<tr>
+<td>-80220</td>
+<td style="text-align:right">_423UserDisabledException</td>
+<td style="text-align:left">&#x7528;&#x6237;&#x88AB;&#x9501;&#xFF0C;&#x8D26;&#x53F7;&#x7981;&#x7528;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x300C;&#x53C1;&#x300D;&#x5F02;&#x5E38;&#x4EE3;&#x7801;&#x8BF4;&#x660E;">&#x300C;&#x53C1;&#x300D;&#x5F02;&#x5E38;&#x4EE3;&#x7801;&#x8BF4;&#x660E;</h2>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x4E0A;&#x8FF0;&#x5F02;&#x5E38;&#x67E5;&#x8BE2;&#x8868;&#x4E2D;&#x5305;&#x542B;&#x4E86;Zero&#x6846;&#x67B6;&#x5185;&#x90E8;&#x4E0D;&#x53EF;&#x66F4;&#x6539;&#x7684;&#x7CFB;&#x7EDF;&#x5185;&#x90E8;&#x5F02;&#x5E38;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x4E86;&#x5341;&#x5206;&#x826F;&#x597D;&#x7684;&#x6269;&#x5C55;&#x7A7A;&#x95F4;&#xFF0C;&#x800C;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x4E0B;&#x8FB9;&#x7684;&#x8868;&#x683C;&#x5F00;&#x53D1;&#x81EA;&#x5DF1;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x5F02;&#x5E38;&#x4FE1;&#x606F;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>code&#x8D77;&#x70B9;</th>
+<th>code&#x7EC8;&#x70B9;</th>
+<th>&#x5E26;&#x72B6;&#x6001;&#x7801;</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10000</td>
+<td>19999</td>
+<td>No</td>
+<td style="text-align:left">ZERO&#x6846;&#x67B6;&#x81EA;&#x8EAB;&#x5F02;&#x5E38;&#xFF0C;&#x6D88;&#x606F;&#x901A;&#x5E38;&#x4F1A;&#x5305;&#x542B;<code>(V) -</code>&#x7684;&#x524D;&#x7F00;&#xFF0C;<br>&#x8FD9;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x5F02;&#x5E38;&#x901A;&#x5E38;&#x662F;&#x4ECE;<code>UpException</code>&#x7EE7;&#x627F;&#x3002;</td>
+</tr>
+<tr>
+<td>20000</td>
+<td>29999</td>
+<td>Yes</td>
+<td style="text-align:left">&#x7B2C;&#x4E09;&#x65B9;&#x63D2;&#x4EF6;&#x4E13;&#x7528;&#x5F02;&#x5E38;&#xFF0C;&#x7B2C;&#x4E09;&#x65B9;&#x63D2;&#x4EF6;&#x4E3B;&#x8981;&#x662F;&#x9488;&#x5BF9;&#x5E26;&#x6709;Vendor<br>&#x751F;&#x4EA7;&#x5546;&#x7684;&#xFF0C;&#x4E14;&#x524D;&#x7F00;&#x4F7F;&#x7528;<code>(HTTPCODE) -</code>&#x3002;</td>
+</tr>
+<tr>
+<td>30000</td>
+<td>39999</td>
+<td>No</td>
+<td style="text-align:left">Vert.x&#x548C;Zero&#x5185;&#x90E8;&#x6865;&#x63A5;&#x4E13;&#x7528;&#x5F02;&#x5E38;&#xFF0C;&#x8BE5;&#x533A;&#x57DF;&#x4FDD;&#x7559;&#x3002;</td>
+</tr>
+<tr>
+<td>40000</td>
+<td>45000</td>
+<td>No</td>
+<td style="text-align:left">Zero&#x5BB9;&#x5668;&#x8FD0;&#x884C;&#x65F6;&#x5F02;&#x5E38;&#xFF0C;&#x548C;&#x5BB9;&#x5668;&#x89C4;&#x8303;&#x76F8;&#x5173;&#x7684;&#x6838;&#x5FC3;&#x5F02;&#x5E38;&#x3002;</td>
+</tr>
+<tr>
+<td>45001</td>
+<td>49999</td>
+<td>No</td>
+<td style="text-align:left">&#x300C;&#x4FDD;&#x7559;&#x300D;Zero&#x5BB9;&#x5668;Rx&#x6A21;&#x5F0F;&#x4E0B;&#x8FD0;&#x884C;&#x65F6;&#x5F02;&#x5E38;&#x3002;</td>
+</tr>
+<tr>
+<td>60000</td>
+<td>69999</td>
+<td>Yes</td>
+<td style="text-align:left">Zero&#x6267;&#x884C;RESTful&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x6807;&#x51C6;&#x8BF7;&#x6C42;&#x5F02;&#x5E38;&#x3002;</td>
+</tr>
+<tr>
+<td>80000</td>
+<td>89999</td>
+<td>Yes</td>
+<td style="text-align:left">Zero Extension&#x6269;&#x5C55;&#x6A21;&#x5757;&#x4E13;&#x7528;&#x5F02;&#x5E38;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x6240;&#x4EE5;&#x63A8;&#x8350;&#x8BFB;&#x8005;&#x5728;&#x4F7F;&#x7528;Zero&#x5F02;&#x5E38;&#x65F6;&#x5C3D;&#x53EF;&#x80FD;&#x4F7F;&#x7528;&#x5C0F;&#x4E8E;<code>-100000</code>&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4EE5;&#x514D;&#x548C;Zero&#x7CFB;&#x7EDF;&#x5B9A;&#x4E49;&#x7684;&#x5F02;&#x5E38;&#x51B2;&#x7A81;&#xFF0C;&#x60A8;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5355;&#x6570;&#x524D;&#x7F00;&#x7A7A;&#x95F4;&#xFF0C;&#x53EA;&#x8981;&#x60A8;&#x5B9A;&#x4E49;&#x7684;&#x5F02;&#x5E38;&#x548C;&#x4E0A;&#x8FF0;&#x5F02;&#x5E38;&#x67E5;&#x8BE2;&#x8868;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x4E0D;&#x91CD;&#x590D;&#x5373;&#x53EF;&#x3002;</p>
+<blockquote>
+<p>&#x6700;&#x540E;&#x5410;&#x69FD;&#x4E00;&#x70B9;&#xFF0C;&#x4E0D;&#x8981;&#x53EA;&#x5B9A;&#x4E49;400&#xFF0C;500&#xFF0C;404&#xFF0C;&#x5982;&#x4F55;&#x5B9A;&#x4E49;&#x53C2;&#x8003;HTTP&#x72B6;&#x6001;&#x4EE3;&#x7801;&#x7684;&#x8BF4;&#x660E;&#xFF0C;&#x5C3D;&#x91CF;&#x653E;&#x5F00;&#x4F7F;&#x7528;4XX&#x548C;5XX&#x3002;</p>
+</blockquote>
+<h2 id="&#x300C;&#x8086;&#x300D;&#x5C0F;&#x7ED3;">&#x300C;&#x8086;&#x300D;&#x5C0F;&#x7ED3;</h2>
+<p>&#x2002;&#x2002;&#x2002;&#x2002;&#x672C;&#x7AE0;&#x8282;&#x4E3B;&#x8981;&#x4ECB;&#x7ECD;&#x4E86;Zero&#x4E2D;&#x7684;&#x6838;&#x5FC3;&#x5BB9;&#x9519;&#x7CFB;&#x7EDF;&#xFF0C;&#x4E5F;&#x63D0;&#x4F9B;&#x4E86;&#x8BE6;&#x7EC6;&#x7684;Zero&#x5BB9;&#x5668;&#x5185;&#x90E8;&#x7684;&#x5F02;&#x5E38;&#x67E5;&#x8BE2;&#x8868;&#x7ED9;&#x8BFB;&#x8005;&#xFF0C;&#x6709;&#x5173;Zero
+Extension&#x90E8;&#x5206;&#x7684;&#x6559;&#x7A0B;&#x4F1A;&#x5728;&#x540E;&#x7EED;&#x6559;&#x7A0B;&#x4E2D;&#x52A0;&#x4EE5;&#x8BF4;&#x660E;&#xFF0C;&#x81F3;&#x4E8E;WebException&#x5728;&#x5B9E;&#x9645;&#x4EE3;&#x7801;&#x4E2D;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x6211;&#x5C06;&#x5728;&#x540E;&#x7EED;&#x7AE0;&#x8282;&#x7528;&#x5B9E;&#x4F8B;&#x6765;&#x8BF4;&#x660E;&#xFF0C;&#x8FD9;&#x90E8;&#x5206;&#x7275;&#x6D89;&#x5230;Worker&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x5E03;&#x5C40;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="006.async.html" class="navigation navigation-prev " aria-label="Previous page: 1.6.潘多拉魔盒：异步">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="008.worker.html" class="navigation navigation-next " aria-label="Next page: 1.8.铁马冰河：细谈Worker">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.7.珠玉在侧：容错","level":"1.2.7","depth":2,"next":{"title":"1.8.铁马冰河：细谈Worker","level":"1.2.8","depth":2,"path":"document/zero/008.worker.md","ref":"document/zero/008.worker.md","articles":[]},"previous":{"title":"1.6.潘多拉魔盒：异步","level":"1.2.6","depth":2,"path":"document/zero/006.async.md","ref":"document/zero/006.async.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chapter-fold","expandable-chapters-small","expandable-chapters","code","copy-code-button","github","splitter"],"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/silentbalanceyh/vertx-zero-example"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"size":1},"highlight":{},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"document/zero/007.error.md","mtime":"2021-09-18T07:17:50.676Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-10-16T02:52:57.212Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
