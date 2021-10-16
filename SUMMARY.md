@@ -1,7 +1,5 @@
 # Summary
 
-* [简介](README.md)
-
 * [1.零之遥（Απόλλων）](document/zero/000.index.md)
     * [1.1.启航：Zero](document/zero/001.first.md)
     * [1.2.曲径通幽：@Path](document/zero/002.uri.md)
