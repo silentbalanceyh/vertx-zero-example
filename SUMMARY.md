@@ -19,3 +19,7 @@
     * [1.16.二向箔：Excel](/document/zero/016.excel.md)
     * [1.17.隐匿者：Job](/document/zero/017.job.md)
     * [1.18.天下：集成](/document/zero/018.integration.md)
+* [2.风之殇（Πόλεμος ανέμου）](document/zero-extension/000.index.md)
+    * [2.1.扬帆：Zero Extension（zero-ke）](document/zero-extension/001.extension.md)
+    * [2.2.漆冰裂：Ambient（zero-ambient）](document/zero-extensiongi/002.ambient.md)
+    * [2.3.木叶鸢：CRUD（zero-crud）](document/zero-extension/003.crud.md)
