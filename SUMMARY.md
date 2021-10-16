@@ -21,7 +21,6 @@
     * [1.18.天下：集成](/document/zero/018.integration.md)
 * [2.风之殇（Πόλεμος ανέμου）](/document/zero-extension/000.index.md)
     * [2.1.扬帆：Zero Extension](/document/zero-extension/001.extension.md)
-    * [2.2.漆冰裂：Ambient](/document/zero-extensiongi/002.ambient.md)
     * [2.3.木叶鸢：CRUD](/document/zero-extension/003.crud.md)
 * [3.影之月（Σάντοου μήνα）](/document/zero-ui/000.index.md)
     * [3.1.初赦：Zero Ui](/document/zero-ui/001.structure.md)
