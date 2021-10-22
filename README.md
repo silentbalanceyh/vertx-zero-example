@@ -119,7 +119,7 @@ public class ApolloUp {
 
 * [3.1.初赦：Zero Ui](document/zero-ui/001.structure.md)
 
-### 3.4. 䆐之疆（Σύνορα της χώρας）
+### 3.5. 䆐之疆（Σύνορα της χώρας）
 
 > 本章节为快速链接，引导到原文章中核心章节。
 
