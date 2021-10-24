@@ -118,6 +118,7 @@ public class ApolloUp {
 ### 3.3. 影之月（Σάντοου μήνα）
 
 * [3.1.初赦：Zero Ui](document/zero-ui/001.structure.md)
+* [3.2.苍山暮雪：Ajax](document/zero-ui/002.ajax.md)
 
 ### 3.5. 䆐之疆（Σύνορα της χώρας）
 
