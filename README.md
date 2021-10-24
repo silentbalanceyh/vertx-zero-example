@@ -1,15 +1,17 @@
-# Zero 中文教程
+---
+title：Zero 中文教程
+---
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/cn.vertxup/vertx-zero/badge.svg?style=plastic)](https://maven-badges.herokuapp.com/maven-central/cn.vertxup/vertx-zero/)  [![Apache License 2](https://img.shields.io/badge/license-ASF2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0.txt)  [![Build Status](https://travis-ci.org/silentbalanceyh/vertx-zero.svg?branch=master)](https://travis-ci.org/silentbalanceyh/vertx-zero)
 
-## 0.楔子
+# 0.楔子
 
 Zero，又称为：“零”，最初的名字起源于高达W中的“飞翼零式”，其实那时想写个框架，最好是：零编码、零配置、零BUG——也许这只是个遥远的梦。从正式官方网站的英文教程问世后，就再也没有更新过教程了，于是重新开启“零”的大门，只是我依旧在尝试将教程写得更加梦幻，最初的落笔点就是名字，包括项目名字、章节名字。
 
 有人说Zero只有后端，其实相反，它还包含一套定制过的前端，虽然不是符合所有人的胃口，但是，从目前已经上线的几个生产系统看来，也简化了不少开发的工作量。于是通过“**闯关**
 ”的方式来写一条类似游戏攻略一样的东西，说不定把读者当做玩家，简而精，能提炼更好的心得呢？
 
-## 1. 资源
+# 1. 资源
 
 Zero相关的资源表
 
@@ -25,13 +27,13 @@ Zero公众号（申请微信群先加微信号：445191171）：
 
 如果您喜欢Zero，帮忙点个Star，谢谢：<https://github.com/silentbalanceyh/vertx-zero>
 
-## 2. 教程
+# 2. 教程
 
 > 我一直在思考使用什么样的方式来写教程，如果告别了曾经那种概念，是不是会写成空中楼阁一样只有代码和“招式”的东西，沉淀下来，还是简单点吧（图、代码、解说一步到位），不过项目名称还是沿用希腊神话中的诸神之名，含义为：以诸神之名开启零之誓约。
 
 Zero目前的版本中仅支持Maven，最新版为`0.6.2`，一直以`0`前缀做版本号，是因为我在收集生产环境的运行数据，当然我希望它的`1.0`是经过了生产环境验证的框架，成为一个真正可用的框架，而不是简单的样子货而已。
 
-### 环境
+## 环境
 
 在您的Maven项目的 `pom.xml` 文件中引入以下配置（推荐使用正式版，0.6.2已发布）：
 
@@ -82,9 +84,9 @@ public class ApolloUp {
          Endpoint: http://198.18.21.28:6083/.
 ```
 
-## 3. 教程（Zero）
+# 3. 教程（Zero）
 
-### 3.1. 零之遥（Απόλλων）
+## 3.1. 零之遥（Απόλλων）
 
 > Zero Framework
 
@@ -107,7 +109,7 @@ public class ApolloUp {
 * [1.17.隐匿者：Job](document/zero/017.job.md)
 * [1.18.天下：集成](document/zero/018.integration.md)
 
-### 3.2. 风之殇（Πόλεμος ανέμου）
+## 3.2. 风之殇（Πόλεμος ανέμου）
 
 > Zero Extension框架
 
@@ -115,12 +117,13 @@ public class ApolloUp {
 * [2.2.漆冰裂：Ambient](document/zero-extension/002.ambient.md)
 * [2.3.木叶鸢：CRUD](document/zero-extension/003.crud.md)
 
-### 3.3. 影之月（Σάντοου μήνα）
+## 3.3. 影之月（Σάντοου μήνα）
 
 * [3.1.初赦：Zero Ui](document/zero-ui/001.structure.md)
 * [3.2.苍山暮雪：Ajax](document/zero-ui/002.ajax.md)
+* [3.3.戒尺：标准化Api](document/zero-ui/003.api.md)
 
-### 3.5. 䆐之疆（Σύνορα της χώρας）
+## 3.5. 䆐之疆（Σύνορα της χώρας）
 
 > 本章节为快速链接，引导到原文章中核心章节。
 
@@ -135,7 +138,7 @@ public class ApolloUp {
 * [9.查询引擎语法](document/zero/010.jooq.md#san-cha-xun-yin-qing)
 * [10.Ex: ServiceLoader通道](document/zero-extension/001.extension.md#2-2-tong-dao-ding-yi)
 
-## COPYRIGHT IN CHINA
+# COPYRIGHT IN CHINA
 
 
 
