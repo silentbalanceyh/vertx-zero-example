@@ -25,3 +25,4 @@
     * [2.3.木叶鸢：CRUD](/document/zero-extension/003.crud.md)
 * [3.影之月（Σάντοου μήνα）](/document/zero-ui/000.index.md)
     * [3.1.初赦：Zero Ui](/document/zero-ui/001.structure.md)
+    * [3.2.苍山暮雪：Ajax](document/zero-ui/002.ajax.md)
