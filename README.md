@@ -127,7 +127,14 @@ public class ApolloUp {
 * [3.6.水平线：ExComplexList](document/zero-ui/006.component.list.md)
 * [3.7.七巧板：ExForm](document/zero-ui/007.component.form.md)
 
-## 3.4. 䆐之疆（Σύνορα της χώρας）
+## 3.4. 满江红（Κόκκινος ποταμός）
+
+> 工具研发专用章节
+
+* [4.1.玉尘迹：Menu](document/zero-specification/002.menu.md)
+* [4.2.行云流水：Workflow](document/zero-specification/001.workflow.md)
+
+## 3.6. 䆐之疆（Σύνορα της χώρας）
 
 > 本章节为快速链接，引导到原文章中核心章节。
 
@@ -141,6 +148,7 @@ public class ApolloUp {
 * [8.参数签名：Job组件](document/zero/017.job.md#2-2-on-off)
 * [9.查询引擎语法](document/zero/010.jooq.md#san-cha-xun-yin-qing)
 * [10.Ex: ServiceLoader通道](document/zero-extension/001.extension.md#2-2-tong-dao-ding-yi)
+
 
 # COPYRIGHT IN CHINA
 
