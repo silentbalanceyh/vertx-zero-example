@@ -53,11 +53,11 @@ Zero目前的版本中仅支持Maven，最新版为`0.6.2`，一直以`0`前缀�
 <parent>
     <artifactId>vertx-import</artifactId>
     <groupId>cn.vertxup</groupId>
-    <version>0.7.0</version>
+    <version>0.8.1</version>
 </parent>
 ```
 
-**特殊说明：**写这套教程的过程中，我会验证所有的演示代码，验证过程的BUG以及最新的版本会在[BUG表](document/bug.md)
+**特殊说明**：写这套教程的过程中，我会验证所有的演示代码，验证过程的BUG以及最新的版本会在[BUG表](document/bug.md)
 中公布，不过由于教程先于框架，最终的框架版本以主页的最新版为主，而正文中所有的版本号都是写教程时的版本号。
 
 然后书写主程序：
@@ -84,6 +84,12 @@ public class ApolloUp {
          Endpoint: http://198.18.21.28:6083/.
 ```
 
+**最新版模块**
+
+最新版模块以Zero开发中心**模块化**后的功能表（包含前后端）：
+
+![](./_image/2022-03-27-15-19-02.png)
+
 # 3. 教程（Zero）
 
 ## 3.1. 零之遥（Απόλλων）
@@ -108,10 +114,11 @@ public class ApolloUp {
 * [1.16.二向箔：Excel](document/zero/016.excel.md)
 * [1.17.隐匿者：Job](document/zero/017.job.md)
 * [1.18.天下：集成](document/zero/018.integration.md)
+* [1.19.冰刀：部署](document/zero/019.deployment.md)
 
 ## 3.2. 风之殇（Πόλεμος ανέμου）
 
-> Zero Extension框架
+> Zero Extension
 
 * [2.1.扬帆：Zero Extension](document/zero-extension/001.extension.md)
 * [2.2.漆冰裂：Ambient](document/zero-extension/002.ambient.md)
@@ -122,19 +129,12 @@ public class ApolloUp {
 * [3.1.初赦：Zero Ui](document/zero-ui/001.structure.md)
 * [3.2.苍山暮雪：Ajax](document/zero-ui/002.ajax.md)
 * [3.3.智多星：属性解析器](document/zero-ui/003.attribute.md)
-* [3.4.死线：表单字段](document/zero-ui/004.field.md)
-* [3.5.太阳帆：列渲染](document/zero-ui/005.column.md)
+* [3.4.死线：表单](document/zero-ui/004.field.md)
+* [3.5.太阳帆：列表](document/zero-ui/005.column.md)
 * [3.6.水平线：ExComplexList](document/zero-ui/006.component.list.md)
 * [3.7.七巧板：ExForm](document/zero-ui/007.component.form.md)
 
-## 3.4. 满江红（Κόκκινος ποταμός）
-
-> 工具研发专用章节
-
-* [4.1.玉尘迹：Menu](document/zero-specification/002.menu.md)
-* [4.2.行云流水：Workflow](document/zero-specification/001.workflow.md)
-
-## 3.6. 䆐之疆（Σύνορα της χώρας）
+## 3.4. 䆐之疆（Σύνορα της χώρας）
 
 > 本章节为快速链接，引导到原文章中核心章节。
 
