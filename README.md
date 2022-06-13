@@ -123,6 +123,7 @@ public class ApolloUp {
 * [2.1.扬帆：Zero Extension](document/zero-extension/001.extension.md)
 * [2.2.漆冰裂：Ambient](document/zero-extension/002.ambient.md)
 * [2.3.木叶鸢：CRUD](document/zero-extension/003.crud.md)
+* [2.4.绀珠：开发工具](document/zero-extension/004.toolkit.md)
 
 ## 3.3. 影之月（Σάντοου μήνα）
 
