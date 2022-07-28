@@ -4,7 +4,7 @@ import cn.vertxup.demo.domain.tables.daos.XTabularDao;
 import cn.vertxup.demo.domain.tables.pojos.XTabular;
 import io.vertx.core.json.JsonArray;
 import io.vertx.core.json.JsonObject;
-import io.vertx.quiz.JooqBase;
+import io.vertx.quiz.ZeroBase;
 import io.vertx.tp.plugin.jooq.JooqInfix;
 import io.vertx.up.uca.jooq.UxJooq;
 import io.vertx.up.unity.Ux;
@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * @author <a href="http://www.origin-x.cn">lang</a>
  */
-public class AbstractJq extends JooqBase {
+public class AbstractJq extends ZeroBase {
     static {
         JooqInfix.init(VERTX);
     }

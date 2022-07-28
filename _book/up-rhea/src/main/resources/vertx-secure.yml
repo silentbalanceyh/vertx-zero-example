@@ -29,7 +29,8 @@ cors:
     - X-App-Key
     - X-Sigma
     - X-Lang
-  origin: "http://ox.server.cn:4000"
+  origin:
+    - "http://ox.server.cn:4000"
 
 # Debugger 模块
 debug:

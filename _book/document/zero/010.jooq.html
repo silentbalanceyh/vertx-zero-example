@@ -867,7 +867,7 @@ echo &quot;[OX] &#x91CD;&#x5EFA; DB_ETERNAL &#x6570;&#x636E;&#x5E93;&#x6210;&#x5
 
     <span class="hljs-meta">@Test</span>
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">testInsert</span><span class="hljs-params">(<span class="hljs-keyword">final</span> TestContext context)</span> </span>{
-        <span class="hljs-keyword">this</span>.async(context, <span class="hljs-keyword">this</span>.insertDemo(), actual -&gt; {
+        <span class="hljs-keyword">this</span>.tcAsync(context, <span class="hljs-keyword">this</span>.insertDemo(), actual -&gt; {
             System.out.println(actual);
             Assert.assertNotNull(actual);
         });

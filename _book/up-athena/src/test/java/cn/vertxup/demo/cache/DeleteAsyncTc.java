@@ -18,7 +18,7 @@ public class DeleteAsyncTc extends AbstractJq {
      */
     @Test
     public void testDelete1(final TestContext context) throws Throwable {
-        this.async(context, this.dao().deleteByIdAsync(HelpData.ID_OK), actual -> {
+        this.tcAsync(context, this.dao().deleteByIdAsync(HelpData.ID_OK), actual -> {
             System.out.println(actual);
             context.assertNotNull(actual);
         });

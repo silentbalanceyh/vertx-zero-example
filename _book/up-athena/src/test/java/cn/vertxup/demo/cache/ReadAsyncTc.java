@@ -28,7 +28,7 @@ public class ReadAsyncTc extends AbstractJq {
      */
     @Test
     public void testFetch1(final TestContext context) throws Throwable {
-        this.async(context, this.dao().fetchByIdAsync(HelpData.ID_OK), actual -> {
+        this.tcAsync(context, this.dao().fetchByIdAsync(HelpData.ID_OK), actual -> {
             System.out.println(actual);
             context.assertNotNull(actual);
         });
@@ -40,11 +40,11 @@ public class ReadAsyncTc extends AbstractJq {
      */
     @Test
     public void testFetch2(final TestContext context) throws Throwable {
-        this.async(context, this.dao().fetchOneAsync(new JsonObject().put("name", "汤娜1")), actual -> {
+        this.tcAsync(context, this.dao().fetchOneAsync(new JsonObject().put("name", "汤娜1")), actual -> {
             System.out.println(actual);
             context.assertNotNull(actual);
         });
-        this.async(context, this.dao().fetchOneAsync(new JsonObject().put("code", "CCRT")), actual -> {
+        this.tcAsync(context, this.dao().fetchOneAsync(new JsonObject().put("code", "CCRT")), actual -> {
             System.out.println(actual);
             context.assertNotNull(actual);
         });
@@ -56,11 +56,11 @@ public class ReadAsyncTc extends AbstractJq {
      */
     @Test
     public void testFetch3(final TestContext context) throws Throwable {
-        this.async(context, this.dao().fetchOneAsync("code", "RWLETT"), actual -> {
+        this.tcAsync(context, this.dao().fetchOneAsync("code", "RWLETT"), actual -> {
             System.out.println(actual);
             context.assertNotNull(actual);
         });
-        this.async(context, this.dao().fetchOneAsync("name", "汤娜"), actual -> {
+        this.tcAsync(context, this.dao().fetchOneAsync("name", "汤娜"), actual -> {
             System.out.println(actual);
             context.assertNotNull(actual);
         });
@@ -75,7 +75,7 @@ public class ReadAsyncTc extends AbstractJq {
         final JsonObject condition = new JsonObject();
         condition.put("code", "RWLETT");
         condition.put("name", "汤娜");
-        this.async(context, this.dao().fetchOneAsync(condition), actual -> {
+        this.tcAsync(context, this.dao().fetchOneAsync(condition), actual -> {
             System.out.println(actual);
             context.assertNotNull(actual);
         });
@@ -89,7 +89,7 @@ public class ReadAsyncTc extends AbstractJq {
     public void testFetch5(final TestContext context) throws Throwable {
         final JsonObject condition = new JsonObject();
         condition.put("code", "RWLETT");
-        this.async(context, this.dao().fetchAsync(condition), actual -> {
+        this.tcAsync(context, this.dao().fetchAsync(condition), actual -> {
             System.out.println(actual);
             context.assertNotNull(actual);
         });
@@ -103,7 +103,7 @@ public class ReadAsyncTc extends AbstractJq {
     public void testFetch6(final TestContext context) throws Throwable {
         final JsonObject condition = new JsonObject();
         condition.put("type", "test.type1");
-        this.async(context, this.dao().fetchAsync(condition), actual -> {
+        this.tcAsync(context, this.dao().fetchAsync(condition), actual -> {
             System.out.println(actual);
             context.assertNotNull(actual);
         });
@@ -115,7 +115,7 @@ public class ReadAsyncTc extends AbstractJq {
      */
     @Test
     public void testFetch7(final TestContext context) throws Throwable {
-        this.async(context, this.dao().fetchByIdAsync("X75c9cf9-4505-4856-a1d3-31f5ce83e860"), actual -> {
+        this.tcAsync(context, this.dao().fetchByIdAsync("X75c9cf9-4505-4856-a1d3-31f5ce83e860"), actual -> {
             System.out.println(actual);
             context.assertNull(actual);
         });
