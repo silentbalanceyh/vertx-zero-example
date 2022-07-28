@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 @Job(
         value = JobType.FIXED, name = "Fixed",
         duration = 1, durationUnit = TimeUnit.DAYS,
-        runAt = "D,18:20"
+        formula = "D,18:20"
 )
 public class FixedJob {
     @Contract

@@ -22,19 +22,19 @@ public class InsertTAsyncTc extends AbstractJq {
         final UxJooq dao = this.dao();
         final XTabular inserted = dao.insert(entity);
         final String genKey = inserted.getKey();
-        this.getLogger().info("[TC1] Generated key: {0}", genKey);
+        this.logger().info("[TC1] Generated key: {0}", genKey);
         context.assertNotNull(genKey);
         /*
          * deleteById(T)
          */
         final boolean deleted = dao.deleteById(genKey);
         context.assertTrue(deleted);
-        this.getLogger().info("[TC1] Deleted key: {0}", genKey);
+        this.logger().info("[TC1] Deleted key: {0}", genKey);
         /*
          * fetchById(ID)
          */
         final XTabular fetched = dao.fetchById(genKey);
         context.assertNull(fetched);
-        this.getLogger().info("[TC1] Fetched null of key: {0}", genKey);
+        this.logger().info("[TC1] Fetched null of key: {0}", genKey);
     }
 }

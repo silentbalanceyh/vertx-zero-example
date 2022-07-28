@@ -22,7 +22,7 @@ public class InsertTTc extends AbstractJq {
         final UxJooq dao = this.dao();
         final XTabular inserted = dao.insert(entity);
         if (Objects.nonNull(inserted)) {
-            this.getLogger().info("[TC1] Generated key: {0}", inserted.toJson().encodePrettily());
+            this.logger().info("[TC1] Generated key: {0}", inserted.toJson().encodePrettily());
         }
     }
 }

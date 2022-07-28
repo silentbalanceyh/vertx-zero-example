@@ -8,7 +8,7 @@ import io.vertx.up.annotations.On;
 import io.vertx.up.commune.Envelop;
 import io.vertx.up.eon.em.JobType;
 
-@Job(value = JobType.PLAN, duration = 10, name = "Final")
+@Job(value = JobType.ONCE, duration = 10, name = "Final")
 public class FinalJob {
 
     @Contract

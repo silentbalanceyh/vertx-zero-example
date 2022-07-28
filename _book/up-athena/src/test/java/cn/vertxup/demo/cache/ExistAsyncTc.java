@@ -23,7 +23,7 @@ public class ExistAsyncTc extends AbstractJq {
         /*
          * 异步测试
          */
-        this.async(context, this.dao().existByIdAsync(HelpData.ID_OK), actual -> {
+        this.tcAsync(context, this.dao().existByIdAsync(HelpData.ID_OK), actual -> {
             System.out.println(actual);
             context.assertTrue(actual);
         });
@@ -35,7 +35,7 @@ public class ExistAsyncTc extends AbstractJq {
      */
     @Test
     public void testExist2(final TestContext context) throws Throwable {
-        this.async(context, this.dao().existByIdAsync(HelpData.ID_KO), actual -> {
+        this.tcAsync(context, this.dao().existByIdAsync(HelpData.ID_KO), actual -> {
             System.out.println(actual);
             context.assertFalse(actual);
         });
@@ -49,7 +49,7 @@ public class ExistAsyncTc extends AbstractJq {
     public void testExist3(final TestContext context) throws Throwable {
         final JsonObject condition = new JsonObject();
         condition.put("type", "test.type1");
-        this.async(context, this.dao().existAsync(condition), actual -> {
+        this.tcAsync(context, this.dao().existAsync(condition), actual -> {
             System.out.println(actual);
             context.assertTrue(actual);
         });
@@ -64,7 +64,7 @@ public class ExistAsyncTc extends AbstractJq {
     public void testExist4(final TestContext context) throws Throwable {
         final JsonObject condition = new JsonObject();
         condition.put("type", "test.type2");
-        this.async(context, this.dao().existAsync(condition), actual -> {
+        this.tcAsync(context, this.dao().existAsync(condition), actual -> {
             System.out.println(actual);
             context.assertFalse(actual);
         });
