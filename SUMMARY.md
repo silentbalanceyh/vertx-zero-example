@@ -33,4 +33,4 @@
     * [3.6.水平线：ExComplexList](document/zero-ui/006.component.list.md)
     * [3.7.七巧板：ExForm](document/zero-ui/007.component.form.md)
 * [4. 氷る世界（Ψυχρός κόσμος）](/document/zero-cloud/000.index.md)
-    * [4.1.贪婪岛：Aeon](/document/zero-cloud/001.aeon.md)
+    * [4.1.贪婪岛：Aeon（K8S 1.25 + CRI-O）](/document/zero-cloud/001.aeon.md)
