@@ -1,9 +1,9 @@
 package cn.vertxup.job;
 
 import io.vertx.core.json.JsonObject;
-import io.vertx.tp.plugin.job.JobClient;
 import io.vertx.up.annotations.EndPoint;
 import io.vertx.up.annotations.Plugin;
+import io.vertx.up.uca.job.plugin.JobClient;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

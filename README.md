@@ -141,6 +141,7 @@ public class ApolloUp {
 > Aeon System
 
 * [4.1.贪婪岛：Aeon](document/zero-cloud/001.aeon.md)
+* [4.2.燎原：云原生](document/zero-cloud/002.native.cloud.md)
 
 ## 3.5. 䆐之疆（Σύνορα της χώρας）
 
