@@ -35,3 +35,4 @@
 * [4. 氷る世界（Ψυχρός κόσμος）](/document/zero-cloud/000.index.md)
     * [4.1.贪婪岛：Aeon（K8S 1.25 + CRI-O）](/document/zero-cloud/001.aeon.md)
     * [4.2.盖亚：Ceph](/document/zero-cloud/002.ceph.md)
+    * [4.3.零步进：Harbor/KubeSphere](/document/zero-cloud/003.ks.md)
