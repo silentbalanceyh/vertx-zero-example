@@ -142,7 +142,7 @@ public class ApolloUp {
 
 * [4.1.贪婪岛：Aeon](document/zero-cloud/001.aeon.md)
 * [4.2.盖亚：Ceph](document/zero-cloud/002.ceph.md)
-* [4.3.零步进：Harbor/KubeSphere](document/zero-cloud/003.ks.md)
+* [4.3.零步进：Harbor](document/zero-cloud/003.harbor.md)
 
 ## 䆐之疆（Σύνορα της χώρας）
 
