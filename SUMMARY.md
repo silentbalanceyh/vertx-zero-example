@@ -36,3 +36,4 @@
     * [4.1.贪婪岛：Aeon（K8S 1.25 + CRI-O）](/document/zero-cloud/001.aeon.md)
     * [4.2.盖亚：Ceph](/document/zero-cloud/002.ceph.md)
     * [4.3.零步进：Harbor](/document/zero-cloud/003.harbor.md)
+    * [4.4.执子之手：Ceph RBD](/document/zero-cloud/004.rbd.md)
