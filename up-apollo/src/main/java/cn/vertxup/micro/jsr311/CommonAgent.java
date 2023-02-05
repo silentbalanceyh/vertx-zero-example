@@ -3,13 +3,13 @@ package cn.vertxup.micro.jsr311;
 import io.vertx.core.json.JsonObject;
 import io.vertx.up.annotations.EndPoint;
 
-import javax.ws.rs.*;
-import javax.ws.rs.core.HttpHeaders;
+import jakarta.ws.rs.*;
+import jakarta.ws.rs.core.HttpHeaders;
 
 /**
- * `javax.ws.rs.QueryParam`
- * `javax.ws.rs.PathParam`
- * `javax.ws.rs.HeaderParam`
+ * `jakarta.ws.rs.QueryParam`
+ * `jakarta.ws.rs.PathParam`
+ * `jakarta.ws.rs.HeaderParam`
  */
 @EndPoint
 public class CommonAgent {

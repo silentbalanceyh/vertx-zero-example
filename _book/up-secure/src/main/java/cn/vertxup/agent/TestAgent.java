@@ -2,8 +2,8 @@ package cn.vertxup.agent;
 
 import io.vertx.up.annotations.EndPoint;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
 
 /**
  * @author <a href="http://www.origin-x.cn">Lang</a>

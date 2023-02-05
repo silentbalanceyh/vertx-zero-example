@@ -3,11 +3,11 @@ package cn.vertxup.advanced;
 import io.vertx.up.annotations.Address;
 import io.vertx.up.annotations.EndPoint;
 
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Null;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.QueryParam;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Null;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.QueryParam;
 
 @EndPoint
 @Path("/hi/worker")

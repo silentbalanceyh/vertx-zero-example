@@ -3,9 +3,9 @@ package cn.vertxup.micro.jsr311;
 import io.vertx.core.json.JsonObject;
 import io.vertx.up.annotations.EndPoint;
 
-import javax.ws.rs.BodyParam;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
+import jakarta.ws.rs.BodyParam;
+import jakarta.ws.rs.POST;
+import jakarta.ws.rs.Path;
 
 @EndPoint
 public class PojoAgent {

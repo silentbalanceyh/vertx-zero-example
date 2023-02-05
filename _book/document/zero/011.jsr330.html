@@ -684,10 +684,10 @@ Responsibility&#xFF08;COR&#xFF09;&#xFF0C;&#x5B83;&#x662F;&#x8BBE;&#x8BA1;&#x6A21
 <span class="hljs-keyword">import</span> io.vertx.core.json.JsonObject;
 <span class="hljs-keyword">import</span> io.vertx.up.annotations.EndPoint;
 
-<span class="hljs-keyword">import</span> javax.ws.rs.BodyParam;
-<span class="hljs-keyword">import</span> javax.ws.rs.ContextParam;
-<span class="hljs-keyword">import</span> javax.ws.rs.POST;
-<span class="hljs-keyword">import</span> javax.ws.rs.Path;
+<span class="hljs-keyword">import</span> jakarta.ws.rs.BodyParam;
+<span class="hljs-keyword">import</span> jakarta.ws.rs.ContextParam;
+<span class="hljs-keyword">import</span> jakarta.ws.rs.POST;
+<span class="hljs-keyword">import</span> jakarta.ws.rs.Path;
 
 <span class="hljs-meta">@EndPoint</span>
 <span class="hljs-meta">@Path</span>(<span class="hljs-string">&quot;/api&quot;</span>)
@@ -854,7 +854,7 @@ Responsibility&#xFF08;COR&#xFF09;&#xFF0C;&#x5B83;&#x662F;&#x8BBE;&#x8BA1;&#x6A21
 &#x6CE8;&#x89E3;&#xFF0C;&#x5E76;&#x4E14;&#x8BE5;&#x7C7B;&#x5FC5;&#x987B;&#x5B9E;&#x73B0;Zero&#x5B9A;&#x4E49;&#x7684;&#x8FC7;&#x6EE4;&#x5668;&#x63A5;&#x53E3;<code>io.vertx.up.uca.web.filter.Filter</code>&#x3002;</li>
 <li><strong>&#x63A8;&#x8350;</strong>&#x4F7F;&#x7528;<code>io.vertx.up.uca.web.filter.HttpFilter</code>&#x62BD;&#x8C61;&#x7C7B;&#xFF0C;&#x53EF;&#x5F15;&#x5165;&#x4E0A;&#x4E0B;&#x6587;&#x73AF;&#x5883;&#x4FE1;&#x606F;&#x800C;&#x5728;&#x8FC7;&#x6EE4;&#x5668;&#x4E2D;&#x83B7;&#x53D6;&#x66F4;&#x591A;<code>vertx-web</code>&#x4E2D;&#x7684;&#x6838;&#x5FC3;&#x5BF9;&#x8C61;&#xFF0C;&#x5982;Session&#x3001;Cookie&#x3001;Annal&#x7B49;&#x3002;</li>
 <li>&#x82E5;&#x8981;&#x5BF9;&#x8FC7;&#x6EE4;&#x5668;Filter&#x6392;&#x5E8F;&#xFF0C;&#x53EF;&#x4F7F;&#x7528;Zero&#x4E2D;&#x7684;&#x6269;&#x5C55;&#x6CE8;&#x89E3;<code>io.vertx.up.annotations.Ordered</code>&#xFF0C;&#x5982;&#x6B64;&#x7F16;&#x6392;&#x540E;&#xFF0C;&#x60A8;&#x7684;&#x8FC7;&#x6EE4;&#x5668;&#x5C31;&#x53EF;&#x4EE5;&#x987A;&#x5229;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x8FC7;&#x6EE4;&#x94FE;&#x3002;</li>
-<li>&#x5728;Agent&#x4E2D;&#x82E5;&#x8981;&#x8BFB;&#x53D6;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x53C2;&#x6570;&#x4FE1;&#x606F;&#x53EF;&#x4F7F;&#x7528;<code>javax.ws.rs.ContextParam</code>&#x6CE8;&#x89E3;&#x3002;</li>
+<li>&#x5728;Agent&#x4E2D;&#x82E5;&#x8981;&#x8BFB;&#x53D6;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x53C2;&#x6570;&#x4FE1;&#x606F;&#x53EF;&#x4F7F;&#x7528;<code>jakarta.ws.rs.ContextParam</code>&#x6CE8;&#x89E3;&#x3002;</li>
 </ol>
 <h2 id="&#x300C;&#x8D30;&#x300D;jsr330">&#x300C;&#x8D30;&#x300D;JSR330</h2>
 <p>&#x2002;&#x2002;&#x2002;&#x2002;&#x8FD9;&#x91CC;&#x5C31;&#x4E0D;&#x89E3;&#x91CA;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x7684;&#x8BE6;&#x7EC6;&#x5185;&#x5BB9;&#x4E86;&#xFF0C;&#x8BFB;&#x8005;&#x53EF;&#x4EE5;&#x4E0A;&#x7F51;&#x67E5;&#x9605;&#xFF0C;&#x94FA;&#x5929;&#x76D6;&#x5730;&#x7684;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#xFF0C;&#x5982;&#x4ECA;&#x7684;DI&#x51E0;&#x4E4E;&#x5DF2;&#x7ECF;&#x6210;&#x4E3A;&#x4E86;&#x4E00;&#x79CD;&#x7CFB;&#x7EDF;&#x8BBE;&#x8BA1;&#x6807;&#x51C6;&#x3002;</p>

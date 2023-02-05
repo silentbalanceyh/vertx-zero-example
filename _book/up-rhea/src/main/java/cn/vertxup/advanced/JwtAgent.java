@@ -4,9 +4,9 @@ import io.vertx.core.json.JsonObject;
 import io.vertx.up.annotations.EndPoint;
 import io.vertx.up.unity.Ux;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.QueryParam;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.QueryParam;
 
 @EndPoint
 @Path("/hi/jwt")

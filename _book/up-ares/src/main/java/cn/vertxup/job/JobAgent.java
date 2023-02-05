@@ -5,8 +5,8 @@ import io.vertx.tp.plugin.job.JobClient;
 import io.vertx.up.annotations.EndPoint;
 import io.vertx.up.annotations.Plugin;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
 
 @EndPoint
 @Path("/hi/job")

@@ -3,7 +3,7 @@ package cn.vertxup.micro.method;
 import io.vertx.core.json.JsonObject;
 import io.vertx.up.annotations.EndPoint;
 
-import javax.ws.rs.*;
+import jakarta.ws.rs.*;
 
 @EndPoint
 public class FourAgent {

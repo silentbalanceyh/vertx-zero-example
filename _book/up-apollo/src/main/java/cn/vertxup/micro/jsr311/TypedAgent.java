@@ -13,9 +13,9 @@ import io.vertx.ext.web.Session;
 import io.vertx.up.annotations.EndPoint;
 import io.vertx.up.commune.config.XHeader;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.POST;
+import jakarta.ws.rs.Path;
 import java.util.Objects;
 import java.util.Set;
 

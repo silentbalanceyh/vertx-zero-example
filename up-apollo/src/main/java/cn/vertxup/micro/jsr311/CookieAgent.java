@@ -4,9 +4,9 @@ import io.vertx.core.http.Cookie;
 import io.vertx.core.json.JsonObject;
 import io.vertx.up.annotations.EndPoint;
 
-import javax.ws.rs.CookieParam;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
+import jakarta.ws.rs.CookieParam;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
 
 @EndPoint
 public class CookieAgent {

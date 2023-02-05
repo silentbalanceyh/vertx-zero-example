@@ -2,11 +2,11 @@ package cn.vertxup.micro.jsr303.agent;
 
 import io.vertx.up.annotations.EndPoint;
 
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.QueryParam;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.QueryParam;
 
 @EndPoint
 @Path("/hi/jsr303")

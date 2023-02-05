@@ -6,9 +6,9 @@ import io.vertx.core.json.JsonObject;
 import io.vertx.ext.web.FileUpload;
 import io.vertx.up.annotations.EndPoint;
 
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.StreamParam;
+import jakarta.ws.rs.POST;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.StreamParam;
 import java.io.File;
 import java.util.Set;
 

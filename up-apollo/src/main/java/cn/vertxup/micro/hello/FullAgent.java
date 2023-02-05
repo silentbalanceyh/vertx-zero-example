@@ -2,7 +2,7 @@ package cn.vertxup.micro.hello;
 
 import io.vertx.up.annotations.EndPoint;
 
-import javax.ws.rs.*;
+import jakarta.ws.rs.*;
 
 @EndPoint
 public class FullAgent {

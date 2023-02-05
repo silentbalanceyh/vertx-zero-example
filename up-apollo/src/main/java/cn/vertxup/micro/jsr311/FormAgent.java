@@ -6,15 +6,15 @@ import io.vertx.core.json.JsonObject;
 import io.vertx.ext.web.FileUpload;
 import io.vertx.up.annotations.EndPoint;
 
-import javax.ws.rs.FormParam;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
+import jakarta.ws.rs.FormParam;
+import jakarta.ws.rs.POST;
+import jakarta.ws.rs.Path;
 import java.io.File;
 import java.util.Arrays;
 import java.util.Set;
 
 /**
- * `javax.ws.rs.FormParam`
+ * `jakarta.ws.rs.FormParam`
  */
 @EndPoint
 public class FormAgent {

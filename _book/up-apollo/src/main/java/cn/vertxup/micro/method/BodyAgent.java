@@ -3,10 +3,10 @@ package cn.vertxup.micro.method;
 import io.vertx.core.json.JsonObject;
 import io.vertx.up.annotations.EndPoint;
 
-import javax.ws.rs.BodyParam;
-import javax.ws.rs.DELETE;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
+import jakarta.ws.rs.BodyParam;
+import jakarta.ws.rs.DELETE;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
 
 @EndPoint
 public class BodyAgent {
