@@ -4,6 +4,12 @@ title：Zero 中文教程
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/cn.vertxup/vertx-zero/badge.svg?style=plastic)](https://maven-badges.herokuapp.com/maven-central/cn.vertxup/vertx-zero/)  [![Apache License 2](https://img.shields.io/badge/license-ASF2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0.txt)  [![Build Status](https://travis-ci.org/silentbalanceyh/vertx-zero.svg?branch=master)](https://travis-ci.org/silentbalanceyh/vertx-zero)
 
+> 云原生版本在重新制作和开发，所以以前规划的 Zero Ui 和 Zero Extension框架文档全部转移到云端白皮书中：
+>
+> * [《Zero云平台白皮书》](https://www.vertx-cloud.cn/document/doc-web/index.html)
+>
+> 后续所有和工程开发强相关的教程部分会直接转移到白皮书中进行介绍，中文教程中不再提供，白皮书中包括工程规范、环境搭建、运维部署、开发技巧、配置实施手册等全方位开发手册。
+
 # 0.楔子
 
 Zero，又称为：“零”，最初的名字起源于高达W中的“飞翼零式”，其实那时想写个框架，最好是：零编码、零配置、零BUG——也许这只是个遥远的梦。从正式官方网站的英文教程问世后，就再也没有更新过教程了，于是重新开启“零”的大门，只是我依旧在尝试将教程写得更加梦幻，最初的落笔点就是名字，包括项目名字、章节名字。
@@ -20,12 +26,16 @@ Zero相关的资源表
 | <http://www.vertxup.cn> | Zero，后端框架 |
 | <http://www.vertxui.cn> | Zero UI，前端框架 |
 | <http://www.vertxai.cn> | Zero 工具集 |
+| <http://www.vertx-cloud.cn> | Zero 数据规范（含白皮书）|
 
 Zero公众号（申请微信群先加微信号：445191171）：
 
 ![](./_image/2020-03-07/2020-03-07-13-24-07.jpg)
 
-如果您喜欢Zero，帮忙点个Star，谢谢：<https://github.com/silentbalanceyh/vertx-zero>
+如果您喜欢Zero，帮忙点个Star，谢谢：
+
+* GitHub：<https://github.com/silentbalanceyh/vertx-zero>
+* Gitee：<https://gitee.com/silentbalanceyh/vertx-zero>
 
 # 2. 教程
 
@@ -56,6 +66,8 @@ Zero目前的版本中仅支持Maven，最新版为`0.6.2`，一直以`0`前缀�
     <version>0.8.1</version>
 </parent>
 ```
+
+> 您可以使用最新版，支持JDK 17，0.9.1-SNAPSHOT版本。
 
 **特殊说明**：写这套教程的过程中，我会验证所有的演示代码，验证过程的BUG以及最新的版本会在[BUG表](document/bug.md)
 中公布，不过由于教程先于框架，最终的框架版本以主页的最新版为主，而正文中所有的版本号都是写教程时的版本号。
@@ -116,26 +128,6 @@ public class ApolloUp {
 * [1.18.天下：集成](document/zero/018.integration.md)
 * [1.19.冰刀：部署](document/zero/019.deployment.md)
 
-## 风之殇（Πόλεμος ανέμου）
-
-> Zero Extension
-
-* [2.1.扬帆：Zero Extension](document/zero-extension/001.extension.md)
-* [2.2.漆冰裂：Ambient](document/zero-extension/002.ambient.md)
-* [2.3.木叶鸢：CRUD](document/zero-extension/003.crud.md)
-
-## 影之月（Σάντοου μήνα）
-
-> Zero Ui
-
-* [3.1.初赦：Zero Ui](document/zero-ui/001.structure.md)
-* [3.2.苍山暮雪：Ajax](document/zero-ui/002.ajax.md)
-* [3.3.智多星：属性解析器](document/zero-ui/003.attribute.md)
-* [3.4.死线：表单](document/zero-ui/004.field.md)
-* [3.5.太阳帆：列表](document/zero-ui/005.column.md)
-* [3.6.水平线：ExComplexList](document/zero-ui/006.component.list.md)
-* [3.7.七巧板：ExForm](document/zero-ui/007.component.form.md)
-
 ## 氷る世界（Ψυχρός κόσμος）
 
 > Aeon System
@@ -159,7 +151,6 @@ public class ApolloUp {
 * [8.参数签名：Job组件](document/zero/017.job.md#2-2-on-off)
 * [9.查询引擎语法](document/zero/010.jooq.md#san-cha-xun-yin-qing)
 * [10.Ex: ServiceLoader通道](document/zero-extension/001.extension.md#2-2-tong-dao-ding-yi)
-
 
 # COPYRIGHT IN CHINA
 
