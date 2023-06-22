@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>vertx-zero-example</artifactId>
-        <groupId>cn.vertxup</groupId>
+        <groupId>io.zerows</groupId>
         <version>0.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -13,20 +13,20 @@
     <name>3.～零之遥：醉月下～.up-athena</name>
     <dependencies>
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
         </dependency>
         <dependency>
-            <groupId>cn.vertxup</groupId>
+            <groupId>io.zerows</groupId>
             <artifactId>zero-ifx-redis</artifactId>
         </dependency>
         <dependency>
-            <groupId>cn.vertxup</groupId>
+            <groupId>io.zerows</groupId>
             <artifactId>zero-ifx-excel</artifactId>
         </dependency>
         <!-- Extension -->
         <dependency>
-            <groupId>cn.vertxup</groupId>
+            <groupId>io.zerows</groupId>
             <artifactId>zero-ambient</artifactId>
             <version>${zero.version}</version>
         </dependency>
@@ -59,7 +59,7 @@
                     <verbose>false</verbose>
                     <weaveDependencies>
                         <weaveDependency>
-                            <groupId>cn.vertxup</groupId>
+                            <groupId>io.zerows</groupId>
                             <artifactId>vertx-up</artifactId>
                         </weaveDependency>
                     </weaveDependencies>
