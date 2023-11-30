@@ -14,19 +14,14 @@ title：Zero 中文教程
 
 Zero，又称为：“零”，最初的名字起源于高达W中的“飞翼零式”，其实那时想写个框架，最好是：零编码、零配置、零BUG——也许这只是个遥远的梦。从正式官方网站的英文教程问世后，就再也没有更新过教程了，于是重新开启“零”的大门，只是我依旧在尝试将教程写得更加梦幻，最初的落笔点就是名字，包括项目名字、章节名字。
 
-有人说Zero只有后端，其实相反，它还包含一套定制过的前端，虽然不是符合所有人的胃口，但是，从目前已经上线的几个生产系统看来，也简化了不少开发的工作量。于是通过“**闯关**
-”的方式来写一条类似游戏攻略一样的东西，说不定把读者当做玩家，简而精，能提炼更好的心得呢？
-
 # 1. 资源
 
 Zero相关的资源表
 
-| 在线地址 | 说明 |
-|---|:---|
-| <http://www.vertxup.cn> | Zero，后端框架 |
-| <http://www.vertxui.cn> | Zero UI，前端框架 |
-| <http://www.vertxai.cn> | Zero 工具集 |
-| <http://www.vertx-cloud.cn> | Zero 数据规范（含白皮书）|
+- （后端）Zero Ecotope：<https://www.zerows.io>
+- （前端）Zero UI：<https://www.vertxui.cn>
+- （工具）Zero AI：<https://www.vertxai.cn>
+- （标准、白皮书）Zero Schema：<https://www.vertx-cloud.cn>
 
 Zero公众号（申请微信群先加微信号：445191171）：
 
@@ -34,40 +29,29 @@ Zero公众号（申请微信群先加微信号：445191171）：
 
 如果您喜欢Zero，帮忙点个Star，谢谢：
 
-* GitHub：<https://github.com/silentbalanceyh/vertx-zero>
-* Gitee：<https://gitee.com/silentbalanceyh/vertx-zero>
+* GitHub：<https://github.com/zero-ws/zero-ecotope>
+* Gitee：<https://gitee.com/zero-ws/zero-ecotope>
 
 # 2. 教程
 
 > 我一直在思考使用什么样的方式来写教程，如果告别了曾经那种概念，是不是会写成空中楼阁一样只有代码和“招式”的东西，沉淀下来，还是简单点吧（图、代码、解说一步到位），不过项目名称还是沿用希腊神话中的诸神之名，含义为：以诸神之名开启零之誓约。
 
-Zero目前的版本中仅支持Maven，最新版为`0.6.2`，一直以`0`前缀做版本号，是因为我在收集生产环境的运行数据，当然我希望它的`1.0`是经过了生产环境验证的框架，成为一个真正可用的框架，而不是简单的样子货而已。
+Zero目前的版本中仅支持Maven，最新版为`1.0-SNAPSHOT`，一直以`0`前缀做版本号，是因为我在收集生产环境的运行数据，当然我希望它的`1.0`是经过了生产环境验证的框架，成为一个真正可用的框架，而不是简单的样子货而已。
 
 ## 环境
 
-在您的Maven项目的 `pom.xml` 文件中引入以下配置（推荐使用正式版，0.6.2已发布）：
-
-**JDK 8, Vert.x 3.x**
+在您的Maven项目的 `pom.xml` 文件中引入以下配置：
 
 ```xml
-<parent>
-    <artifactId>vertx-import</artifactId>
-    <groupId>cn.vertxup</groupId>
-    <version>0.6.2</version>
-</parent>
+<!-- 1.0-SNAPSHOT -->
+<dependency>
+    <artifactId>zero-ams</artifactId>
+    <groupId>io.zerows</groupId>
+    <version>${ZERO_VERSION}</version>
+</dependency>
 ```
 
-**JDK 11, Vert.x 4.x**
-
-```xml
-<parent>
-    <artifactId>vertx-import</artifactId>
-    <groupId>cn.vertxup</groupId>
-    <version>0.8.1</version>
-</parent>
-```
-
-> 您可以使用最新版，支持JDK 17，0.9.1-SNAPSHOT版本。
+> 您可以使用最新版，支持JDK 17，1.0-SNAPSHOT 版本。
 
 **特殊说明**：写这套教程的过程中，我会验证所有的演示代码，验证过程的BUG以及最新的版本会在[BUG表](document/bug.md)
 中公布，不过由于教程先于框架，最终的框架版本以主页的最新版为主，而正文中所有的版本号都是写教程时的版本号。
@@ -136,21 +120,6 @@ public class ApolloUp {
 * [4.2.盖亚：Ceph](document/zero-cloud/002.ceph.md)
 * [4.3.零步进：Harbor](document/zero-cloud/003.harbor.md)
 * [4.4.执子之手：Ceph RBD](document/zero-cloud/004.rbd.md)
-
-## 䆐之疆（Σύνορα της χώρας）
-
-> 本章节为快速链接，原文中的快捷方式。
-
-* [1.信封模型：Envelop](document/zero/006.async.md#er-tong-yi-mo-xing)
-* [2.任务模型：Mission](document/zero/017.job.md#1-6-mission)
-* [3.集成模型：Integration](document/zero/018.integration.md#2-1-integration)
-* [4.异常查询表](document/zero/007.error.md#er-yi-chang-cha-xun-biao)
-* [5.异步模式：5 Style](document/zero/006.async.md#1-2-zero-mo-shi)
-* [6.参数签名：Agent组件](document/zero/004.param.md#3-4-shang-xia-wen)
-* [7.参数签名：Worker组件](document/zero/008.worker.md##3-2-kuo-zhan-can-shu)
-* [8.参数签名：Job组件](document/zero/017.job.md#2-2-on-off)
-* [9.查询引擎语法](document/zero/010.jooq.md#san-cha-xun-yin-qing)
-* [10.Ex: ServiceLoader通道](document/zero-extension/001.extension.md#2-2-tong-dao-ding-yi)
 
 # COPYRIGHT IN CHINA
 
