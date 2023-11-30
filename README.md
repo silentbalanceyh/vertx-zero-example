@@ -116,6 +116,9 @@ public class ApolloUp {
 
 > Java Programming
 
+* 1.基础知识
+  * [1-01.环境变量](/document/java-programming/ch001/01.environment.md)
+
 ## 氷る世界（Ψυχρός κόσμος）
 
 > Aeon System
