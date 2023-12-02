@@ -118,6 +118,8 @@ public class ApolloUp {
 
 * 2.1.漆木：基础
   * [01.环境变量](/document/java-programming/ch001/01.environment.md)
+  * [02.JDK](/document/java-programming/ch001/02.jdk.md)
+  * [02.JDK](/document/java-programming/ch001/02.jdk.adoc)
 
 ## 氷る世界（Ψυχρός κόσμος）
 
