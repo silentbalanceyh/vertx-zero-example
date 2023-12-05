@@ -2,7 +2,7 @@ package cn.vertxup.demo.cache;
 
 import cn.vertxup.demo.util.AbstractJq;
 import io.vertx.ext.unit.TestContext;
-import io.vertx.tp.plugin.redis.RedisInfix;
+import io.vertx.up.plugin.redis.RedisInfix;
 import org.junit.Test;
 
 /**

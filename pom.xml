@@ -19,6 +19,7 @@
         <module>up-crius</module>
         <module>upe-ambient</module>
         <module>up-secure</module>
+        <module>j-programming</module>
     </modules>
     <properties>
         <maven.deploy.skip>true</maven.deploy.skip>

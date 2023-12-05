@@ -120,6 +120,7 @@ public class ApolloUp {
   * [01.环境变量](/document/java-programming/ch001/01.environment.md)
   * [02.JDK](/document/java-programming/ch001/02.jdk.md)
   * [03.命令工具](/document/java-programming/ch001/03.command.md)
+  * [04.入口](/document/java-programming/ch001/04.entry.md)
 
 ## 氷る世界（Ψυχρός κόσμος）
 

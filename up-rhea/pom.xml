@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>up-rhea</artifactId>
-    <name>2.～零之遥：山河颂～.up-rhea</name>
+    <name>1-2.～零之遥：山河颂～.up-rhea</name>
     <dependencies>
         <dependency>
             <groupId>io.zerows</groupId>

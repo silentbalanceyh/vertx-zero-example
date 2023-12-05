@@ -1,9 +1,10 @@
 package cn.vertxup;
 
-import io.vertx.tp.ke.booter.Bt;
+import io.mature.exploit.PulseOn;
 
 public class AthenaLoader {
     public static void main(final String[] args) {
-        Bt.load("init/");
+//        Bt.load("init/");
+        PulseOn.runOob(AthenaLoader.class, "init/");
     }
 }

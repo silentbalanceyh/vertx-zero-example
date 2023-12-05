@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>up-secure</artifactId>
-    <name>8.～零之遥：新兰亭～.up-secure</name>
+    <name>1-8.～零之遥：新兰亭～.up-secure</name>
     <dependencies>
         <dependency>
             <groupId>io.zerows</groupId>

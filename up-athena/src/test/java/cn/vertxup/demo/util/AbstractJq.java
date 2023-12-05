@@ -5,7 +5,7 @@ import cn.vertxup.demo.domain.tables.pojos.XTabular;
 import io.vertx.core.json.JsonArray;
 import io.vertx.core.json.JsonObject;
 import io.vertx.quiz.ZeroBase;
-import io.vertx.tp.plugin.jooq.JooqInfix;
+import io.vertx.up.plugin.jooq.JooqInfix;
 import io.vertx.up.uca.jooq.UxJooq;
 import io.vertx.up.unity.Ux;
 import io.vertx.up.util.Ut;

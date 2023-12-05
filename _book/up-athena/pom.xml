@@ -60,7 +60,7 @@
                     <weaveDependencies>
                         <weaveDependency>
                             <groupId>io.zerows</groupId>
-                            <artifactId>vertx-up</artifactId>
+                            <artifactId>zero-web</artifactId>
                         </weaveDependency>
                     </weaveDependencies>
                 </configuration>

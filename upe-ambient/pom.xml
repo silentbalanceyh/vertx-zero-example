@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>upe-ambient</artifactId>
-    <name>1.～风之殇：漆冰裂～.upe-ambient</name>
+    <name>3-1.～风之殇：漆冰裂～.upe-ambient</name>
     <dependencies>
         <dependency>
             <groupId>io.zerows</groupId>

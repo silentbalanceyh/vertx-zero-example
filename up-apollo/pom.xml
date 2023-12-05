@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>up-apollo</artifactId>
-    <name>1.～零之遥：起源～.up-apollo</name>
+    <name>1-1.～零之遥：起源～.up-apollo</name>
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>

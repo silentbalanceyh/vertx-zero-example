@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>up-shell</artifactId>
-    <name>5.～零之遥：鼚乎～.up-shell</name>
+    <name>1-5.～零之遥：鼚乎～.up-shell</name>
     <dependencies>
         <dependency>
             <groupId>io.zerows</groupId>

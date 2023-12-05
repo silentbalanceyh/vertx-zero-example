@@ -1,6 +1,6 @@
 package cn.vertxup;
 
-import io.vertx.up.VertxApplication;
+import io.vertx.boot.VertxApplication;
 import io.vertx.up.annotations.Up;
 
 @Up
