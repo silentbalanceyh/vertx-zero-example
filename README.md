@@ -122,6 +122,7 @@ public class ApolloUp {
   * [03.命令工具](/document/java-programming/ch001/03.command.md)
   * [04.入口](/document/java-programming/ch001/04.entry.md)
   * [05.类加载器 *](/document/java-programming/ch001/05.cl.md)
+  * [06.注释 & 文档](/document/java-programming/ch001/06.comment.md)
 
 ## 氷る世界（Ψυχρός κόσμος）
 
