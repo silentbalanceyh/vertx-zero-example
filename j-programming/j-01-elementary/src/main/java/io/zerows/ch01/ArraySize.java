@@ -26,4 +26,11 @@ public class ArraySize {
             System.out.println(name);
         }
     }
+
+    /**
+     * @deprecated
+     */
+    public static void print(){
+
+    }
 }
